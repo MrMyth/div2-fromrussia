@@ -26,10 +26,10 @@ const HeroSection = () => {
         <div className="flex flex-col items-center justify-center h-[70vh] text-center space-y-6">
           <Shield className="w-16 h-16 text-primary animate-pulse" />
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">
-            Russian Elite Division
+            [RUS] FROM RUSSIA
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-semibold">
-            Сила в единстве • Strength in Unity
+            Игровой Discord сервер
           </p>
           <div className="flex gap-4 mt-4">
             <button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-md transition-colors">
