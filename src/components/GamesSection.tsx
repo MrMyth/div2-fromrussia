@@ -1,3 +1,5 @@
+import GameSlideshow from "./GameSlideshow";
+
 const GamesSection = () => {
   const games = [
     "Tom Clancy's The Division 2",
@@ -22,6 +24,7 @@ const GamesSection = () => {
             </li>
           ))}
         </ul>
+        <GameSlideshow />
       </div>
     </section>
   );
