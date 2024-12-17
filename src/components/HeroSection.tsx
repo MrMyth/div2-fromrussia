@@ -2,7 +2,7 @@ import { Shield } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="relative h-[70vh] flex flex-col">
+    <div className="relative h-[50vh] flex flex-col">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-background z-10" />
@@ -23,19 +23,19 @@ const HeroSection = () => {
 
       {/* Header Content */}
       <div className="relative z-20 container mx-auto px-4">
-        <div className="flex flex-col items-center justify-center h-[70vh] text-center space-y-6">
-          <Shield className="w-16 h-16 text-[#F97316] animate-pulse" />
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-white">
+        <div className="flex flex-col items-center justify-center h-[50vh] text-center space-y-4">
+          <Shield className="w-12 h-12 text-[#F97316] animate-pulse" />
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
             [RUS] FROM RUSSIA
           </h1>
-          <p className="text-xl md:text-2xl text-white/80 font-semibold">
+          <p className="text-lg md:text-xl text-white/80 font-semibold">
             Игровой Discord сервер
           </p>
-          <div className="flex gap-4 mt-4">
-            <button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-6 py-2 rounded-md transition-colors">
+          <div className="flex gap-4 mt-2">
+            <button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-4 py-1.5 rounded-md transition-colors">
               Join Now
             </button>
-            <button className="border border-[#F97316]/50 hover:bg-[#F97316]/10 text-white px-6 py-2 rounded-md transition-colors">
+            <button className="border border-[#F97316]/50 hover:bg-[#F97316]/10 text-white px-4 py-1.5 rounded-md transition-colors">
               Learn More
             </button>
           </div>
@@ -44,7 +44,7 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <div className="w-1 h-12 rounded-full bg-gradient-to-b from-[#F97316] to-transparent" />
+        <div className="w-1 h-8 rounded-full bg-gradient-to-b from-[#F97316] to-transparent" />
       </div>
     </div>
   );
