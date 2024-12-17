@@ -52,7 +52,7 @@ const GameSlideshow = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto mt-12">
+    <div className="w-full mt-12">
       <Carousel
         opts={{
           align: "start",
@@ -62,19 +62,19 @@ const GameSlideshow = () => {
       >
         <CarouselContent>
           {images.map((image, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="basis-full">
               <div className="p-1">
                 <img
                   src={image}
                   alt={`Game screenshot ${index + 1}`}
-                  className="w-full h-48 object-cover rounded-lg"
+                  className="w-full h-[600px] object-contain rounded-lg"
                 />
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="left-4" />
+        <CarouselNext className="right-4" />
       </Carousel>
     </div>
   );
