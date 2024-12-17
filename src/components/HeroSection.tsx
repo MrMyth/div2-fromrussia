@@ -24,18 +24,18 @@ const HeroSection = () => {
       {/* Header Content */}
       <div className="relative z-20 container mx-auto px-4">
         <div className="flex flex-col items-center justify-center h-[70vh] text-center space-y-6">
-          <Shield className="w-16 h-16 text-primary animate-pulse" />
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">
+          <Shield className="w-16 h-16 text-[#F97316] animate-pulse" />
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-white">
             [RUS] FROM RUSSIA
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground font-semibold">
+          <p className="text-xl md:text-2xl text-white/80 font-semibold">
             Игровой Discord сервер
           </p>
           <div className="flex gap-4 mt-4">
-            <button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-md transition-colors">
+            <button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-6 py-2 rounded-md transition-colors">
               Join Now
             </button>
-            <button className="border border-primary/50 hover:bg-primary/10 text-white px-6 py-2 rounded-md transition-colors">
+            <button className="border border-[#F97316]/50 hover:bg-[#F97316]/10 text-white px-6 py-2 rounded-md transition-colors">
               Learn More
             </button>
           </div>
@@ -44,7 +44,7 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <div className="w-1 h-12 rounded-full bg-gradient-to-b from-primary to-transparent" />
+        <div className="w-1 h-12 rounded-full bg-gradient-to-b from-[#F97316] to-transparent" />
       </div>
     </div>
   );
