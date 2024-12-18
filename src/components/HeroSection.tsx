@@ -24,7 +24,11 @@ const HeroSection = () => {
       {/* Header Content */}
       <div className="relative z-20 container mx-auto px-4">
         <div className="flex flex-col items-center justify-center h-[50vh] text-center space-y-4">
-          <Shield className="w-12 h-12 text-[#F97316] animate-pulse" />
+          <img 
+            src="https://i.ibb.co/bLnHTds/42da929679073452.png" 
+            alt="Division Logo" 
+            className="w-12 h-12 animate-pulse"
+          />
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
             [RUS] FROM RUSSIA
           </h1>
