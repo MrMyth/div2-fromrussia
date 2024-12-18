@@ -1,5 +1,6 @@
 import GameSlideshow from "./GameSlideshow";
 import GameSlideshow2 from "./GameSlideshow2";
+import { Button } from "./ui/button";
 
 const GamesSection = () => {
   const games = [
@@ -10,10 +11,18 @@ const GamesSection = () => {
     "Tom Clancy's Ghost Recon Breakpoint"
   ];
 
+  const resources = [
+    { name: "Division Info", url: "https://division.inot.pro/" },
+    { name: "Known Issues", url: "https://trello.com/b/F2RU9ia9/the-division-2-known-issues" },
+    { name: "Yougile Board", url: "https://ru.yougile.com/board/zyy6vkmc28pb" },
+    { name: "Division Map", url: "https://division2map.com/" },
+    { name: "Division Timers", url: "https://divisiontimers.com/#/" }
+  ];
+
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-[#F97316] mb-8">Наши игры</h2>
+        <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8">Наши игры</h2>
         <ul className="space-y-4 max-w-2xl mx-auto">
           {games.map((game, index) => (
             <li 
@@ -27,18 +36,34 @@ const GamesSection = () => {
         </ul>
         
         <div className="text-center mt-12">
-          <h3 className="text-xl font-bold text-gray-800 mb-6">Азбуки рейдов</h3>
+          <h3 className="text-xl font-bold text-[#F97316] mb-6">Азбуки рейдов</h3>
           <p className="text-gray-700 mb-8 max-w-3xl mx-auto">
             Кликни на картинку, чтобы увеличить слайдшоу. После увеличения слайдшоу ты можешь перемещаться между слайдами. Для этого используй стрелки по бокам или же стрелки на клавиатуре.
           </p>
-          <h4 className="text-lg font-semibold text-gray-800 mb-4">Азбука рейда "Тяжелые времена"</h4>
+          <h4 className="text-lg font-semibold text-[#F97316] mb-4">Азбука рейда "Тяжелые времена"</h4>
         </div>
         <GameSlideshow />
         
         <div className="text-center mt-12">
-          <h4 className="text-lg font-semibold text-gray-800 mb-4">Азбука рейда "Железный конь"</h4>
+          <h4 className="text-lg font-semibold text-[#F97316] mb-4">Азбука рейда "Железный конь"</h4>
         </div>
         <GameSlideshow2 />
+
+        <div className="mt-16">
+          <h3 className="text-xl font-bold text-[#F97316] text-center mb-8">Полезные ресурсы</h3>
+          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+            {resources.map((resource, index) => (
+              <Button
+                key={index}
+                variant="default"
+                className="bg-[#F97316] hover:bg-[#F97316]/90 text-white"
+                onClick={() => window.open(resource.url, '_blank')}
+              >
+                {resource.name}
+              </Button>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
