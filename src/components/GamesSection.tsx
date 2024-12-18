@@ -1,4 +1,5 @@
 import GameSlideshow from "./GameSlideshow";
+import GameSlideshow2 from "./GameSlideshow2";
 
 const GamesSection = () => {
   const games = [
@@ -25,6 +26,7 @@ const GamesSection = () => {
           ))}
         </ul>
         <GameSlideshow />
+        <GameSlideshow2 />
       </div>
     </section>
   );
