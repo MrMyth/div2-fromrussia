@@ -20,7 +20,7 @@ const DiscordSection = () => {
 
           {/* Right Column - Join Instructions */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-[#F97316] text-center">Как присоединиться к серверу</h2>
+            <h2 className="text-2xl font-bold text-[#F97316] text-left">Как присоединиться к серверу</h2>
             <p className="text-lg text-muted-foreground">
               Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord".
             </p>

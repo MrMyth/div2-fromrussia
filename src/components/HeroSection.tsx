@@ -27,7 +27,7 @@ const HeroSection = () => {
           <img 
             src="https://i.ibb.co/bLnHTds/42da929679073452.png" 
             alt="Division Logo" 
-            className="w-12 h-12 animate-pulse"
+            className="w-12 h-12"
           />
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
             [RUS] FROM RUSSIA
