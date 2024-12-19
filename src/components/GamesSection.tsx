@@ -51,12 +51,12 @@ const GamesSection = () => {
 
         <div className="mt-16">
           <h3 className="text-xl font-bold text-[#F97316] text-center mb-8">Полезные ресурсы</h3>
-          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+          <div className="flex flex-col items-center gap-4 max-w-md mx-auto">
             {resources.map((resource, index) => (
               <Button
                 key={index}
                 variant="default"
-                className="bg-[#F97316] hover:bg-[#F97316]/90 text-white"
+                className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full rounded-lg"
                 onClick={() => window.open(resource.url, '_blank')}
               >
                 {resource.name}
