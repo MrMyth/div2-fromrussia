@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { Loader2 } from "lucide-react";
 
 const DiscordSection = () => {
   return (
@@ -31,8 +32,13 @@ const DiscordSection = () => {
               className="w-full bg-[#F97316] hover:bg-[#F97316]/90 text-white rounded-lg"
               onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
             >
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
               Присоединится к Discord
             </Button>
+
+            <p className="text-sm text-muted-foreground">
+              Скачать Discord с официального сайта
+            </p>
 
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-[#F97316]">Дополнительно</h3>
