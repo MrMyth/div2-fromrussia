@@ -1,3 +1,5 @@
+import { Button } from "./ui/button";
+
 const DiscordSection = () => {
   return (
     <section className="py-16 bg-white">
@@ -19,11 +21,38 @@ const DiscordSection = () => {
           </div>
 
           {/* Right Column - Join Instructions */}
-          <div className="space-y-4">
+          <div className="space-y-6">
             <h2 className="text-2xl font-bold text-[#F97316] text-left">Как присоединиться к серверу</h2>
             <p className="text-lg text-muted-foreground">
               Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord".
             </p>
+            <Button
+              variant="default"
+              className="w-full bg-[#F97316] hover:bg-[#F97316]/90 text-white rounded-lg"
+              onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
+            >
+              Присоединится к Discord
+            </Button>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-[#F97316]">Дополнительно</h3>
+              <div className="flex flex-col gap-4">
+                <Button
+                  variant="outline"
+                  className="w-full rounded-lg border-[#F97316] text-[#F97316] hover:bg-[#F97316]/10"
+                  onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
+                >
+                  Join Discord
+                </Button>
+                <Button
+                  variant="outline"
+                  className="w-full rounded-lg border-[#F97316] text-[#F97316] hover:bg-[#F97316]/10"
+                  onClick={() => window.open('https://disk.yandex.ru/i/VzWLimdSluvIaw', '_blank')}
+                >
+                  Yandex Disk
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
