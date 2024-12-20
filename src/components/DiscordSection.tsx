@@ -38,15 +38,15 @@ const DiscordSection = () => {
               <h3 className="text-xl font-bold text-[#F97316]">Дополнительно</h3>
               <div className="flex flex-col gap-4">
                 <Button
-                  variant="outline"
-                  className="w-full rounded-lg border-[#F97316] text-[#F97316] hover:bg-[#F97316]/10"
+                  variant="default"
+                  className="w-full rounded-lg bg-[#F97316] hover:bg-[#F97316]/90 text-white"
                   onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
                 >
                   Join Discord
                 </Button>
                 <Button
-                  variant="outline"
-                  className="w-full rounded-lg border-[#F97316] text-[#F97316] hover:bg-[#F97316]/10"
+                  variant="default"
+                  className="w-full rounded-lg bg-[#F97316] hover:bg-[#F97316]/90 text-white"
                   onClick={() => window.open('https://disk.yandex.ru/i/VzWLimdSluvIaw', '_blank')}
                 >
                   Yandex Disk
