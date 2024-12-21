@@ -22,35 +22,39 @@ const GamesSection = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8">Наши игры</h2>
-        <ul className="space-y-4 max-w-2xl mx-auto">
-          {games.map((game, index) => (
-            <li 
-              key={index}
-              className="flex items-center space-x-4 p-4 rounded-lg border border-[#FEC6A1] hover:bg-[#FEC6A1]/10 transition-colors"
-            >
-              <span className="text-[#F97316] font-medium">{index + 1}.</span>
-              <span className="text-gray-800">{game}</span>
-            </li>
-          ))}
-        </ul>
-        
-        <div className="text-center mt-12">
-          <h3 className="text-xl font-bold text-[#F97316] mb-6">Азбуки рейдов</h3>
-          <p className="text-gray-700 mb-8 max-w-3xl mx-auto">
-            Кликни на картинку, чтобы увеличить слайдшоу. После увеличения слайдшоу ты можешь перемещаться между слайдами. Для этого используй стрелки по бокам или же стрелки на клавиатуре.
-          </p>
-          <h4 className="text-lg font-semibold text-[#F97316] mb-4">Азбука рейда "Тяжелые времена"</h4>
+      <div className="container mx-auto px-4 space-y-16">
+        <div className="border border-black/10 rounded-lg shadow-md p-8">
+          <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8">Наши игры</h2>
+          <ul className="space-y-4 max-w-2xl mx-auto">
+            {games.map((game, index) => (
+              <li 
+                key={index}
+                className="flex items-center space-x-4 p-4 rounded-lg border border-[#FEC6A1] hover:bg-[#FEC6A1]/10 transition-colors"
+              >
+                <span className="text-[#F97316] font-medium">{index + 1}.</span>
+                <span className="text-gray-800">{game}</span>
+              </li>
+            ))}
+          </ul>
         </div>
-        <GameSlideshow />
         
-        <div className="text-center mt-12">
-          <h4 className="text-lg font-semibold text-[#F97316] mb-4">Азбука рейда "Железный конь"</h4>
+        <div className="border border-black/10 rounded-lg shadow-md p-8">
+          <div className="text-center">
+            <h3 className="text-xl font-bold text-[#F97316] mb-6">Азбуки рейдов</h3>
+            <p className="text-gray-700 mb-8 max-w-3xl mx-auto">
+              Кликни на картинку, чтобы увеличить слайдшоу. После увеличения слайдшоу ты можешь перемещаться между слайдами. Для этого используй стрелки по бокам или же стрелки на клавиатуре.
+            </p>
+            <h4 className="text-lg font-semibold text-[#F97316] mb-4">Азбука рейда "Тяжелые времена"</h4>
+          </div>
+          <GameSlideshow />
+          
+          <div className="text-center mt-12">
+            <h4 className="text-lg font-semibold text-[#F97316] mb-4">Азбука рейда "Железный конь"</h4>
+          </div>
+          <GameSlideshow2 />
         </div>
-        <GameSlideshow2 />
 
-        <div className="mt-16">
+        <div className="border border-black/10 rounded-lg shadow-md p-8">
           <h3 className="text-xl font-bold text-[#F97316] text-center mb-8">Полезные ресурсы</h3>
           <div className="flex flex-col items-center gap-4 max-w-md mx-auto">
             {resources.map((resource, index) => (
@@ -67,7 +71,7 @@ const GamesSection = () => {
           </div>
         </div>
 
-        <div className="mt-16">
+        <div className="border border-black/10 rounded-lg shadow-md p-8">
           <h3 className="text-xl font-bold text-[#F97316] text-center mb-8">Жалоба на игрока</h3>
           <div className="flex justify-center">
             <iframe 
@@ -83,8 +87,7 @@ const GamesSection = () => {
           </div>
         </div>
 
-        {/* Наши каналы section */}
-        <div className="mt-16">
+        <div className="border border-black/10 rounded-lg shadow-md p-8">
           <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8">Наши каналы</h2>
           <div className="space-y-8">
             <div className="space-y-4">
