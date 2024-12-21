@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 const DiscordSection = () => {
   return (
@@ -32,6 +33,7 @@ const DiscordSection = () => {
               onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
             >
               Присоединится к Discord
+              <ArrowRight className="w-5 h-5" />
             </Button>
 
             <div className="space-y-4">
@@ -43,6 +45,7 @@ const DiscordSection = () => {
                   onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
                 >
                   Join Discord
+                  <ArrowRight className="w-5 h-5" />
                 </Button>
                 <Button
                   variant="default"
@@ -50,6 +53,7 @@ const DiscordSection = () => {
                   onClick={() => window.open('https://disk.yandex.ru/i/VzWLimdSluvIaw', '_blank')}
                 >
                   Yandex Disk
+                  <ArrowRight className="w-5 h-5" />
                 </Button>
               </div>
             </div>

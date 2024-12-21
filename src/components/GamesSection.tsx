@@ -1,7 +1,7 @@
 import GameSlideshow from "./GameSlideshow";
 import GameSlideshow2 from "./GameSlideshow2";
 import { Button } from "./ui/button";
-import { Youtube, Link } from "lucide-react";
+import { Youtube, Link, ArrowRight } from "lucide-react";
 
 const GamesSection = () => {
   const games = [
@@ -61,6 +61,7 @@ const GamesSection = () => {
                 onClick={() => window.open(resource.url, '_blank')}
               >
                 {resource.name}
+                <ArrowRight className="w-5 h-5" />
               </Button>
             ))}
           </div>
