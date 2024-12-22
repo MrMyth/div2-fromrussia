@@ -1,7 +1,7 @@
 import GameSlideshow from "./GameSlideshow";
 import GameSlideshow2 from "./GameSlideshow2";
 import { Button } from "./ui/button";
-import { Youtube, Link } from "lucide-react";
+import { Youtube, Link, Store, AlertOctagon, Map, Clock } from "lucide-react";
 
 const GamesSection = () => {
   const games = [
@@ -13,11 +13,11 @@ const GamesSection = () => {
   ];
 
   const resources = [
-    { name: "Division Info", url: "https://division.inot.pro/" },
-    { name: "Known Issues", url: "https://trello.com/b/F2RU9ia9/the-division-2-known-issues" },
-    { name: "Yougile Board", url: "https://ru.yougile.com/board/zyy6vkmc28pb" },
-    { name: "Division Map", url: "https://division2map.com/" },
-    { name: "Division Timers", url: "https://divisiontimers.com/#/" }
+    { name: "Товары недели", url: "https://division.inot.pro/", icon: Store },
+    { name: "Известные ошибки игры (английский)", url: "https://trello.com/b/F2RU9ia9/the-division-2-known-issues", icon: AlertOctagon },
+    { name: "Известные ошибки (русский)", url: "https://ru.yougile.com/board/zyy6vkmc28pb", icon: AlertOctagon },
+    { name: "Интерактивная карта игры", url: "https://division2map.com/", icon: Map },
+    { name: "Таймеры игры", url: "https://divisiontimers.com/#/", icon: Clock }
   ];
 
   return (
@@ -60,6 +60,7 @@ const GamesSection = () => {
                 className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full rounded-lg"
                 onClick={() => window.open(resource.url, '_blank')}
               >
+                <resource.icon className="w-5 h-5" />
                 {resource.name}
               </Button>
             ))}
