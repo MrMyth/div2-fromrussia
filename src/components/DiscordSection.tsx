@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { MessageSquare, Download, XOctagon } from "lucide-react";
 
 const DiscordSection = () => {
   return (
@@ -28,9 +29,10 @@ const DiscordSection = () => {
             </p>
             <Button
               variant="default"
-              className="w-full bg-[#F97316] hover:bg-[#F97316]/90 text-white rounded-lg"
+              className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg"
               onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
             >
+              <MessageSquare className="w-5 h-5" />
               Присоединится к Discord
             </Button>
 
@@ -39,17 +41,19 @@ const DiscordSection = () => {
               <div className="flex flex-col gap-4">
                 <Button
                   variant="default"
-                  className="w-full rounded-lg bg-[#F97316] hover:bg-[#F97316]/90 text-white"
+                  className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white"
                   onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
                 >
-                  Join Discord
+                  <Download className="w-5 h-5" />
+                  Скачать Discord с офиального сайта
                 </Button>
                 <Button
                   variant="default"
-                  className="w-full rounded-lg bg-[#F97316] hover:bg-[#F97316]/90 text-white"
+                  className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white"
                   onClick={() => window.open('https://disk.yandex.ru/i/VzWLimdSluvIaw', '_blank')}
                 >
-                  Yandex Disk
+                  <XOctagon className="w-5 h-5" />
+                  Если Discord не работает
                 </Button>
               </div>
             </div>
