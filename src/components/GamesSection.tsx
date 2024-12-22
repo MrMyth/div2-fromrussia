@@ -87,7 +87,7 @@ const GamesSection = () => {
           <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8">Наши каналы</h2>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Left Column - MuRomeZ */}
-            <div className="space-y-4 p-6 rounded-lg border border-gray-200 shadow-md">
+            <div className="space-y-4 p-6 rounded-lg border border-[#F97316]/20 backdrop-blur-lg">
               <h3 className="text-xl font-bold text-[#F97316] text-center">MuRomeZ</h3>
               <div className="flex justify-center">
                 <Button
@@ -102,7 +102,7 @@ const GamesSection = () => {
             </div>
 
             {/* Right Column - MrMyth92 */}
-            <div className="space-y-4 p-6 rounded-lg border border-gray-200 shadow-md">
+            <div className="space-y-4 p-6 rounded-lg border border-[#F97316]/20 backdrop-blur-lg">
               <h3 className="text-xl font-bold text-[#F97316] text-center">MrMyth92</h3>
               <div className="flex justify-center gap-4">
                 <Button
