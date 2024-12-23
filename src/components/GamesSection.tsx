@@ -72,11 +72,9 @@ const GamesSection = () => {
           <div className="flex justify-center">
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSeyhEk7FC95iPaHFvHxNlRNIEh4D_qV7tQVM1Ic8DdpocXXBQ/viewform?embedded=true" 
-              width="640" 
-              height="640" 
-              frameBorder="0" 
-              marginHeight="0" 
-              marginWidth="0"
+              width={640}
+              height={640}
+              frameBorder={0}
               className="max-w-full"
               title="Форма жалобы на игрока"
             >
