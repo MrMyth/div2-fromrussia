@@ -28,7 +28,7 @@ const GamesSection = () => {
           {games.map((game, index) => (
             <li 
               key={index}
-              className="flex items-center space-x-4 p-4 rounded-lg border border-[#FEC6A1] hover:bg-[#FEC6A1]/10 transition-colors"
+              className="flex items-center space-x-4 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
             >
               <span className="text-[#F97316] font-medium">{index + 1}.</span>
               <span className="text-gray-800">{game}</span>
@@ -87,7 +87,7 @@ const GamesSection = () => {
           <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8">Наши каналы</h2>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Left Column - MuRomeZ */}
-            <div className="space-y-4 p-6 rounded-lg border border-[#F97316]/20 backdrop-blur-lg">
+            <div className="space-y-4 p-6 rounded-lg bg-gray-50">
               <h3 className="text-xl font-bold text-[#F97316] text-center">MuRomeZ</h3>
               <div className="flex justify-center">
                 <Button
@@ -102,7 +102,7 @@ const GamesSection = () => {
             </div>
 
             {/* Right Column - MrMyth92 */}
-            <div className="space-y-4 p-6 rounded-lg border border-[#F97316]/20 backdrop-blur-lg">
+            <div className="space-y-4 p-6 rounded-lg bg-gray-50">
               <h3 className="text-xl font-bold text-[#F97316] text-center">MrMyth92</h3>
               <div className="flex justify-center gap-4">
                 <Button
