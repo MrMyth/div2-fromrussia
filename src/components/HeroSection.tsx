@@ -1,8 +1,67 @@
 import { Shield } from "lucide-react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 const HeroSection = () => {
   return (
-    <div className="relative h-[50vh] flex flex-col">
+    <div className="relative min-h-[50vh] flex flex-col">
+      {/* Navigation Menu */}
+      <div className="relative z-30 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40">
+        <div className="container mx-auto">
+          <NavigationMenu className="mx-auto">
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Discord</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="p-4 w-[200px] space-y-2">
+                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
+                      Виджет Discord сервера
+                    </NavigationMenuLink>
+                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
+                      Как присоединиться к серверу
+                    </NavigationMenuLink>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Азбуки рейдов</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="p-4 w-[250px] space-y-2">
+                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
+                      Азбука рейда "Тяжелые времена"
+                    </NavigationMenuLink>
+                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
+                      Азбука рейда "Железный конь"
+                    </NavigationMenuLink>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Контент-мейкеры</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="p-4 w-[200px] space-y-2">
+                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
+                      MuRomeZ
+                    </NavigationMenuLink>
+                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
+                      MrMyth92
+                    </NavigationMenuLink>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
+      </div>
+
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-background z-10" />
@@ -35,14 +94,6 @@ const HeroSection = () => {
           <p className="subheading">
             Игровой Discord сервер
           </p>
-          <div className="flex gap-4 mt-2">
-            <button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-4 py-1.5 rounded-md transition-colors">
-              Join Now
-            </button>
-            <button className="border border-[#F97316]/50 hover:bg-[#F97316]/10 text-white px-4 py-1.5 rounded-md transition-colors">
-              Learn More
-            </button>
-          </div>
         </div>
       </div>
 
