@@ -1,4 +1,4 @@
-import MainNav from "./MainNav"
+import { Shield } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -35,7 +35,14 @@ const HeroSection = () => {
           <p className="subheading">
             Игровой Discord сервер
           </p>
-          <MainNav />
+          <div className="flex gap-4 mt-2">
+            <button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-4 py-1.5 rounded-md transition-colors">
+              Join Now
+            </button>
+            <button className="border border-[#F97316]/50 hover:bg-[#F97316]/10 text-white px-4 py-1.5 rounded-md transition-colors">
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
 
@@ -44,7 +51,7 @@ const HeroSection = () => {
         <div className="w-1 h-8 rounded-full bg-gradient-to-b from-[#F97316] to-transparent" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
