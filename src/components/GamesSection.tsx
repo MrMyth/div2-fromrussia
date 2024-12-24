@@ -12,7 +12,7 @@ const GamesSection = () => {
         <GamesList />
         
         <div className="text-center mt-12">
-          <h3 className="subheading mb-6">Азбуки рейдов</h3>
+          <h3 className="catchphrase mb-6">Азбуки рейдов</h3>
           <p className="text-gray-700 mb-8 max-w-3xl mx-auto">
             Кликни на картинку, чтобы увеличить слайдшоу. После увеличения слайдшоу ты можешь перемещаться между слайдами. Для этого используй стрелки по бокам или же стрелки на клавиатуре.
           </p>
