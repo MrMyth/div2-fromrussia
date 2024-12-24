@@ -32,6 +32,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Furore', sans-serif;
   }
 }
 
@@ -45,4 +46,19 @@
 
 .card-hover:hover {
   transform: translateY(-5px);
+}
+
+.catchphrase {
+  font-family: 'Furore', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #F97316;
+}
+
+.subheading {
+  font-family: 'Furore', sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  font-style: italic;
+  color: #F97316;
 }

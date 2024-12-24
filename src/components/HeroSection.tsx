@@ -29,10 +29,10 @@ const HeroSection = () => {
             alt="Division Logo" 
             className="w-12 h-12"
           />
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+          <h1 className="catchphrase">
             [RUS] FROM RUSSIA
           </h1>
-          <p className="text-lg md:text-xl text-white/80 font-semibold">
+          <p className="subheading">
             Игровой Discord сервер
           </p>
           <div className="flex gap-4 mt-2">
