@@ -8,7 +8,7 @@ const ComplaintForm = () => {
         <iframe 
           src="https://docs.google.com/forms/d/e/1FAIpQLSeyhEk7FC95iPaHFvHxNlRNIEh4D_qV7tQVM1Ic8DdpocXXBQ/viewform?embedded=true" 
           width={640}
-          height={640}
+          height={1200}
           frameBorder={0}
           className="max-w-full"
           title="Форма жалобы на игрока"
