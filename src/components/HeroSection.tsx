@@ -1,64 +1,34 @@
-import { Shield } from "lucide-react";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+import { Discord, Youtube, BookOpen, Gamepad, HelpCircle, Link } from "lucide-react";
 
 const HeroSection = () => {
+  const menuItems = [
+    { icon: <Discord className="w-5 h-5" />, text: "Discord сервер", href: "#discord" },
+    { icon: <Gamepad className="w-5 h-5" />, text: "Игры", href: "#games" },
+    { icon: <Youtube className="w-5 h-5" />, text: "YouTube каналы", href: "#channels" },
+    { icon: <BookOpen className="w-5 h-5" />, text: "Азбуки рейдов", href: "#raids" },
+    { icon: <Link className="w-5 h-5" />, text: "Полезные ресурсы", href: "#resources" },
+    { icon: <HelpCircle className="w-5 h-5" />, text: "Жалоба на игрока", href: "#complaint" }
+  ];
+
   return (
     <div className="relative min-h-[50vh] flex flex-col">
       {/* Navigation Menu */}
       <div className="relative z-30 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40">
-        <div className="container mx-auto">
-          <NavigationMenu className="mx-auto">
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Discord</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="p-4 w-[200px] space-y-2">
-                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
-                      Виджет Discord сервера
-                    </NavigationMenuLink>
-                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
-                      Как присоединиться к серверу
-                    </NavigationMenuLink>
-                  </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Азбуки рейдов</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="p-4 w-[250px] space-y-2">
-                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
-                      Азбука рейда "Тяжелые времена"
-                    </NavigationMenuLink>
-                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
-                      Азбука рейда "Железный конь"
-                    </NavigationMenuLink>
-                  </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Контент-мейкеры</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="p-4 w-[200px] space-y-2">
-                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
-                      MuRomeZ
-                    </NavigationMenuLink>
-                    <NavigationMenuLink className="block hover:text-primary cursor-pointer">
-                      MrMyth92
-                    </NavigationMenuLink>
-                  </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center py-4">
+            <nav className="flex items-center space-x-6">
+              {menuItems.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.href}
+                  className="flex items-center space-x-2 text-sm text-gray-200 hover:text-primary transition-colors"
+                >
+                  {item.icon}
+                  <span>{item.text}</span>
+                </a>
+              ))}
+            </nav>
+          </div>
         </div>
       </div>
 

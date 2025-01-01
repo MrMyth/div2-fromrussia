@@ -7,8 +7,12 @@ const Index = () => {
     <div className="min-h-screen bg-white flex flex-col">
       <div className="flex-grow">
         <HeroSection />
-        <DiscordSection />
-        <GamesSection />
+        <div id="discord">
+          <DiscordSection />
+        </div>
+        <div id="games">
+          <GamesSection />
+        </div>
       </div>
       <footer className="bg-[#F97316] text-white py-6 mt-auto">
         <div className="container mx-auto px-4">
