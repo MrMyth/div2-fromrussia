@@ -26,8 +26,8 @@ const GamesSection = () => {
         <GameSlideshow2 />
 
         <ResourcesList />
-        <ComplaintForm />
         <CreatorsSection />
+        <ComplaintForm />
       </div>
     </section>
   );

@@ -17,9 +17,6 @@ const Index = () => {
               <p className="font-bold">FROM RUSSIA</p>
               <p className="text-sm">Игровой Discord сервер</p>
             </div>
-            <div className="text-sm">
-              © 2024 FROM RUSSIA. Все права защищены.
-            </div>
           </div>
         </div>
       </footer>
