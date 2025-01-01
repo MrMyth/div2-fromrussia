@@ -1,8 +1,8 @@
-import { Discord, Youtube, BookOpen, Gamepad, HelpCircle, Link } from "lucide-react";
+import { MessageSquare, Youtube, BookOpen, Gamepad, HelpCircle, Link } from "lucide-react";
 
 const HeroSection = () => {
   const menuItems = [
-    { icon: <Discord className="w-5 h-5" />, text: "Discord сервер", href: "#discord" },
+    { icon: <MessageSquare className="w-5 h-5" />, text: "Discord сервер", href: "#discord" },
     { icon: <Gamepad className="w-5 h-5" />, text: "Игры", href: "#games" },
     { icon: <Youtube className="w-5 h-5" />, text: "YouTube каналы", href: "#channels" },
     { icon: <BookOpen className="w-5 h-5" />, text: "Азбуки рейдов", href: "#raids" },
