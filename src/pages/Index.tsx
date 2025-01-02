@@ -7,10 +7,10 @@ const Index = () => {
     <div className="min-h-screen bg-white flex flex-col">
       <div className="flex-grow">
         <HeroSection />
-        <div id="discord" className="bg-white border-2 border-black">
+        <div id="discord">
           <DiscordSection />
         </div>
-        <div id="games" className="bg-white border-2 border-black">
+        <div id="games">
           <GamesSection />
         </div>
       </div>
