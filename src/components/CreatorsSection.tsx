@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from "./ui/button";
+import { Youtube, Link } from "lucide-react";
 
 const CreatorsSection = () => {
   return (
@@ -15,7 +16,7 @@ const CreatorsSection = () => {
               className="bg-[#FF0000] hover:bg-[#FF0000]/90 text-white rounded-lg flex items-center gap-2"
               onClick={() => window.open('https://www.youtube.com/@MuRomeZ977', '_blank')}
             >
-              <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" className="w-5 h-5" />
+              <Youtube className="w-5 h-5" />
               YouTube
             </Button>
           </div>
@@ -30,7 +31,7 @@ const CreatorsSection = () => {
               className="bg-[#FF0000] hover:bg-[#FF0000]/90 text-white rounded-lg flex items-center gap-2"
               onClick={() => window.open('https://www.youtube.com/@MrMyth92/', '_blank')}
             >
-              <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" className="w-5 h-5" />
+              <Youtube className="w-5 h-5" />
               YouTube
             </Button>
             <Button
@@ -38,7 +39,7 @@ const CreatorsSection = () => {
               className="bg-[#0077FF] hover:bg-[#0077FF]/90 text-white rounded-lg flex items-center gap-2"
               onClick={() => window.open('https://vk.com/mrmyth92ds', '_blank')}
             >
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="VK" className="w-5 h-5" />
+              <Link className="w-5 h-5" />
               VK
             </Button>
           </div>

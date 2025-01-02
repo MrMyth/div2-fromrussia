@@ -3,11 +3,11 @@ import { MessageSquare, Youtube, BookOpen, Gamepad, HelpCircle, Link } from "luc
 const HeroSection = () => {
   const menuItems = [
     { icon: <MessageSquare className="w-5 h-5" />, text: "Discord сервер", href: "#discord" },
-    { icon: <Gamepad className="w-5 h-5" />, text: "Наши игры", href: "#games" },
+    { icon: <Youtube className="w-5 h-5" />, text: "YouTube каналы", href: "#channels" },
+    { icon: <HelpCircle className="w-5 h-5" />, text: "Жалоба на игрока", href: "#complaint" },
+    { icon: <Gamepad className="w-5 h-5" />, text: "Игры", href: "#games" },
     { icon: <BookOpen className="w-5 h-5" />, text: "Азбуки рейдов", href: "#raids" },
-    { icon: <Link className="w-5 h-5" />, text: "Полезные ресурсы", href: "#resources" },
-    { icon: <Youtube className="w-5 h-5" />, text: "Наши каналы", href: "#channels" },
-    { icon: <HelpCircle className="w-5 h-5" />, text: "Жалоба на игрока", href: "#complaint" }
+    { icon: <Link className="w-5 h-5" />, text: "Полезные ресурсы", href: "#resources" }
   ];
 
   return (

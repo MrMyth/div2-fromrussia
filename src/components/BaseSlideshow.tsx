@@ -44,8 +44,8 @@ const BaseSlideshow = ({ images, title }: SlideshowProps) => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-4 bg-transparent hover:bg-transparent text-[#F97316] hover:text-[#F97316] border-none font-bold" />
-          <CarouselNext className="right-4 bg-transparent hover:bg-transparent text-[#F97316] hover:text-[#F97316] border-none font-bold" />
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
         </Carousel>
       </div>
 
@@ -58,13 +58,13 @@ const BaseSlideshow = ({ images, title }: SlideshowProps) => {
               className="w-full h-[90vh] object-contain"
             />
             <button
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-transparent text-[#F97316] p-2 rounded-full font-bold text-xl"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 rounded-full text-white"
               onClick={() => setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))}
             >
               ←
             </button>
             <button
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-transparent text-[#F97316] p-2 rounded-full font-bold text-xl"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 rounded-full text-white"
               onClick={() => setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))}
             >
               →
