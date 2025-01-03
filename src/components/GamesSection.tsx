@@ -9,9 +9,11 @@ const GamesSection = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <GamesList />
+        <div id="games">
+          <GamesList />
+        </div>
         
-        <div className="text-center mt-12">
+        <div id="raids" className="text-center mt-12">
           <h3 className="catchphrase mb-6">Азбуки рейдов</h3>
           <p className="text-gray-700 mb-8 max-w-3xl mx-auto">
             Кликни на картинку, чтобы увеличить слайдшоу. После увеличения слайдшоу ты можешь перемещаться между слайдами. Для этого используй стрелки по бокам или же стрелки на клавиатуре.
@@ -25,9 +27,15 @@ const GamesSection = () => {
         </div>
         <GameSlideshow2 />
 
-        <ResourcesList />
-        <CreatorsSection />
-        <ComplaintForm />
+        <div id="resources">
+          <ResourcesList />
+        </div>
+        <div id="channels">
+          <CreatorsSection />
+        </div>
+        <div id="complaint">
+          <ComplaintForm />
+        </div>
       </div>
     </section>
   );
