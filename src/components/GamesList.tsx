@@ -3,6 +3,7 @@ import React from 'react';
 const GamesList = () => {
   const games = [
     "Tom Clancy's The Division 2",
+    "Tom Clancy's The Division 2 (Китайская версия)",
     "Tom Clancy's The Division 1",
     "Tom Clancy's Ghost Recon: Wildlands",
     "Tom Clancy's Ghost Recon Breakpoint"
