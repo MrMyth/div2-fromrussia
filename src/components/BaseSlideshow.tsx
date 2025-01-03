@@ -8,6 +8,7 @@ import {
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useSlideshow } from "@/hooks/useSlideshow";
 import type { SlideshowProps } from "@/types/slideshow";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const BaseSlideshow = ({ images, title }: SlideshowProps) => {
   const { isFullscreen, setIsFullscreen, currentIndex, setCurrentIndex } = useSlideshow(images);
@@ -44,8 +45,12 @@ const BaseSlideshow = ({ images, title }: SlideshowProps) => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-4" />
-          <CarouselNext className="right-4" />
+          <CarouselPrevious className="left-4">
+            <ArrowLeft className="h-6 w-6 text-[#F97316] font-bold" strokeWidth={3} />
+          </CarouselPrevious>
+          <CarouselNext className="right-4">
+            <ArrowRight className="h-6 w-6 text-[#F97316] font-bold" strokeWidth={3} />
+          </CarouselNext>
         </Carousel>
       </div>
 
@@ -58,16 +63,16 @@ const BaseSlideshow = ({ images, title }: SlideshowProps) => {
               className="w-full h-[90vh] object-contain"
             />
             <button
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 rounded-full text-white"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 rounded-full"
               onClick={() => setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))}
             >
-              ←
+              <ArrowLeft className="h-6 w-6 text-[#F97316] font-bold" strokeWidth={3} />
             </button>
             <button
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 rounded-full text-white"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 rounded-full"
               onClick={() => setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))}
             >
-              →
+              <ArrowRight className="h-6 w-6 text-[#F97316] font-bold" strokeWidth={3} />
             </button>
           </div>
         </DialogContent>
