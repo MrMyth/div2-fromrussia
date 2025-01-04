@@ -59,7 +59,7 @@ const HeroSection = () => {
             className="w-12 h-12"
           />
           <h1 className="catchphrase">
-            [RUS] FROM RUSSIA
+            [RUS] From Russia
           </h1>
           <p className="subheading">
             Игровой Discord сервер

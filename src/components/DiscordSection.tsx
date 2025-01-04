@@ -26,7 +26,7 @@ const DiscordSection = () => {
             <div className="space-y-6">
               <h2 className="subheading text-left">Как присоединиться к серверу</h2>
               <p className="text-lg text-muted-foreground">
-                Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord".
+                Чтобы зайти на сервер нажмите на "Присоединиться к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord".
               </p>
               <Button
                 variant="default"
@@ -34,7 +34,7 @@ const DiscordSection = () => {
                 onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
               >
                 <MessageSquare className="w-5 h-5" />
-                Присоединится к Discord
+                Присоединиться к Discord
               </Button>
 
               <div className="space-y-4">
@@ -46,7 +46,7 @@ const DiscordSection = () => {
                     onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
                   >
                     <Download className="w-5 h-5" />
-                    Скачать Discord с офиального сайта
+                    Скачать Discord с официального сайта
                   </Button>
                   <Button
                     variant="default"
