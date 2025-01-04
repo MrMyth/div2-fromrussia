@@ -33,6 +33,22 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Furore', sans-serif;
+    text-transform: lowercase;
+  }
+  
+  /* First letter capitalization for specific elements */
+  h1, h2, h3, h4, h5, h6, p, span, a, button {
+    text-transform: lowercase;
+  }
+  
+  h1::first-letter, 
+  h2::first-letter, 
+  h3::first-letter, 
+  h4::first-letter, 
+  h5::first-letter, 
+  h6::first-letter, 
+  p::first-letter {
+    text-transform: uppercase;
   }
 }
 
@@ -53,6 +69,11 @@
   font-size: 22px;
   font-weight: bold;
   color: #9b87f5;
+  text-transform: lowercase;
+}
+
+.catchphrase::first-letter {
+  text-transform: uppercase;
 }
 
 .subheading {
@@ -61,4 +82,9 @@
   font-weight: bold;
   font-style: italic;
   color: #9b87f5;
+  text-transform: lowercase;
+}
+
+.subheading::first-letter {
+  text-transform: uppercase;
 }
