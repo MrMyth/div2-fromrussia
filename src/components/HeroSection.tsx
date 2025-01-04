@@ -12,7 +12,6 @@ const HeroSection = () => {
 
   return (
     <div className="relative min-h-[50vh] flex flex-col">
-      {/* Navigation Menu */}
       <div className="relative z-30 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center py-4">
@@ -32,7 +31,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Video Background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-background z-10" />
         <video
@@ -50,7 +48,6 @@ const HeroSection = () => {
         </video>
       </div>
 
-      {/* Header Content */}
       <div className="relative z-20 container mx-auto px-4">
         <div className="flex flex-col items-center justify-center h-[50vh] text-center space-y-4">
           <img 
@@ -67,9 +64,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <div className="w-1 h-8 rounded-full bg-gradient-to-b from-[#F97316] to-transparent" />
+        <div className="w-1 h-8 rounded-full bg-gradient-to-b from-primary to-transparent" />
       </div>
     </div>
   );

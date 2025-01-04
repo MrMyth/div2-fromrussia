@@ -10,16 +10,16 @@ const GamesList = () => {
   ];
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-      <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8">Игры</h2>
+    <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">
+      <h2 className="text-2xl font-bold text-primary text-center mb-8">Игры</h2>
       <ul className="space-y-4 max-w-2xl mx-auto">
         {games.map((game, index) => (
           <li 
             key={index}
-            className="flex items-center space-x-4 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
+            className="flex items-center space-x-4 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
           >
-            <span className="text-[#F97316] font-medium">{index + 1}.</span>
-            <span className="text-gray-800">{game}</span>
+            <span className="text-primary font-medium">{index + 1}.</span>
+            <span className="text-foreground">{game}</span>
           </li>
         ))}
       </ul>
