@@ -33,6 +33,12 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Furore', sans-serif;
+    background-image: url('https://i.ibb.co/BKR2fQX/00021-2193695751.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 }
 
