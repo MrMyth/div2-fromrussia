@@ -3,9 +3,9 @@ import { MessageSquare, Download, XOctagon } from "lucide-react";
 
 const DiscordSection = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
+        <div className="rounded-2xl border border-[#9b87f5]/20 bg-card p-8 shadow-sm">
           <h1 className="catchphrase text-center mb-8">Discord сервер</h1>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Left Column - Discord Widget */}
@@ -30,7 +30,7 @@ const DiscordSection = () => {
               </p>
               <Button
                 variant="default"
-                className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg"
+                className="w-full bg-[#9b87f5] hover:bg-[#9b87f5]/90 text-white rounded-lg"
                 onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
               >
                 <MessageSquare className="w-5 h-5" />
@@ -42,7 +42,7 @@ const DiscordSection = () => {
                 <div className="flex flex-col gap-4">
                   <Button
                     variant="default"
-                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white"
+                    className="w-full rounded-lg bg-[#9b87f5] hover:bg-[#9b87f5]/90 text-white"
                     onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
                   >
                     <Download className="w-5 h-5" />
@@ -50,7 +50,7 @@ const DiscordSection = () => {
                   </Button>
                   <Button
                     variant="default"
-                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white"
+                    className="w-full rounded-lg bg-[#9b87f5] hover:bg-[#9b87f5]/90 text-white"
                     onClick={() => window.open('https://disk.yandex.ru/i/VzWLimdSluvIaw', '_blank')}
                   >
                     <XOctagon className="w-5 h-5" />
