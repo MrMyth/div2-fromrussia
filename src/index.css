@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 230 25% 14%;
-    --foreground: 210 40% 98%;
-    --card: 230 25% 14%;
-    --card-foreground: 210 40% 98%;
-    --popover: 230 25% 14%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 252 87% 74%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 0 0% 0%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 0%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 24 95% 53%;
     --primary-foreground: 0 0% 100%;
     --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 0 0% 0%;
     --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted-foreground: 0 0% 0%;
     --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent-foreground: 0 0% 0%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 0%;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 252 87% 74%;
+    --ring: 24 95% 53%;
   }
 }
 
@@ -33,22 +33,6 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Furore', sans-serif;
-    text-transform: lowercase;
-  }
-  
-  /* First letter capitalization for specific elements */
-  h1, h2, h3, h4, h5, h6, p, span, a, button {
-    text-transform: lowercase;
-  }
-  
-  h1::first-letter, 
-  h2::first-letter, 
-  h3::first-letter, 
-  h4::first-letter, 
-  h5::first-letter, 
-  h6::first-letter, 
-  p::first-letter {
-    text-transform: uppercase;
   }
 }
 
@@ -68,12 +52,7 @@
   font-family: 'Furore', sans-serif;
   font-size: 22px;
   font-weight: bold;
-  color: #9b87f5;
-  text-transform: lowercase;
-}
-
-.catchphrase::first-letter {
-  text-transform: uppercase;
+  color: #F97316;
 }
 
 .subheading {
@@ -81,10 +60,5 @@
   font-size: 19px;
   font-weight: bold;
   font-style: italic;
-  color: #9b87f5;
-  text-transform: lowercase;
-}
-
-.subheading::first-letter {
-  text-transform: uppercase;
+  color: #F97316;
 }

@@ -3,9 +3,9 @@ import { MessageSquare, Download, XOctagon } from "lucide-react";
 
 const DiscordSection = () => {
   return (
-    <section className="py-16 bg-background">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="rounded-2xl border border-[#9b87f5]/20 bg-card p-8 shadow-sm">
+        <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
           <h1 className="catchphrase text-center mb-8">Discord сервер</h1>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Left Column - Discord Widget */}
@@ -26,15 +26,15 @@ const DiscordSection = () => {
             <div className="space-y-6">
               <h2 className="subheading text-left">Как присоединиться к серверу</h2>
               <p className="text-lg text-muted-foreground">
-                Чтобы зайти на сервер нажмите на "Присоединиться к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord".
+                Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord".
               </p>
               <Button
                 variant="default"
-                className="w-full bg-[#9b87f5] hover:bg-[#9b87f5]/90 text-white rounded-lg"
+                className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg"
                 onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
               >
                 <MessageSquare className="w-5 h-5" />
-                Присоединиться к Discord
+                Присоединится к Discord
               </Button>
 
               <div className="space-y-4">
@@ -42,15 +42,15 @@ const DiscordSection = () => {
                 <div className="flex flex-col gap-4">
                   <Button
                     variant="default"
-                    className="w-full rounded-lg bg-[#9b87f5] hover:bg-[#9b87f5]/90 text-white"
+                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white"
                     onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
                   >
                     <Download className="w-5 h-5" />
-                    Скачать Discord с официального сайта
+                    Скачать Discord с офиального сайта
                   </Button>
                   <Button
                     variant="default"
-                    className="w-full rounded-lg bg-[#9b87f5] hover:bg-[#9b87f5]/90 text-white"
+                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white"
                     onClick={() => window.open('https://disk.yandex.ru/i/VzWLimdSluvIaw', '_blank')}
                   >
                     <XOctagon className="w-5 h-5" />
