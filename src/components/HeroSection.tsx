@@ -1,4 +1,5 @@
 import { MENU_ITEMS } from "@/constants/menu";
+import { MenuItem } from "./MenuItem";
 
 const HeroSection = () => {
   return (
@@ -9,14 +10,7 @@ const HeroSection = () => {
           <div className="flex items-center justify-center py-4">
             <nav className="flex items-center space-x-6">
               {MENU_ITEMS.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.href}
-                  className="flex items-center space-x-2 text-sm text-gray-200 hover:text-primary transition-colors"
-                >
-                  {item.icon}
-                  <span>{item.text}</span>
-                </a>
+                <MenuItem key={index} {...item} />
               ))}
             </nav>
           </div>
