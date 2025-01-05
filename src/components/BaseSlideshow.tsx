@@ -46,10 +46,10 @@ const BaseSlideshow = ({ images, title }: SlideshowProps) => {
             ))}
           </CarouselContent>
           <CarouselPrevious className="left-4">
-            <ArrowLeft className="h-6 w-6 text-[#F97316] font-bold" strokeWidth={3} />
+            <ArrowLeft className="h-8 w-8 text-[#F97316]" strokeWidth={4} />
           </CarouselPrevious>
           <CarouselNext className="right-4">
-            <ArrowRight className="h-6 w-6 text-[#F97316] font-bold" strokeWidth={3} />
+            <ArrowRight className="h-8 w-8 text-[#F97316]" strokeWidth={4} />
           </CarouselNext>
         </Carousel>
       </div>
@@ -63,16 +63,16 @@ const BaseSlideshow = ({ images, title }: SlideshowProps) => {
               className="w-full h-[90vh] object-contain"
             />
             <button
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 rounded-full"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 rounded-full hover:bg-black/10 p-2 transition-colors"
               onClick={() => setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))}
             >
-              <ArrowLeft className="h-6 w-6 text-[#F97316] font-bold" strokeWidth={3} />
+              <ArrowLeft className="h-8 w-8 text-[#F97316]" strokeWidth={4} />
             </button>
             <button
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 rounded-full"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 rounded-full hover:bg-black/10 p-2 transition-colors"
               onClick={() => setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))}
             >
-              <ArrowRight className="h-6 w-6 text-[#F97316] font-bold" strokeWidth={3} />
+              <ArrowRight className="h-8 w-8 text-[#F97316]" strokeWidth={4} />
             </button>
           </div>
         </DialogContent>
