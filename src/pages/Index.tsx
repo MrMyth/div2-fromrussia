@@ -18,7 +18,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
             <div>
-              <p className="font-bold">FROM RUSSIA</p>
+              <p className="font-bold">[RUS] FROM RUSSIA</p>
               <p className="text-sm">Игровой Discord сервер</p>
             </div>
           </div>
