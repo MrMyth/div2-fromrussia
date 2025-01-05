@@ -1,15 +1,15 @@
 import { MessageSquare, Youtube, BookOpen, Gamepad, HelpCircle, Link } from "lucide-react";
 
-const HeroSection = () => {
-  const menuItems = [
-    { icon: <MessageSquare className="w-5 h-5" />, text: "Discord сервер", href: "#discord" },
-    { icon: <Gamepad className="w-5 h-5" />, text: "Наши игры", href: "#games" },
-    { icon: <BookOpen className="w-5 h-5" />, text: "Азбуки рейдов", href: "#raids" },
-    { icon: <Link className="w-5 h-5" />, text: "Полезные ресурсы", href: "#resources" },
-    { icon: <Youtube className="w-5 h-5" />, text: "Наши каналы", href: "#channels" },
-    { icon: <HelpCircle className="w-5 h-5" />, text: "Жалоба на игрока", href: "#complaint" }
-  ];
+const MENU_ITEMS = [
+  { icon: <MessageSquare className="w-5 h-5" />, text: "Discord сервер", href: "#discord" },
+  { icon: <Gamepad className="w-5 h-5" />, text: "Наши игры", href: "#games" },
+  { icon: <BookOpen className="w-5 h-5" />, text: "Азбуки рейдов", href: "#raids" },
+  { icon: <Link className="w-5 h-5" />, text: "Полезные ресурсы", href: "#resources" },
+  { icon: <Youtube className="w-5 h-5" />, text: "Наши каналы", href: "#channels" },
+  { icon: <HelpCircle className="w-5 h-5" />, text: "Жалоба на игрока", href: "#complaint" }
+];
 
+const HeroSection = () => {
   return (
     <div className="relative min-h-[50vh] flex flex-col">
       {/* Navigation Menu */}
@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center py-4">
             <nav className="flex items-center space-x-6">
-              {menuItems.map((item, index) => (
+              {MENU_ITEMS.map((item, index) => (
                 <a
                   key={index}
                   href={item.href}
