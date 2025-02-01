@@ -20,6 +20,17 @@ const DiscordSection = () => {
                 sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                 className="w-full max-w-[350px] mx-auto"
               ></iframe>
+              <div className="mt-6">
+                <h2 className="subheading text-center mb-4">Разблокировка Discord в РФ</h2>
+                <Button
+                  variant="default"
+                  className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white"
+                  onClick={() => window.open('https://disk.yandex.ru/d/h0sNYN18hB0EMg', '_blank')}
+                >
+                  <XOctagon className="w-5 h-5" />
+                  Разблокировать Discord
+                </Button>
+              </div>
             </div>
 
             {/* Right Column - Join Instructions */}
