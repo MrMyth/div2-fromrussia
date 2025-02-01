@@ -57,7 +57,7 @@ const DiscordSection = () => {
                   <Button
                     variant="default"
                     className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white"
-                    onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
+                    onClick={() => window.open('https://discord.com/download', '_blank')}
                   >
                     <Download className="w-5 h-5" />
                     Скачать Discord с офиального сайта
