@@ -44,10 +44,10 @@ const DiscordSection = () => {
               </p>
               <Button
                 variant="default"
-                className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg"
+                className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg py-6 text-lg"
                 onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
               >
-                <MessageSquare className="w-5 h-5" />
+                <MessageSquare className="w-6 h-6 mr-2" />
                 Присоединится к Discord
               </Button>
 
@@ -56,18 +56,18 @@ const DiscordSection = () => {
                 <div className="flex flex-col gap-4">
                   <Button
                     variant="default"
-                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white"
+                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg"
                     onClick={() => window.open('https://discord.com/download', '_blank')}
                   >
-                    <Download className="w-5 h-5" />
+                    <Download className="w-6 h-6 mr-2" />
                     Скачать Discord с офиального сайта
                   </Button>
                   <Button
                     variant="default"
-                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white"
+                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg"
                     onClick={() => window.open('https://drive.google.com/file/d/1GEWBHezhE4-LJ9hMCk9oxg38dXf1tVSx/view?usp=sharing', '_blank')}
                   >
-                    <XOctagon className="w-5 h-5" />
+                    <XOctagon className="w-6 h-6 mr-2" />
                     Разблокировка Discord в РФ
                   </Button>
                 </div>
