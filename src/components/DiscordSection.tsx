@@ -65,10 +65,10 @@ const DiscordSection = () => {
                   <Button
                     variant="default"
                     className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white"
-                    onClick={() => window.open('https://disk.yandex.ru/d/h0sNYN18hB0EMg', '_blank')}
+                    onClick={() => window.open('https://drive.google.com/file/d/1GEWBHezhE4-LJ9hMCk9oxg38dXf1tVSx/view?usp=sharing', '_blank')}
                   >
                     <XOctagon className="w-5 h-5" />
-                    Если Discord не работает
+                    Разблокировка Discord в РФ
                   </Button>
                 </div>
               </div>
