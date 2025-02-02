@@ -8,7 +8,7 @@ const DiscordSection = () => {
         <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
           <h1 className="catchphrase text-center mb-8">Discord сервер</h1>
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            {/* Left Column - Discord Widget and Unblock Instructions */}
+            {/* Left Column - Discord Widget */}
             <div className="space-y-8">
               <div className="space-y-4">
                 <h2 className="subheading text-center">Виджет Discord сервера</h2>
@@ -22,16 +22,6 @@ const DiscordSection = () => {
                   className="w-full max-w-[350px] mx-auto"
                 ></iframe>
               </div>
-              
-              <h2 className="subheading text-center">Разблокировка Discord в РФ</h2>
-              <iframe 
-                src="https://drive.google.com/file/d/1GEWBHezhE4-LJ9hMCk9oxg38dXf1tVSx/preview" 
-                width="350"
-                height="197"
-                allow="autoplay"
-                className="w-full max-w-[350px] mx-auto"
-                frameBorder="0"
-              ></iframe>
             </div>
 
             {/* Right Column - Join Instructions */}
