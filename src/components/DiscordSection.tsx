@@ -14,12 +14,12 @@ const DiscordSection = () => {
                 <h2 className="subheading text-center">Виджет Discord сервера</h2>
                 <iframe 
                   src="https://discord.com/widget?id=835802952521351180&theme=dark" 
-                  width="350" 
-                  height="500" 
+                  width="900" 
+                  height="1000" 
                   allowTransparency={true} 
                   frameBorder="0" 
                   sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-                  className="w-full max-w-[350px] mx-auto"
+                  className="w-full max-w-[900px] mx-auto"
                 ></iframe>
               </div>
               
@@ -27,10 +27,10 @@ const DiscordSection = () => {
                 <h2 className="subheading text-center">Разблокировка Discord в РФ</h2>
                 <iframe 
                   src="https://drive.google.com/file/d/1GEWBHezhE4-LJ9hMCk9oxg38dXf1tVSx/preview" 
-                  width="350"
-                  height="197"
+                  width="900"
+                  height="1000"
                   allow="autoplay"
-                  className="w-full max-w-[350px] mx-auto"
+                  className="w-full max-w-[900px] mx-auto"
                   frameBorder="0"
                 ></iframe>
               </div>
