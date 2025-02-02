@@ -14,12 +14,12 @@ const DiscordSection = () => {
                 <h2 className="subheading text-center">Виджет Discord сервера</h2>
                 <iframe 
                   src="https://discord.com/widget?id=835802952521351180&theme=dark" 
-                  width="900" 
-                  height="1000" 
+                  width="350" 
+                  height="500" 
                   allowTransparency={true} 
                   frameBorder="0" 
                   sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-                  className="w-full max-w-[900px] mx-auto"
+                  className="w-full max-w-[350px] mx-auto"
                 ></iframe>
               </div>
               
@@ -27,10 +27,10 @@ const DiscordSection = () => {
                 <h2 className="subheading text-center">Разблокировка Discord в РФ</h2>
                 <iframe 
                   src="https://drive.google.com/file/d/1GEWBHezhE4-LJ9hMCk9oxg38dXf1tVSx/preview" 
-                  width="900"
-                  height="1000"
+                  width="350"
+                  height="197"
                   allow="autoplay"
-                  className="w-full max-w-[900px] mx-auto"
+                  className="w-full max-w-[350px] mx-auto"
                   frameBorder="0"
                 ></iframe>
               </div>
@@ -56,7 +56,7 @@ const DiscordSection = () => {
                 <div className="flex flex-col gap-4">
                   <Button
                     variant="default"
-                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg"
+                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg flex justify-center items-center"
                     onClick={() => window.open('https://discord.com/download', '_blank')}
                   >
                     <Download className="w-6 h-6 mr-2" />
@@ -64,7 +64,7 @@ const DiscordSection = () => {
                   </Button>
                   <Button
                     variant="default"
-                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg"
+                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg flex justify-center items-center"
                     onClick={() => window.open('https://drive.google.com/file/d/1GEWBHezhE4-LJ9hMCk9oxg38dXf1tVSx/view?usp=sharing', '_blank')}
                   >
                     <XOctagon className="w-6 h-6 mr-2" />
