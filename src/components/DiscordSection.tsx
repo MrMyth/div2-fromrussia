@@ -23,17 +23,15 @@ const DiscordSection = () => {
                 ></iframe>
               </div>
               
-              <div className="space-y-4">
-                <h2 className="subheading text-center">Разблокировка Discord в РФ</h2>
-                <iframe 
-                  src="https://drive.google.com/file/d/1GEWBHezhE4-LJ9hMCk9oxg38dXf1tVSx/preview" 
-                  width="350"
-                  height="197"
-                  allow="autoplay"
-                  className="w-full max-w-[350px] mx-auto"
-                  frameBorder="0"
-                ></iframe>
-              </div>
+              <h2 className="subheading text-center">Разблокировка Discord в РФ</h2>
+              <iframe 
+                src="https://drive.google.com/file/d/1GEWBHezhE4-LJ9hMCk9oxg38dXf1tVSx/preview" 
+                width="350"
+                height="197"
+                allow="autoplay"
+                className="w-full max-w-[350px] mx-auto"
+                frameBorder="0"
+              ></iframe>
             </div>
 
             {/* Right Column - Join Instructions */}
