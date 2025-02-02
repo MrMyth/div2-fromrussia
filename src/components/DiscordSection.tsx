@@ -56,7 +56,7 @@ const DiscordSection = () => {
                 <div className="flex flex-col gap-4">
                   <Button
                     variant="default"
-                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg flex justify-center items-center"
+                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg"
                     onClick={() => window.open('https://discord.com/download', '_blank')}
                   >
                     <Download className="w-6 h-6 mr-2" />
@@ -64,7 +64,7 @@ const DiscordSection = () => {
                   </Button>
                   <Button
                     variant="default"
-                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg flex justify-center items-center"
+                    className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg"
                     onClick={() => window.open('https://drive.google.com/file/d/1GEWBHezhE4-LJ9hMCk9oxg38dXf1tVSx/view?usp=sharing', '_blank')}
                   >
                     <XOctagon className="w-6 h-6 mr-2" />
