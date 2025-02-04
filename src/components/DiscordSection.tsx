@@ -33,7 +33,7 @@ const DiscordSection = () => {
               <Button
                 variant="default"
                 className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg py-6 text-lg"
-                onClick={() => window.open('https://discord.gg/8C6HzXq92W', '_blank')}
+                onClick={() => window.open('https://discord.gg/rk7ZeadZGH', '_blank')}
               >
                 <MessageSquare className="w-6 h-6 mr-2" />
                 Присоединится к Discord
