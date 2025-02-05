@@ -23,14 +23,6 @@ const GamesList = () => {
           </li>
         ))}
       </ul>
-
-      <div className="mt-8 max-w-2xl mx-auto">
-        <h3 className="text-xl font-semibold text-[#F97316] mb-4">Как купить китайскую версию игры?</h3>
-        <p className="text-gray-800 text-left">
-          Чтобы получить инструкцию по покупке китайской The Division 2 вам нужно:<br/>
-          1) Зайти на наш Discord сервер.
-        </p>
-      </div>
     </div>
   );
 };
