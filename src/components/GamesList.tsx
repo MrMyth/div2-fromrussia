@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const GamesList = () => {
@@ -24,11 +25,14 @@ const GamesList = () => {
         ))}
       </ul>
 
-      <div className="mt-8 max-w-2xl mx-auto">
-        <h3 className="text-xl font-semibold text-[#F97316] mb-4">Как купить китайскую версию игры?</h3>
+      <div className="mt-8 w-full">
+        <h3 className="text-xl font-semibold text-[#F97316] text-center mb-4">Как купить китайскую версию игры?</h3>
         <p className="text-gray-800 text-left">
           Чтобы получить инструкцию по покупке китайской The Division 2 вам нужно:<br/>
-          1) Зайти на наш Discord сервер.
+          1) Зайти на наш Discord сервер.<br/>
+          2) Связаться с MrMyth92 на нашем сервере и запросить инструкцию.<br/>
+          <br/>
+          Цена инструкции: 750 рублей.
         </p>
       </div>
     </div>
