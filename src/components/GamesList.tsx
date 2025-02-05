@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const GamesList = () => {
@@ -12,7 +13,7 @@ const GamesList = () => {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
       <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8">Игры</h2>
-      <ul className="space-y-4 max-w-2xl mx-auto">
+      <ul className="space-y-4 max-w-2xl mx-auto mb-8">
         {games.map((game, index) => (
           <li 
             key={index}
@@ -23,6 +24,11 @@ const GamesList = () => {
           </li>
         ))}
       </ul>
+      <h3 className="text-xl font-bold text-[#F97316] text-center mb-4">Как купить китайскую версию игры?</h3>
+      <p className="text-gray-800 w-full">
+        Чтобы получить инструкцию по покупке китайской The Division 2 вам нужно:
+        <br />1) Зайти на наш Discord сервер.
+      </p>
     </div>
   );
 };
