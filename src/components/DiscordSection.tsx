@@ -53,7 +53,7 @@ const DiscordSection = () => {
                   <Button
                     variant="default"
                     className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg flex justify-center items-center"
-                    onClick={() => window.open('https://drive.google.com/file/d/1GEWBHezhE4-LJ9hMCk9oxg38dXf1tVSx/view?usp=sharing', '_blank')}
+                    onClick={() => window.open('https://drive.google.com/file/d/1peDzSGlgP0bDeE4lP7JA_rC7HhZTM8R2/view?usp=sharing', '_blank')}
                   >
                     <XOctagon className="w-6 h-6 mr-2" />
                     Разблокировка Discord в РФ
