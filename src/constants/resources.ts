@@ -11,5 +11,5 @@ export const RESOURCES = [
   { name: "Сообщество игры в Telegram", url: "https://t.me/divisiongame", icon: MessageCircle },
   { name: "Чаты по игре в Telegram", url: "https://t.me/divisiongame_chat", icon: MessageCircle },
   { name: "Twitch канал разработчиков", url: "https://www.twitch.tv/thedivisiongame", icon: Video },
-  { name: "Официальный канал Ubisoft", url: "https://www.youtube.com/@Ubisoft/featured", icon: Youtube }
+  { name: "Официальный канал Ubisoft на Youtube", url: "https://www.youtube.com/@Ubisoft/featured", icon: Youtube }
 ] as const;
