@@ -5,7 +5,8 @@ const ResourcesList = () => {
   return (
     <div className="mt-16">
       <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-        <h3 className="text-xl font-bold text-[#F97316] text-center mb-8">Полезные ресурсы</h3>
+        <h3 className="text-xl font-bold text-[#F97316] text-center mb-2">Полезные ресурсы</h3>
+        <p className="text-gray-600 text-center mb-8">Различные ресурсы по игре, не связанные с нашим кланом.</p>
         <div className="flex flex-col items-center gap-4 max-w-md mx-auto">
           {RESOURCES.map((resource, index) => (
             <Button
