@@ -1,4 +1,4 @@
-import { Store, AlertOctagon, Map, Clock, Package, MessageCircle, Video, Youtube } from "lucide-react";
+import { Store, AlertOctagon, Map, Clock, Package, MessageCircle, Video, Youtube, Twitch, Telegram } from "lucide-react";
 
 export const RESOURCES = [
   { name: "Товары недели", url: "https://division.inot.pro/", icon: Store },
@@ -8,8 +8,8 @@ export const RESOURCES = [
   { name: "Таймеры игры", url: "https://divisiontimers.com/#/", icon: Clock },
   { name: "Набор фаната серии", url: "https://drive.google.com/drive/folders/16-yBPXnZiM_d6QtBy_UBUVsQRxYpc9Ga?usp=sharing", icon: Package },
   { name: "Сообщество игры в VK", url: "https://vk.com/game_thedivision", icon: MessageCircle },
-  { name: "Сообщество игры в Telegram", url: "https://t.me/divisiongame", icon: MessageCircle },
-  { name: "Чаты по игре в Telegram", url: "https://t.me/divisiongame_chat", icon: MessageCircle },
-  { name: "Twitch канал разработчиков", url: "https://www.twitch.tv/thedivisiongame", icon: Video },
+  { name: "Сообщество игры в Telegram", url: "https://t.me/divisiongame", icon: Telegram },
+  { name: "Чаты по игре в Telegram", url: "https://t.me/divisiongame_chat", icon: Telegram },
+  { name: "Twitch канал разработчиков", url: "https://www.twitch.tv/thedivisiongame", icon: Twitch },
   { name: "Официальный канал Ubisoft на Youtube", url: "https://www.youtube.com/@Ubisoft/featured", icon: Youtube }
 ] as const;
