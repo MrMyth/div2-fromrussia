@@ -1,4 +1,4 @@
-import { Store, AlertOctagon, Map, Clock, Package, MessageCircle, Video, Youtube, MessageSquare } from "lucide-react";
+import { Store, AlertOctagon, Map, Clock, Package, MessageCircle, Video, Youtube, MessageSquare, Link } from "lucide-react";
 
 export const RESOURCES = [
   { name: "Товары недели", url: "https://division.inot.pro/", icon: Store },
@@ -11,5 +11,6 @@ export const RESOURCES = [
   { name: "Сообщество игры в Telegram", url: "https://t.me/divisiongame", icon: MessageSquare },
   { name: "Чаты по игре в Telegram", url: "https://t.me/divisiongame_chat", icon: MessageSquare },
   { name: "Twitch канал разработчиков", url: "https://www.twitch.tv/thedivisiongame", icon: Video },
-  { name: "Официальный канал Ubisoft на Youtube", url: "https://www.youtube.com/@Ubisoft/featured", icon: Youtube }
+  { name: "Официальный канал Ubisoft на Youtube", url: "https://www.youtube.com/@Ubisoft/featured", icon: Youtube },
+  { name: "Реферальная программа The Division 2", url: "https://referral.ubisoft.com/the-division-2-referral/ru-RU", icon: Link }
 ] as const;
