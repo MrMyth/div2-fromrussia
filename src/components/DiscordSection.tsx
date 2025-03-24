@@ -6,12 +6,12 @@ const DiscordSection = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-          <h1 className="catchphrase text-center mb-8">Discord сервер</h1>
+          <h1 className="text-3xl font-bold text-center mb-8">Discord сервер</h1>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Left Column - Discord Widget */}
             <div className="space-y-8">
               <div className="space-y-4">
-                <h2 className="subheading text-center">Виджет Discord сервера</h2>
+                <h2 className="text-xl font-semibold text-center">Виджет Discord сервера</h2>
                 <iframe 
                   src="https://discord.com/widget?id=835802952521351180&theme=dark" 
                   width="350" 
@@ -26,7 +26,7 @@ const DiscordSection = () => {
 
             {/* Right Column - Join Instructions */}
             <div className="space-y-6">
-              <h2 className="subheading text-left">Как присоединиться к серверу</h2>
+              <h2 className="text-xl font-semibold">Как присоединиться к серверу</h2>
               <p className="text-lg text-muted-foreground">
                 Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord".
               </p>
@@ -40,7 +40,7 @@ const DiscordSection = () => {
               </Button>
 
               <div className="space-y-4">
-                <h3 className="subheading">Дополнительно</h3>
+                <h3 className="text-xl font-semibold">Дополнительно</h3>
                 <div className="flex flex-col gap-4">
                   <Button
                     variant="default"
