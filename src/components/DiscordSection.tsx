@@ -7,7 +7,7 @@ const DiscordSection = () => {
       <div className="container mx-auto px-4">
         <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
           {/* Main Title */}
-          <h1 className="text-3xl font-bold text-center mb-8 first-letter:text-4xl" style={{ fontFamily: 'Furore', color: '#F97316' }}>
+          <h1 className="text-3xl font-bold text-center mb-8 first-letter:text-4xl" style={{ fontFamily: 'Furore', color: '#FFA500' }}>
             discord сервер
           </h1>
           <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -15,7 +15,7 @@ const DiscordSection = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 {/* Widget Title */}
-                <h2 className="text-xl font-semibold text-center first-letter:text-3xl" style={{ fontFamily: 'Furore', color: '#F97316' }}>
+                <h2 className="text-xl font-semibold text-center first-letter:text-3xl" style={{ fontFamily: 'Furore', color: '#FFA500' }}>
                   виджет discord сервера
                 </h2>
                 <iframe 
@@ -32,10 +32,10 @@ const DiscordSection = () => {
             {/* Right Column - Join Instructions */}
             <div className="space-y-6">
               {/* Join Instructions Title */}
-              <h2 className="text-xl font-semibold first-letter:text-2xl" style={{ fontFamily: 'Furore', color: '#F97316' }}>
+              <h2 className="text-xl font-semibold first-letter:text-2xl" style={{ fontFamily: 'Furore', color: '#FFA500' }}>
                 как присоединиться к серверу
               </h2>
-              <p className="text-lg first-letter:text-xl" style={{ fontFamily: 'Furore', color: '#F97316' }}>
+              <p className="text-lg first-letter:text-xl" style={{ fontFamily: 'Furore', color: '#FFA500' }}>
                 чтобы зайти на сервер нажмите на "присоединится к discord". если приглашение не сработало, то используйте кнопку "join discord".
               </p>
               <Button
@@ -48,7 +48,7 @@ const DiscordSection = () => {
               </Button>
               <div className="space-y-4">
                 {/* Additional Section Title */}
-                <h3 className="text-xl font-semibold first-letter:text-2xl" style={{ fontFamily: 'Furore', color: '#F97316' }}>
+                <h3 className="text-xl font-semibold first-letter:text-2xl" style={{ fontFamily: 'Furore', color: '#FFA500' }}>
                   дополнительно
                 </h3>
                 <div className="flex flex-col gap-4">
