@@ -7,7 +7,7 @@ const DiscordSection = () => {
       <div className="container mx-auto px-4">
         <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
           {/* Main Title */}
-          <h1 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: 'Pacifico, cursive', color: '#F97316' }}>
+          <h1 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: 'Orbitron, cursive', color: '#F97316' }}>
             Discord сервер
           </h1>
           <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -15,7 +15,7 @@ const DiscordSection = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 {/* Widget Title */}
-                <h2 className="text-xl font-semibold text-center" style={{ fontFamily: 'Pacifico, cursive', color: '#F97316' }}>
+                <h2 className="text-xl font-semibold text-center" style={{ fontFamily: 'Orbitron, cursive', color: '#F97316' }}>
                   Виджет Discord сервера
                 </h2>
                 <iframe 
@@ -32,16 +32,16 @@ const DiscordSection = () => {
             {/* Right Column - Join Instructions */}
             <div className="space-y-6">
               {/* Join Instructions Title */}
-              <h2 className="text-xl font-semibold" style={{ fontFamily: 'Pacifico, cursive', color: '#F97316' }}>
+              <h2 className="text-xl font-semibold" style={{ fontFamily: 'Orbitron, cursive', color: '#F97316' }}>
                 Как присоединиться к серверу
               </h2>
-              <p className="text-lg" style={{ fontFamily: 'Pacifico, cursive', color: '#F97316' }}>
+              <p className="text-lg" style={{ fontFamily: 'Orbitron, cursive', color: '#F97316' }}>
                 Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord".
               </p>
               <Button
                 variant="default"
                 className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg py-6 text-lg"
-                style={{ fontFamily: 'Pacifico, cursive' }}
+                style={{ fontFamily: 'Orbitron, cursive' }}
                 onClick={() => window.open('https://discord.gg/rk7ZeadZGH', '_blank')}
               >
                 <MessageSquare className="w-6 h-6 mr-2" />
@@ -49,14 +49,14 @@ const DiscordSection = () => {
               </Button>
               <div className="space-y-4">
                 {/* Additional Section Title */}
-                <h3 className="text-xl font-semibold" style={{ fontFamily: 'Pacifico, cursive', color: '#F97316' }}>
+                <h3 className="text-xl font-semibold" style={{ fontFamily: 'Orbitron, cursive', color: '#F97316' }}>
                   Дополнительно
                 </h3>
                 <div className="flex flex-col gap-4">
                   <Button
                     variant="default"
                     className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg flex justify-center items-center"
-                    style={{ fontFamily: 'Pacifico, cursive' }}
+                    style={{ fontFamily: 'Orbitron, cursive' }}
                     onClick={() => window.open('https://discord.com/download', '_blank')}
                   >
                     <Download className="w-6 h-6 mr-2" />
@@ -65,7 +65,7 @@ const DiscordSection = () => {
                   <Button
                     variant="default"
                     className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg flex justify-center items-center"
-                    style={{ fontFamily: 'Pacifico, cursive' }}
+                    style={{ fontFamily: 'Orbitron, cursive' }}
                     onClick={() => window.open('https://drive.google.com/file/d/1peDzSGlgP0bDeE4lP7JA_rC7HhZTM8R2/view?usp=sharing', '_blank')}
                   >
                     <XOctagon className="w-6 h-6 mr-2" />
