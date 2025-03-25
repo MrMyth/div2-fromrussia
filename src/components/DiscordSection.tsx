@@ -7,16 +7,16 @@ const DiscordSection = () => {
       <div className="container mx-auto px-4">
         <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
           {/* Main Title */}
-          <h1 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: 'Furore', color: '#F97316' }}>
-            <span style={{ fontSize: '2rem' }}>D</span>iscord сервер
+          <h1 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: 'Pacifico, cursive', color: '#F97316' }}>
+            Discord сервер
           </h1>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Left Column - Discord Widget */}
             <div className="space-y-8">
               <div className="space-y-4">
                 {/* Widget Title */}
-                <h2 className="text-xl font-semibold text-center" style={{ fontFamily: 'Furore', color: '#F97316' }}>
-                  <span style={{ fontSize: '1.5rem' }}>В</span>иджет discord сервера
+                <h2 className="text-xl font-semibold text-center" style={{ fontFamily: 'Pacifico, cursive', color: '#F97316' }}>
+                  Виджет Discord сервера
                 </h2>
                 <iframe 
                   src="https://discord.com/widget?id=835802952521351180&theme=dark" 
@@ -32,12 +32,11 @@ const DiscordSection = () => {
             {/* Right Column - Join Instructions */}
             <div className="space-y-6">
               {/* Join Instructions Title */}
-              <h2 className="text-xl font-semibold" style={{ fontFamily: 'Furore', color: '#F97316' }}>
-                <span style={{ fontSize: '1.5rem' }}>К</span>ак присоединиться к серверу
+              <h2 className="text-xl font-semibold" style={{ fontFamily: 'Pacifico, cursive', color: '#F97316' }}>
+                Как присоединиться к серверу
               </h2>
-              <p className="text-lg" style={{ fontFamily: 'Furore', color: '#F97316' }}>
-                <span style={{ fontSize: '1.25rem' }}>ч</span>
-                тобы зайти на сервер нажмите на "присоединится к discord". если приглашение не сработало, то используйте кнопку "join discord".
+              <p className="text-lg" style={{ fontFamily: 'Pacifico, cursive', color: '#F97316' }}>
+                Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord".
               </p>
               <Button
                 variant="default"
@@ -49,8 +48,8 @@ const DiscordSection = () => {
               </Button>
               <div className="space-y-4">
                 {/* Additional Section Title */}
-                <h3 className="text-xl font-semibold" style={{ fontFamily: 'Furore', color: '#F97316' }}>
-                  <span style={{ fontSize: '1.5rem' }}>Д</span>ополнительно
+                <h3 className="text-xl font-semibold" style={{ fontFamily: 'Pacifico, cursive', color: '#F97316' }}>
+                  Дополнительно
                 </h3>
                 <div className="flex flex-col gap-4">
                   <Button
