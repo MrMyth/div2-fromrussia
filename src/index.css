@@ -32,7 +32,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Pacifico', sans-serif;
+    font-family: 'Neucha', sans-serif;
   }
 }
 
@@ -52,14 +52,14 @@
 
 /* Typography Styles */
 .catchphrase {
-  font-family: 'Pacifico', sans-serif;
+  font-family: 'Neucha', sans-serif;
   font-size: 22px;
   font-weight: bold;
   color: #F97316;
 }
 
 .subheading {
-  font-family: 'Pacifico', sans-serif;
+  font-family: 'Neucha', sans-serif;
   font-size: 19px;
   font-weight: bold;
   font-style: italic;
