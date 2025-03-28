@@ -35,7 +35,7 @@ const DiscordSection = () => {
               <h2 className="text-xl font-semibold" style={{ fontFamily: 'Neucha, cursive', color: '#F97316' }}>
                 Как присоединиться к серверу
               </h2>
-              <p className="text-lg" style={{ fontFamily: 'Neucha, cursive', color: '#F97316' }}>
+              <p className="text-lg" style={{ fontFamily: 'Neucha', color: 'gray-200' }}>
                 Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord". Ее вы найдете в правом нижнем углу виджета сервера.
               </p>
               <Button
