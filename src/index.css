@@ -32,7 +32,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Neucha', sans-serif;
+    font-family: 'Furore', sans-serif;
   }
 }
 
@@ -52,14 +52,14 @@
 
 /* Typography Styles */
 .catchphrase {
-  font-family: 'Neucha', sans-serif;
+  font-family: 'Furore', sans-serif;
   font-size: 22px;
   font-weight: bold;
   color: #F97316;
 }
 
 .subheading {
-  font-family: 'Neucha', sans-serif;
+  font-family: 'Furore', sans-serif;
   font-size: 19px;
   font-weight: bold;
   font-style: italic;
