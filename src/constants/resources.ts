@@ -15,6 +15,6 @@ export const RESOURCES = [
   { name: "Реферальная программа The Division 2", url: "https://referral.ubisoft.com/the-division-2-referral/ru-RU", icon: Link },
   { name: "Онлайн конструктор билдов (английский)", url: "https://mxswat.github.io/mx-division-builds/#/", icon: Link },
   { name: "Сообщество игры на платформе Reddit", url: "https://www.reddit.com/r/Division2/", icon: Link },
-  { name: "Discord сервер Ubisoft", url: "https://discord.gg/ubisoftofficial", icon: Link }
+  { name: "Discord сервер Ubisoft", url: "https://discord.gg/ubisoftofficial", icon: Link },
   { name: "Discord сервер The Division 2", url: "https://discord.gg/thedivisiongame", icon: Link }
 ] as const;
