@@ -13,7 +13,7 @@ const DiscordSection = () => {
               <div className="space-y-4">
                 <h2 className="subheading text-center">Виджет Discord сервера</h2>
                 <iframe 
-  src="https://discord.com/widget?id=835802952521351180&theme=light&locale=ru"
+                  src="https://discord.com/widget?id=835802952521351180&theme=light&locale=ru"
                   width="350" 
                   height="500" 
                   allowTransparency={true} 
@@ -38,6 +38,25 @@ const DiscordSection = () => {
                 <MessageSquare className="w-6 h-6 mr-2" />
                 Зайти на Discord сервер
               </Button>
+
+              {/* Дубликат секции "Как присоединиться к серверу?" */}
+              <div className="space-y-6 mt-8">
+                <h2 className="subheading text-left">Почему рекомендуем использовать связь через Discord:</h2>
+                <p className="text-lg text-muted-foreground">
+1) На нашем сервере почти 500 человек: помощь и компанию можно найти не только среди соклановцев, но и других игроков, что играют в игру.<br/>
+2) Огромная база готовых гайдов по прохождению, прокачке, сборке билдов, и различные полезности для игры.<br/>
+3) Библиотека готовых и проверенных билдов: открыл и смотришь, что и как нужно собрать.<br/>
+4) У Discord есть шумоподавление, режим рации и эхоподавление для микрофонов.<br/>
+                </p>
+                <Button
+                  variant="default"
+                  className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg py-6 text-lg"
+                  onClick={() => window.open('https://discord.gg/rk7ZeadZGH', '_blank')}
+                >
+                  <MessageSquare className="w-6 h-6 mr-2" />
+                  Зайти на Discord сервер
+                </Button>
+              </div>
 
               <div className="space-y-4">
                 <h3 className="subheading">Дополнительно</h3>
