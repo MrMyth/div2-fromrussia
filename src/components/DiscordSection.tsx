@@ -15,7 +15,7 @@ const DiscordSection = () => {
                 <iframe 
                   src="https://discord.com/widget?id=835802952521351180&theme=light&locale=ru"
                   width="350" 
-                  height="500" 
+                  height="620" 
                   allowTransparency={true} 
                   frameBorder="0" 
                   sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
