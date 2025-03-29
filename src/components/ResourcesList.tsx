@@ -12,14 +12,14 @@ const ResourcesList = () => {
         <h3 className="text-xl font-bold text-[#F97316] text-center mb-2">Полезные ресурсы</h3>
         <p className="text-gray-600 text-center mb-8">Различные ресурсы по игре, не связанные с нашим кланом.</p>
         
-        <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-4 max-w-6xl mx-auto">
           {/* Первый столбец */}
           <div className="flex flex-col gap-4 w-full md:w-auto">
             {firstColumn.map((resource, index) => (
               <Button
                 key={index}
                 variant="default"
-                className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-48 rounded-lg"
+                className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-lg"
                 onClick={() => window.open(resource.url, '_blank')}
               >
                 <resource.icon className="w-5 h-5" />
@@ -32,9 +32,9 @@ const ResourcesList = () => {
           <div className="flex flex-col gap-4 w-full md:w-auto">
             {secondColumn.map((resource, index) => (
               <Button
-                key={index + 8} // Добавляем 8 к индексу, чтобы ключи были уникальными
+                key={index + 8}
                 variant="default"
-                className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-48 rounded-lg"
+                className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-lg"
                 onClick={() => window.open(resource.url, '_blank')}
               >
                 <resource.icon className="w-5 h-5" />
