@@ -13,7 +13,7 @@ const DiscordSection = () => {
               <div className="space-y-4">
                 <h2 className="subheading text-center">Виджет Discord сервера</h2>
                 <iframe 
-                  src="https://discord.com/widget?id=835802952521351180&theme=light&locale=ru" 
+  src="https://discord.com/widget?id=835802952521351180&theme=light&locale=ru"
                   width="350" 
                   height="500" 
                   allowTransparency={true} 
