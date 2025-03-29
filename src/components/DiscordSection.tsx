@@ -48,14 +48,6 @@ const DiscordSection = () => {
 3) Библиотека готовых и проверенных билдов: открыл и смотришь, что и как нужно собрать.<br/>
 4) У Discord есть шумоподавление, режим рации и эхоподавление для микрофонов.<br/>
                 </p>
-                <Button
-                  variant="default"
-                  className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg py-6 text-lg"
-                  onClick={() => window.open('https://discord.gg/rk7ZeadZGH', '_blank')}
-                >
-                  <MessageSquare className="w-6 h-6 mr-2" />
-                  Зайти на Discord сервер
-                </Button>
               </div>
 
               <div className="space-y-4">
