@@ -13,7 +13,7 @@ const DiscordSection = () => {
               <div className="space-y-4">
                 <h2 className="subheading text-center">Виджет Discord сервера</h2>
                 <iframe 
-                  src="https://discord.com/widget?id=835802952521351180&theme=dark" 
+                  src="https://discord.com/widget?id=835802952521351180&theme=light" 
                   width="350" 
                   height="500" 
                   allowTransparency={true} 
@@ -26,9 +26,9 @@ const DiscordSection = () => {
 
             {/* Right Column - Join Instructions */}
             <div className="space-y-6">
-              <h2 className="subheading text-left">Как присоединиться к серверу</h2>
+              <h2 className="subheading text-left">Как присоединиться к серверу?</h2>
               <p className="text-lg text-muted-foreground">
-                Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord".
+                Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord". Ее вы можете найти в правом нижнем углу виджета сервера.
               </p>
               <Button
                 variant="default"
@@ -36,7 +36,7 @@ const DiscordSection = () => {
                 onClick={() => window.open('https://discord.gg/rk7ZeadZGH', '_blank')}
               >
                 <MessageSquare className="w-6 h-6 mr-2" />
-                Присоединится к Discord
+                Зайти на Discord сервер
               </Button>
 
               <div className="space-y-4">
