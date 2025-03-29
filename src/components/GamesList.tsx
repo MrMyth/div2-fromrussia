@@ -35,13 +35,13 @@ const GamesList = () => {
         </p>
       </div>
 	    <div className="mt-8 w-full text-center">
-        <h3 className="text-xl font-semibold text-[#F97316] text-center mb-4">Как купить китайскую версию игры?</h3>
+        <h3 className="text-xl font-semibold text-[#F97316] text-center mb-4">Интересует наш бот для "Саммита"?</h3>
         <p className="text-gray-800">
-          Чтобы получить инструкцию по покупке китайской The Division 2 вам нужно:<br/>
+          Чтобы получить доступ к боту для "Саммита" (The Division 2) вам нужно:<br/>
           1) Зайти на наш Discord сервер.<br/>
-          2) Связаться с MrMyth92 на нашем сервере и запросить инструкцию.<br/>
+          2) Выбрать роли на сервере.<br/>
+          3) Открыть канал сервера "бот-100-й-этаж" и изучить инструкцию по боту.<br/>
           <br/>
-          Цена инструкции: 750 рублей.
         </p>
       </div> 
     </div>
