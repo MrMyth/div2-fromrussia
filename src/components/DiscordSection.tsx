@@ -27,7 +27,7 @@ const DiscordSection = () => {
           
           {/* All text content below the widget, full width */}
           <div className="space-y-6 max-w-full">
-            <h2 className="subheading text-left">Как присоединиться к серверу?</h2>
+            <h2 className="subheading text-center">Как присоединиться к серверу?</h2>
             <p className="text-lg text-muted-foreground">
               Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord". Ее вы можете найти в правом нижнем углу виджета сервера.
             </p>
@@ -41,7 +41,7 @@ const DiscordSection = () => {
             </Button>
 
             <div className="space-y-6 mt-8">
-              <h2 className="subheading text-left">Почему мы рекомендуем использовать связь через Discord:</h2>
+              <h2 className="subheading text-center">Почему мы рекомендуем использовать связь через Discord:</h2>
               <p className="text-lg text-muted-foreground">
 1) На нашем сервере почти 500 человек: помощь и компанию можно найти не только среди соклановцев, но и других игроков, что играют в игру.<br/>
 2) Огромная база готовых гайдов по прохождению, прокачке, сборке билдов, и различные полезности для игры.<br/>
@@ -53,7 +53,7 @@ const DiscordSection = () => {
             </div>
 
             <div className="space-y-4">
-              <h3 className="subheading">Дополнительно</h3>
+              <h3 className="subheading text-center">Дополнительно</h3>
               <div className="flex flex-col gap-4">
                 <Button
                   variant="default"
