@@ -1,6 +1,5 @@
-
 import { Button } from "./ui/button";
-import { MessageSquare, Download, XOctagon } from "lucide-react";
+import { Plus, Download, XOctagon } from "lucide-react";
 
 const DiscordSection = () => {
   return (
@@ -36,7 +35,7 @@ const DiscordSection = () => {
               className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg py-6 text-lg"
               onClick={() => window.open('https://discord.gg/rk7ZeadZGH', '_blank')}
             >
-              <MessageSquare className="w-6 h-6 mr-2" />
+              <Plus className="w-6 h-6 mr-2 stroke-[3]" />
               Зайти на Discord сервер
             </Button>
 

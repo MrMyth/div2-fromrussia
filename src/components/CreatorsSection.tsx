@@ -31,7 +31,7 @@ const CreatorsSection = () => {
               <Button
                 variant="default"
                 className="bg-[#FF0000] hover:bg-[#FF0000]/90 text-white rounded-lg flex items-center gap-2 py-6 text-lg"
-                onClick={() => window.open('https://www.youtube.com/@MrMyth92/', '_blank')}
+                onClick={() => window.open('https://www.youtube.com/@MrMyth92_TC/', '_blank')}
               >
                 <Youtube className="w-6 h-6" />
                 YouTube
