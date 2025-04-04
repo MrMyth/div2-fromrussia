@@ -1,6 +1,5 @@
-
 import { Button } from "./ui/button";
-import { MessageSquare, Download, XOctagon } from "lucide-react";
+import { Plus, Download, XOctagon } from "lucide-react";
 
 const DiscordSection = () => {
   return (
@@ -29,14 +28,14 @@ const DiscordSection = () => {
           <div className="space-y-6 max-w-full">
             <h2 className="subheading text-center">Как присоединиться к серверу?</h2>
             <p className="text-lg text-muted-foreground">
-              Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord". Ее вы можете найти в правом нижнем углу виджета сервера.
+              Чтобы зайти на сервер нажмите на "Зайти на Discord сервер". Если приглашение не сработало, то используйте кнопку "Join Discord". Ее вы можете найти в правом нижнем углу виджета сервера.
             </p>
             <Button
               variant="default"
               className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg py-6 text-lg"
               onClick={() => window.open('https://discord.gg/rk7ZeadZGH', '_blank')}
             >
-              <MessageSquare className="w-6 h-6 mr-2" />
+              <Plus className="w-6 h-6 mr-2 stroke-[3]" />
               Зайти на Discord сервер
             </Button>
 
