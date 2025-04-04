@@ -29,7 +29,7 @@ const DiscordSection = () => {
           <div className="space-y-6 max-w-full">
             <h2 className="subheading text-center">Как присоединиться к серверу?</h2>
             <p className="text-lg text-muted-foreground">
-              Чтобы зайти на сервер нажмите на "Присоединится к Discord". Если приглашение не сработало, то используйте кнопку "Join Discord". Ее вы можете найти в правом нижнем углу виджета сервера.
+              Чтобы зайти на сервер нажмите на "Зайти на Discord сервер". Если приглашение не сработало, то используйте кнопку "Join Discord". Ее вы можете найти в правом нижнем углу виджета сервера.
             </p>
             <Button
               variant="default"
