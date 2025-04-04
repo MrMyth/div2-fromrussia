@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "./ui/button";
 import { Youtube, Twitch } from "lucide-react";
@@ -27,7 +26,7 @@ const CreatorsSection = () => {
           {/* Right Column - MrMyth92 */}
           <div className="space-y-4 p-6 rounded-lg">
             <h3 className="subheading text-center">MrMyth92</h3>
-            <div className="flex justify-center gap-4">
+            <div className="flex justify-center gap-4 flex-wrap">
               <Button
                 variant="default"
                 className="bg-[#FF0000] hover:bg-[#FF0000]/90 text-white rounded-lg flex items-center gap-2"
@@ -53,6 +52,13 @@ const CreatorsSection = () => {
               >
                 <Twitch className="w-5 h-5" />
                 Twitch
+              </Button>
+              <Button
+                variant="default"
+                className="bg-gray-700 hover:bg-gray-700/90 text-white rounded-lg flex items-center gap-2"
+                onClick={() => window.open('https://mrmyth92-contacts.lovable.app/', '_blank')}
+              >
+                Подробнее о авторе
               </Button>
             </div>
           </div>
