@@ -6,10 +6,23 @@ import {
   Globe, 
   Shield, 
   Skull,
-  Pistol 
+  Crosshair 
 } from "lucide-react";
 
-// Обновлённый список игр с заменённой иконкой
+// Типы для TypeScript
+type GameItem = {
+  title: string;
+  icon: React.ComponentType<{ className?: string }>;
+};
+
+type InstructionItem = {
+  title: string;
+  icon: React.ComponentType<{ className?: string }>;
+  steps: string[];
+  price?: number;
+};
+
+// Константы
 const GAMES_LIST: GameItem[] = [
   {
     title: "Tom Clancy's The Division 2",
@@ -25,7 +38,7 @@ const GAMES_LIST: GameItem[] = [
   },
   {
     title: "Tom Clancy's Ghost Recon: Wildlands",
-    icon: Pistol  // Заменили Skull на Pistol
+    icon: Crosshair // Используем Crosshair вместо Pistol
   },
   {
     title: "Tom Clancy's Ghost Recon Breakpoint",
@@ -33,7 +46,33 @@ const GAMES_LIST: GameItem[] = [
   }
 ];
 
-// ... (остальной код остаётся без изменений)
+const INSTRUCTIONS = {
+  chineseVersion: {
+    title: "Как купить китайскую версию игры?",
+    icon: ShoppingCart,
+    steps: [
+      "Зайти на наш Discord сервер",
+      "Связаться с MrMyth92 на нашем сервере и запросить инструкцию"
+    ],
+    price: 750
+  },
+  summitBot: {
+    title: "Интересует наш бот для 'Саммита'?",
+    icon: TowerControl,
+    steps: [
+      "Зайти на наш Discord сервер",
+      "Выбрать роли на сервере",
+      "Открыть канал сервера 'бот-100-й-этаж' и воспользоваться инструкцией по боту"
+    ]
+  }
+};
+
+// Компоненты
+const PriceTag = ({ value }: { value: number }) => (
+  <span className="ml-2 px-2 py-1 bg-[#F97316] text-white text-sm rounded-full">
+    {value} ₽
+  </span>
+);
 
 const GameListItem = ({ index, game }: { index: number; game: GameItem }) => {
   const Icon = game.icon;
@@ -46,4 +85,39 @@ const GameListItem = ({ index, game }: { index: number; game: GameItem }) => {
   );
 };
 
-// ... (остальной код без изменений)
+const InstructionSection = ({ title, icon: Icon, steps, price }: InstructionItem) => (
+  <section className="mt-6 p-6 bg-gray-50 rounded-lg border border-gray-200">
+    <h3 className="text-xl font-semibold text-[#F97316] mb-4 flex items-center justify-center">
+      <Icon className="w-6 h-6 mr-2" />
+      {title}
+      {price && <PriceTag value={price} />}
+    </h3>
+    <ul className="text-gray-800 space-y-2 pl-5 list-decimal">
+      {steps.map((step, i) => (
+        <li key={i}>{step}</li>
+      ))}
+    </ul>
+  </section>
+);
+
+// Основной компонент
+const GamesList = () => {
+  return (
+    <div className="max-w-3xl mx-auto px-4">
+      <ul className="space-y-3">
+        {GAMES_LIST.map((game, index) => (
+          <GameListItem 
+            key={game.title} 
+            index={index} 
+            game={game} 
+          />
+        ))}
+      </ul>
+
+      <InstructionSection {...INSTRUCTIONS.chineseVersion} />
+      <InstructionSection {...INSTRUCTIONS.summitBot} />
+    </div>
+  );
+};
+
+export default GamesList;
