@@ -1,6 +1,6 @@
-iimport GameSlideshow from "./GameSlideshow";
+import GameSlideshow from "./GameSlideshow";
 import GameSlideshow2 from "./GameSlideshow2";
-import { BookOpen } from "lucide-react";
+import { BookOpen, Clock, ChessKnight } from "lucide-react";
 
 const RaidGuides = () => {
   return (
@@ -15,7 +15,7 @@ const RaidGuides = () => {
       <div className="space-y-8">
         <div>
           <h4 className="subheading text-center mb-4 flex items-center justify-center">
-            <BookOpen className="w-6 h-6 mr-2 text-[#F97316]" />
+            <Clock className="w-6 h-6 mr-2 text-[#F97316]" />
             Азбука рейда "Тяжелые времена"
           </h4>
           <GameSlideshow />
@@ -23,7 +23,7 @@ const RaidGuides = () => {
         
         <div>
           <h4 className="subheading text-center mb-4 flex items-center justify-center">
-            <BookOpen className="w-6 h-6 mr-2 text-[#F97316]" />
+            <ChessKnight className="w-6 h-6 mr-2 text-[#F97316]" />
             Азбука рейда "Железный конь"
           </h4>
           <GameSlideshow2 />
