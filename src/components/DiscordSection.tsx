@@ -1,82 +1,124 @@
-
 import { Button } from "./ui/button";
-import { Plus, Download, XOctagon, MessageSquare } from "lucide-react";
+import { 
+  Plus, 
+  Download, 
+  XOctagon, 
+  MessageSquare, 
+  SquareCode, 
+  Home, 
+  Headphones, 
+  Lightbulb 
+} from "lucide-react";
 
 const DiscordSection = () => {
+  const benefits = [
+    "На нашем сервере почти 500 человек: помощь и компанию можно найти не только среди соклановцев, но и других игроков",
+    "Огромная база готовых гайдов по прохождению, прокачке, сборке билдов и различные полезности для игры",
+    "Библиотека готовых и проверенных билдов: открыл и смотришь, что и как нужно собрать",
+    "У Discord есть шумоподавление, режим рации и эхоподавление для микрофонов",
+    "Постоянно обновляемые новости про текущие целевые трофеи, таланты 'Спуска', работу торговцев",
+    "Свой общедоступный бот в 'Саммите' на 100-м этаже с инструкцией по использованию"
+  ];
+
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-          <h1 className="catchphrase text-center mb-8 flex items-center justify-center">
-            <MessageSquare className="w-6 h-6 mr-2 text-[#F97316]" />
-            Discord сервер
-          </h1>
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
           
-          {/* Widget - Centered */}
-          <div className="flex justify-center mb-8">
-            <div className="space-y-4">
-              <h2 className="subheading text-center">Виджет Discord сервера</h2>
+          {/* Header */}
+          <header className="text-center mb-10">
+            <h1 className="text-3xl font-bold flex items-center justify-center gap-2">
+              <MessageSquare className="w-7 h-7 text-[#5865F2]" />
+              <span>Discord сервер</span>
+            </h1>
+            <p className="mt-2 text-lg text-gray-500">
+              Присоединяйтесь к нашему сообществу игроков
+            </p>
+          </header>
+
+          {/* Widget Section */}
+          <section className="mb-12 text-center">
+            <h2 className="text-xl font-semibold mb-4 flex items-center justify-center gap-2">
+              <SquareCode className="w-6 h-6 text-[#F97316]" />
+              Виджет сервера
+            </h2>
+            <div className="flex justify-center">
               <iframe 
                 src="https://discord.com/widget?id=835802952521351180&theme=light&locale=ru"
                 width="350" 
-                height="700" 
-                allowTransparency={true} 
-                frameBorder="0" 
+                height="500" 
+                allowTransparency
+                className="rounded-lg shadow-md border border-gray-200"
                 sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-                className="mx-auto"
-              ></iframe>
+              />
             </div>
-          </div>
-          
-          {/* All text content below the widget, full width */}
-          <div className="space-y-6 max-w-full">
-            <h2 className="subheading text-center">Как присоединиться к серверу?</h2>
-            <p className="text-lg text-muted-foreground">
-              Чтобы зайти на сервер нажмите на "Зайти на Discord сервер". Если приглашение не сработало, то используйте кнопку "Join Discord". Ее вы можете найти в правом нижнем углу виджета сервера.
-            </p>
-            <Button
-              variant="default"
-              className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 text-white rounded-lg py-6 text-lg"
-              onClick={() => window.open('https://discord.gg/rk7ZeadZGH', '_blank')}
-            >
-              <Plus className="w-6 h-6 mr-2 stroke-[3]" />
-              Зайти на Discord сервер
-            </Button>
+          </section>
 
-            <div className="space-y-6 mt-8">
-              <h2 className="subheading text-center">Почему мы рекомендуем использовать связь через Discord:</h2>
-              <p className="text-lg text-muted-foreground">
-1) На нашем сервере почти 500 человек: помощь и компанию можно найти не только среди соклановцев, но и других игроков, что играют в игру.<br/>
-2) Огромная база готовых гайдов по прохождению, прокачке, сборке билдов, и различные полезности для игры.<br/>
-3) Библиотека готовых и проверенных билдов: открыл и смотришь, что и как нужно собрать.<br/>
-4) У Discord есть шумоподавление, режим рации и эхоподавление для микрофонов.<br/>
-5) На сервере есть постоянно обновляемые новости про текущие целевые трофеи, таланты "Спуска", работу торговцев, новости от Ubisoft и Discord. Новости про скидки и бесплатные игры.<br/>
-6) Свой общедоступный бот в "Саммите" на 100-м этаже. Инструкция по нему там же, в Discord.<br/>
+          {/* Join Section */}
+          <section className="mb-12">
+            <h2 className="text-xl font-semibold mb-4 text-center flex items-center justify-center gap-2">
+              <Home className="w-6 h-6 text-[#F97316]" />
+              Как присоединиться?
+            </h2>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <p className="mb-6 text-gray-700">
+                Нажмите кнопку ниже, чтобы присоединиться к нашему Discord серверу. 
+                Если возникли проблемы, используйте кнопку "Join Discord" в виджете выше.
               </p>
+              <Button
+                size="lg"
+                className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 py-6 text-lg font-medium"
+                onClick={() => window.open('https://discord.gg/rk7ZeadZGH', '_blank')}
+              >
+                <Plus className="w-5 h-5 mr-2" />
+                Присоединиться к серверу
+              </Button>
             </div>
+          </section>
 
-            <div className="space-y-4">
-              <h3 className="subheading text-center">Дополнительно</h3>
-              <div className="flex flex-col gap-4">
-                <Button
-                  variant="default"
-                  className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg flex justify-center items-center"
-                  onClick={() => window.open('https://discord.com/download', '_blank')}
-                >
-                  <Download className="w-6 h-6 mr-2" />
-                  Скачать Discord с офиального сайта
-                </Button>
-                <Button
-                  variant="default"
-                  className="w-full rounded-lg bg-[#5865F2] hover:bg-[#5865F2]/90 text-white py-6 text-lg flex justify-center items-center"
-                  onClick={() => window.open('https://drive.google.com/file/d/1peDzSGlgP0bDeE4lP7JA_rC7HhZTM8R2/view?usp=sharing', '_blank')}
-                >
-                  <XOctagon className="w-6 h-6 mr-2" />
-                  Разблокировка Discord в РФ
-                </Button>
-              </div>
+          {/* Benefits Section */}
+          <section className="mb-12">
+            <h2 className="text-xl font-semibold mb-6 text-center flex items-center justify-center gap-2">
+              <Headphones className="w-6 h-6 text-[#F97316]" />
+              Преимущества нашего Discord
+            </h2>
+            <ul className="space-y-3">
+              {benefits.map((benefit, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-[#F97316] mr-2">•</span>
+                  <span className="text-gray-700">{benefit}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Downloads Section */}
+          <section>
+            <h2 className="text-xl font-semibold mb-6 text-center flex items-center justify-center gap-2">
+              <Lightbulb className="w-6 h-6 text-[#F97316]" />
+              Дополнительно
+            </h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Button
+                size="lg"
+                variant="outline"
+                className="py-6 text-lg font-medium border-[#5865F2] text-[#5865F2] hover:bg-[#5865F2]/10"
+                onClick={() => window.open('https://discord.com/download', '_blank')}
+              >
+                <Download className="w-5 h-5 mr-2" />
+                Скачать Discord
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="py-6 text-lg font-medium border-[#5865F2] text-[#5865F2] hover:bg-[#5865F2]/10"
+                onClick={() => window.open('https://drive.google.com/file/d/1peDzSGlgP0bDeE4lP7JA_rC7HhZTM8R2/view?usp=sharing', '_blank')}
+              >
+                <XOctagon className="w-5 h-5 mr-2" />
+                Разблокировка в РФ
+              </Button>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </section>
