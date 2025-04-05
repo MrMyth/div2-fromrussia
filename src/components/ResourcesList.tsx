@@ -1,58 +1,91 @@
-import { Button } from "./ui/button";
-import { RESOURCES } from "@/constants/resources";
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 
-const ResourcesList = () => {
-  // Разделяем ресурсы на две равные колонки
-  const column1 = RESOURCES.slice(0, Math.ceil(RESOURCES.length / 2));
-  const column2 = RESOURCES.slice(Math.ceil(RESOURCES.length / 2));
+/**
+ * Объединяет и оптимизирует классы Tailwind CSS
+ * @param inputs Классы для объединения
+ * @returns Оптимизированная строка классов
+ */
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
-  return (
-    <div className="space-y-6">
-      <p className="text-gray-600 text-center mb-6">
-        Различные ресурсы по игре, не связанные с нашим кланом
-      </p>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl mx-auto">
-        {/* Первая колонка */}
-        <div className="space-y-3">
-          {column1.map((resource) => (
-            <ResourceButton 
-              key={resource.name}
-              resource={resource}
-            />
-          ))}
-        </div>
-        
-        {/* Вторая колонка */}
-        <div className="space-y-3">
-          {column2.map((resource) => (
-            <ResourceButton
-              key={resource.name}
-              resource={resource}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+/**
+ * Разделяет массив на части
+ * @param array Исходный массив
+ * @param chunkSize Размер части
+ * @returns Массив с частями исходного массива
+ */
+export function splitArray<T>(array: T[], chunkSize: number): T[][] {
+  const result: T[][] = [];
+  for (let i = 0; i < array.length; i += chunkSize) {
+    result.push(array.slice(i, i + chunkSize));
+  }
+  return result;
+}
 
-// Вынесенный компонент кнопки ресурса
-const ResourceButton = ({ resource }: { resource: typeof RESOURCES[number] }) => {
-  const Icon = resource.icon;
-  
-  return (
-    <Button
-      variant="default"
-      className="w-full bg-[#F97316] hover:bg-[#F97316]/90 text-white rounded-lg py-6"
-      onClick={() => window.open(resource.url, '_blank')}
-    >
-      <div className="flex items-center gap-3 w-full">
-        <Icon className="w-5 h-5" />
-        <span>{resource.name}</span>
-      </div>
-    </Button>
-  );
-};
+/**
+ * Форматирует дату в читаемый вид
+ * @param date Строка или объект Date
+ * @returns Отформатированная дата
+ */
+export function formatDate(date: Date | string): string {
+  return new Date(date).toLocaleDateString("ru-RU", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
 
-export default ResourcesList;
+/**
+ * Проверяет, является ли значение объектом
+ * @param value Проверяемое значение
+ * @returns true, если значение является объектом
+ */
+export function isObject(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+/**
+ * Создает задержку
+ * @param ms Время задержки в миллисекундах
+ * @returns Promise, который разрешится после задержки
+ */
+export function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+/**
+ * Генерирует уникальный ID
+ * @returns Уникальный строковый ID
+ */
+export function generateId(): string {
+  return Math.random().toString(36).substring(2, 11);
+}
+
+/**
+ * Проверяет, является ли строка валидным URL
+ * @param url Строка для проверки
+ * @returns true, если строка является валидным URL
+ */
+export function isValidUrl(url: string): boolean {
+  try {
+    new URL(url);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Преобразует строку в camelCase
+ * @param str Исходная строка
+ * @returns Строка в camelCase
+ */
+export function toCamelCase(str: string): string {
+  return str
+    .replace(/(?:^\w|[A-Z]|\b\w)/g, (word, index) => {
+      return index === 0 ? word.toLowerCase() : word.toUpperCase();
+    })
+    .replace(/\s+/g, "");
+}
