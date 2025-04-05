@@ -29,7 +29,7 @@ const DiscordSection = () => {
           
           {/* Header */}
           <header className="text-center mb-10">
-            <h1 className="text-3xl font-bold flex items-center justify-center gap-2">
+            <h1 className="text-3xl font-bold flex items-center justify-center gap-2 text-[#F97316]">
               <MessageSquare className="w-7 h-7 text-[#5865F2]" />
               <span>Discord сервер</span>
             </h1>
@@ -40,7 +40,7 @@ const DiscordSection = () => {
 
           {/* Widget Section */}
           <section className="mb-12 text-center">
-            <h2 className="text-xl font-semibold mb-4 flex items-center justify-center gap-2">
+            <h2 className="text-xl font-semibold mb-4 flex items-center justify-center gap-2 text-[#F97316]">
               <SquareCode className="w-6 h-6 text-[#F97316]" />
               Виджет сервера
             </h2>
@@ -58,7 +58,7 @@ const DiscordSection = () => {
 
           {/* Join Section */}
           <section className="mb-12">
-            <h2 className="text-xl font-semibold mb-4 text-center flex items-center justify-center gap-2">
+            <h2 className="text-xl font-semibold mb-4 text-center flex items-center justify-center gap-2 text-[#F97316]">
               <Home className="w-6 h-6 text-[#F97316]" />
               Как присоединиться?
             </h2>
@@ -80,7 +80,7 @@ const DiscordSection = () => {
 
           {/* Benefits Section */}
           <section className="mb-12">
-            <h2 className="text-xl font-semibold mb-6 text-center flex items-center justify-center gap-2">
+            <h2 className="text-xl font-semibold mb-6 text-center flex items-center justify-center gap-2 text-[#F97316]">
               <Headphones className="w-6 h-6 text-[#F97316]" />
               Преимущества нашего Discord
             </h2>
@@ -96,7 +96,7 @@ const DiscordSection = () => {
 
           {/* Downloads Section */}
           <section>
-            <h2 className="text-xl font-semibold mb-6 text-center flex items-center justify-center gap-2">
+            <h2 className="text-xl font-semibold mb-6 text-center flex items-center justify-center gap-2 text-[#F97316]">
               <Lightbulb className="w-6 h-6 text-[#F97316]" />
               Дополнительно
             </h2>
