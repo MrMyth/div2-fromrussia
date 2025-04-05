@@ -87,7 +87,7 @@ const GameListItem = ({ index, game }: { index: number; game: GameItem }) => {
 
 const InstructionSection = ({ title, icon: Icon, steps, price }: InstructionItem) => (
   <section className="mt-6 rounded-lg">
-    <h3 className="text-xl font-semibold text-[#F97316] mb-4 flex items-center">
+    <h3 className="text-xl font-semibold text-[#F97316] mb-4 flex items-center justify-center text-center">
       <Icon className="w-6 h-6 mr-2" />
       {title}
       {price && <PriceTag value={price} />}
