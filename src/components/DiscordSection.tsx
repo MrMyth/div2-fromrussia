@@ -6,16 +6,9 @@ import {
   SquareCode, 
   Home, 
   Headphones, 
-  Lightbulb 
+  Lightbulb,
+  Discord
 } from "lucide-react";
-
-const DiscordLogo = () => (
-  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="#5865F2">
-    <path 
-      d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v19.056c0 1.368-1.104 2.472-2.46 2.472H16.44c-.552 0-.888-.456-.888-.984v-3.192c0-.528.336-.984.888-.984h.624c.816 0 1.488-.672 1.488-1.488V5.976c0-.816-.672-1.488-1.488-1.488h-6.888c-.816 0-1.488.672-1.488 1.488v10.368c0 .816.672 1.488 1.488 1.488h.624c.552 0 .888.456.888.984v3.192c0 .528-.336.984-.888.984H4.46C3.104 22 2 20.896 2 19.528V2.472C2 1.104 3.104 0 4.46 0h15.08zm-4.632 15.672c-1.176 0-2.136-.96-2.136-2.136s.96-2.136 2.136-2.136 2.136.96 2.136 2.136-.96 2.136-2.136 2.136zm-6.888 0c-1.176 0-2.136-.96-2.136-2.136s.96-2.136 2.136-2.136 2.136.96 2.136 2.136-.96 2.136-2.136 2.136z"
-    />
-  </svg>
-);
 
 const DiscordSection = () => {
   const benefits = [
@@ -37,7 +30,7 @@ const DiscordSection = () => {
           {/* Header */}
           <header className="text-center mb-10">
             <h1 className="text-3xl font-bold flex items-center justify-center gap-2 text-[#F97316]">
-              <DiscordLogo />
+              <Discord className="w-7 h-7 text-[#5865F2]" />
               <span>Discord сервер</span>
             </h1>
             <p className="mt-2 text-lg text-gray-500">
