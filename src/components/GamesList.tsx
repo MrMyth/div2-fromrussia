@@ -48,7 +48,7 @@ const GAMES_LIST: GameItem[] = [
 
 const INSTRUCTIONS = {
   chineseVersion: {
-    title: "Как купить инструкцию по приобритению китайской версию игры?",
+    title: "Как купить китайскую версию игры?",
     icon: ShoppingCart,
     steps: [
       "Зайти на наш Discord сервер",
