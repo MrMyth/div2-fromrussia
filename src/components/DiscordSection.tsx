@@ -1,12 +1,16 @@
+
 import { Button } from "./ui/button";
-import { Plus, Download, XOctagon } from "lucide-react";
+import { Plus, Download, XOctagon, MessageSquare } from "lucide-react";
 
 const DiscordSection = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-          <h1 className="catchphrase text-center mb-8">Discord сервер</h1>
+          <h1 className="catchphrase text-center mb-8 flex items-center justify-center">
+            <MessageSquare className="w-6 h-6 mr-2 text-[#F97316]" />
+            Discord сервер
+          </h1>
           
           {/* Widget - Centered */}
           <div className="flex justify-center mb-8">

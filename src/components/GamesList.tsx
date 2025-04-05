@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const GamesList = () => {
@@ -10,8 +11,7 @@ const GamesList = () => {
   ];
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-      <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8">Игры</h2>
+    <div>
       <ul className="space-y-4 max-w-2xl mx-auto">
         {games.map((game, index) => (
           <li 
@@ -34,7 +34,7 @@ const GamesList = () => {
           Цена инструкции: 750 рублей.
         </p>
       </div>
-	    <div className="mt-8 w-full text-center">
+      <div className="mt-8 w-full text-center">
         <h3 className="text-xl font-semibold text-[#F97316] text-center mb-4">Интересует наш бот для "Саммита"?</h3>
         <p className="text-gray-800">
           Чтобы получить доступ к боту для "Саммита" (The Division 2) вам нужно:<br/>
