@@ -18,19 +18,19 @@ const DiscordSection = () => {
     "Постоянно обновляемые новости про текущие целевые трофеи, таланты 'Спуска', работу торговцев",
     "Постоянно обновляемые новости о франшизе The Division и компании Ubisoft",
     "Свой общедоступный бот в 'Саммите' на 100-м этаже с инструкцией по использованию",
-    "Наши создатели контента всегда тестируют бета версии The Division 2. Ты ранньше остальных будешь узнавать о том, что ждет тебя в обновлении",
+    "Наши создатели контента всегда тестируют бета версии The Division 2. Ты раньше остальных будешь узнавать о том, что ждет тебя в обновлении",
     "У Discord есть шумоподавление, режим рации и эхоподавление для микрофонов"
   ];
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-6xl"> {/* Изменено с max-w-4xl на max-w-6xl */}
+      <div className="container mx-auto px-4 max-w-6xl">
         <div className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
           
           {/* Header */}
           <header className="text-center mb-10">
             <h1 className="text-3xl font-bold flex items-center justify-center gap-2 text-[#F97316]">
-              <MessageSquare className="w-7 h-7 text-[#5865F2]" />
+              <MessageSquare className="w-7 h-7 text-[#F97316]" />
               <span>Discord сервер</span>
             </h1>
             <p className="mt-2 text-lg text-gray-500">
