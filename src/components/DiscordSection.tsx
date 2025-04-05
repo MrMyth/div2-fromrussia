@@ -84,14 +84,16 @@ const DiscordSection = () => {
               <Headphones className="w-6 h-6 text-[#F97316]" />
               Преимущества нашего Discord
             </h2>
-            <ul className="space-y-3">
-              {benefits.map((benefit, index) => (
-                <li key={index} className="flex items-start">
-                  <span className="text-[#F97316] mr-2">•</span>
-                  <span className="text-gray-700">{benefit}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="bg-gray-50 p-6 rounded-lg"> {/* Добавлен серый фон */}
+              <ul className="space-y-3">
+                {benefits.map((benefit, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="text-[#F97316] mr-2">•</span>
+                    <span className="text-gray-700">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </section>
 
           {/* Downloads Section */}
