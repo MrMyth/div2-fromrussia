@@ -69,7 +69,7 @@ const DiscordSection = () => {
               </p>
               <Button
                 size="lg"
-                className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 py-6 text-lg font-medium"
+                className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 py-6 text-lg font-medium text-white"
                 onClick={() => window.open('https://discord.gg/rk7ZeadZGH', '_blank')}
               >
                 <Plus className="w-5 h-5 mr-2" />
@@ -103,8 +103,7 @@ const DiscordSection = () => {
             <div className="grid md:grid-cols-2 gap-4">
               <Button
                 size="lg"
-                variant="outline"
-                className="py-6 text-lg font-medium border-[#5865F2] text-[#5865F2] hover:bg-[#5865F2]/10"
+                className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 py-6 text-lg font-medium text-white"
                 onClick={() => window.open('https://discord.com/download', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -112,8 +111,7 @@ const DiscordSection = () => {
               </Button>
               <Button
                 size="lg"
-                variant="outline"
-                className="py-6 text-lg font-medium border-[#5865F2] text-[#5865F2] hover:bg-[#5865F2]/10"
+                className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 py-6 text-lg font-medium text-white"
                 onClick={() => window.open('https://drive.google.com/file/d/1peDzSGlgP0bDeE4lP7JA_rC7HhZTM8R2/view?usp=sharing', '_blank')}
               >
                 <XOctagon className="w-5 h-5 mr-2" />
