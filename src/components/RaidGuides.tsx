@@ -1,4 +1,4 @@
-iimport GameSlideshow from "./GameSlideshow";
+import GameSlideshow from "./GameSlideshow";
 import GameSlideshow2 from "./GameSlideshow2";
 import { BookOpen } from "lucide-react";
 
