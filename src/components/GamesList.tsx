@@ -38,7 +38,7 @@ const GAMES_LIST: GameItem[] = [
   },
   {
     title: "Tom Clancy's Ghost Recon: Wildlands",
-    icon: Crosshair // Используем Crosshair вместо Pistol
+    icon: Crosshair
   },
   {
     title: "Tom Clancy's Ghost Recon Breakpoint",
@@ -77,7 +77,7 @@ const PriceTag = ({ value }: { value: number }) => (
 const GameListItem = ({ index, game }: { index: number; game: GameItem }) => {
   const Icon = game.icon;
   return (
-    <li className="flex items-center p-3 gap-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+    <li className="flex items-center p-3 gap-3 rounded-lg hover:bg-gray-100 transition-colors">
       <span className="text-[#F97316] font-medium w-6">{index + 1}.</span>
       <Icon className="w-5 h-5 text-gray-500" />
       <span className="text-gray-800 flex-1">{game.title}</span>
@@ -86,17 +86,19 @@ const GameListItem = ({ index, game }: { index: number; game: GameItem }) => {
 };
 
 const InstructionSection = ({ title, icon: Icon, steps, price }: InstructionItem) => (
-  <section className="mt-6 p-6 bg-gray-50 rounded-lg border border-gray-200">
-    <h3 className="text-xl font-semibold text-[#F97316] mb-4 flex items-center justify-center">
+  <section className="mt-6 rounded-lg">
+    <h3 className="text-xl font-semibold text-[#F97316] mb-4 flex items-center">
       <Icon className="w-6 h-6 mr-2" />
       {title}
       {price && <PriceTag value={price} />}
     </h3>
-    <ul className="text-gray-800 space-y-2 pl-5 list-decimal">
-      {steps.map((step, i) => (
-        <li key={i}>{step}</li>
-      ))}
-    </ul>
+    <div className="bg-gray-50 p-6 rounded-lg">
+      <ul className="text-gray-800 space-y-2 pl-5 list-decimal">
+        {steps.map((step, i) => (
+          <li key={i}>{step}</li>
+        ))}
+      </ul>
+    </div>
   </section>
 );
 
