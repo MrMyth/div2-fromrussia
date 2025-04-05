@@ -3,11 +3,11 @@ import {
   Plus, 
   Download, 
   XOctagon, 
+  MessageSquare, 
   SquareCode, 
   Home, 
   Headphones, 
-  Lightbulb,
-  Discord
+  Lightbulb 
 } from "lucide-react";
 
 const DiscordSection = () => {
@@ -18,7 +18,7 @@ const DiscordSection = () => {
     "Постоянно обновляемые новости про текущие целевые трофеи, таланты 'Спуска', работу торговцев",
     "Постоянно обновляемые новости о франшизе The Division и компании Ubisoft",
     "Свой общедоступный бот в 'Саммите' на 100-м этаже с инструкцией по использованию",
-    "Наши создатели контента всегда тестируют бета версии The Division 2. Ты раньше остальных будешь узнавать о том, что ждет тебя в обновлении",
+    "Наши создатели контента всегда тестируют бета версии The Division 2. Ты ранньше остальных будешь узнавать о том, что ждет тебя в обновлении",
     "У Discord есть шумоподавление, режим рации и эхоподавление для микрофонов"
   ];
 
@@ -30,7 +30,7 @@ const DiscordSection = () => {
           {/* Header */}
           <header className="text-center mb-10">
             <h1 className="text-3xl font-bold flex items-center justify-center gap-2 text-[#F97316]">
-              <Discord className="w-7 h-7 text-[#5865F2]" />
+              <MessageSquare className="w-7 h-7 text-[#5865F2]" />
               <span>Discord сервер</span>
             </h1>
             <p className="mt-2 text-lg text-gray-500">
