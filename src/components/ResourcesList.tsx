@@ -1,9 +1,7 @@
-
 import { Button } from "./ui/button";
 import { RESOURCES } from "@/constants/resources";
 
 const ResourcesList = () => {
-  // Разделяем ресурсы на две части для двух столбцов
   const firstColumn = RESOURCES.slice(0, 8);
   const secondColumn = RESOURCES.slice(8, 16);
 
@@ -17,11 +15,11 @@ const ResourcesList = () => {
           {firstColumn.map((resource, index) => (
             <Button
               key={index}
-              variant="default"
-              className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-lg"
+              size="lg"
+              className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              <resource.icon className="w-5 h-5" />
+              <resource.icon className="w-5 h-5 mr-2" />
               {resource.name}
             </Button>
           ))}
@@ -32,11 +30,11 @@ const ResourcesList = () => {
           {secondColumn.map((resource, index) => (
             <Button
               key={index + 8}
-              variant="default"
-              className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-lg"
+              size="lg"
+              className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              <resource.icon className="w-5 h-5" />
+              <resource.icon className="w-5 h-5 mr-2" />
               {resource.name}
             </Button>
           ))}
