@@ -14,14 +14,6 @@ const GamesSection = () => {
           <GamesList />
         </div>
         
-        <div id="channels">
-          <CreatorsSection />
-        </div>
-        
-        <div id="resources">
-          <ResourcesList />
-        </div>
-        
         <div id="raids" className="mt-16">
           <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
             <h3 className="catchphrase text-center mb-8">Азбуки рейдов</h3>
@@ -42,8 +34,16 @@ const GamesSection = () => {
           </div>
         </div>
 
+        <div id="channels">
+          <CreatorsSection />
+        </div>
+        
         <div id="complaint">
           <ComplaintForm />
+        </div>
+
+        <div id="resources">
+          <ResourcesList />
         </div>
       </div>
     </section>
