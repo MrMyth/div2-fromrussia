@@ -24,7 +24,7 @@ const DiscordSection = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-6xl"> {/* Изменено с max-w-4xl на max-w-6xl */}
         <div className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
           
           {/* Header */}
@@ -84,7 +84,7 @@ const DiscordSection = () => {
               <Headphones className="w-6 h-6 text-[#F97316]" />
               Преимущества нашего Discord
             </h2>
-            <div className="bg-gray-50 p-6 rounded-lg"> {/* Добавлен серый фон */}
+            <div className="bg-gray-50 p-6 rounded-lg">
               <ul className="space-y-3">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start">
