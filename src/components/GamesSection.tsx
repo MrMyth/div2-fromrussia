@@ -1,9 +1,9 @@
-
 import GamesList from "./GamesList";
 import GameSlideshow from "./GameSlideshow";
 import GameSlideshow2 from "./GameSlideshow2";
 import ResourcesList from "./ResourcesList";
 import ComplaintForm from "./ComplaintForm";
+import CreatorsSection from "./CreatorsSection";
 
 const GamesSection = () => {
   return (
@@ -35,6 +35,9 @@ const GamesSection = () => {
 
         <div id="resources">
           <ResourcesList />
+        </div>
+        <div id="channels">
+          <CreatorsSection />
         </div>
         <div id="complaint">
           <ComplaintForm />

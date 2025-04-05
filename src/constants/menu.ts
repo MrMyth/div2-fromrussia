@@ -5,5 +5,6 @@ export const MENU_ITEMS = [
   { icon: Gamepad, text: "Наши игры", href: "#games" },
   { icon: BookOpen, text: "Азбуки рейдов", href: "#raids" },
   { icon: Link, text: "Полезные ресурсы", href: "#resources" },
+  { icon: Youtube, text: "Наши каналы", href: "#channels" },
   { icon: HelpCircle, text: "Жалоба на игрока", href: "#complaint" }
 ] as const;
