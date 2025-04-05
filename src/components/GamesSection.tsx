@@ -1,3 +1,4 @@
+
 import GamesList from "./GamesList";
 import GameSlideshow from "./GameSlideshow";
 import GameSlideshow2 from "./GameSlideshow2";
@@ -11,6 +12,14 @@ const GamesSection = () => {
       <div className="container mx-auto px-4">
         <div id="games">
           <GamesList />
+        </div>
+        
+        <div id="channels">
+          <CreatorsSection />
+        </div>
+        
+        <div id="resources">
+          <ResourcesList />
         </div>
         
         <div id="raids" className="mt-16">
@@ -33,12 +42,6 @@ const GamesSection = () => {
           </div>
         </div>
 
-        <div id="resources">
-          <ResourcesList />
-        </div>
-        <div id="channels">
-          <CreatorsSection />
-        </div>
         <div id="complaint">
           <ComplaintForm />
         </div>
