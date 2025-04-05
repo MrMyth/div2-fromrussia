@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { ShoppingCart, TowerControl } from "lucide-react";
 
 const GamesList = () => {
   const games = [
@@ -25,7 +25,10 @@ const GamesList = () => {
       </ul>
 
       <div className="mt-8 w-full text-center">
-        <h3 className="text-xl font-semibold text-[#F97316] text-center mb-4">Как купить китайскую версию игры?</h3>
+        <h3 className="text-xl font-semibold text-[#F97316] text-center mb-4 flex items-center justify-center">
+          <ShoppingCart className="w-6 h-6 mr-2 text-[#F97316]" />
+          Как купить китайскую версию игры?
+        </h3>
         <p className="text-gray-800">
           Чтобы получить инструкцию по покупке китайской The Division 2 вам нужно:<br/>
           1) Зайти на наш Discord сервер.<br/>
@@ -35,7 +38,10 @@ const GamesList = () => {
         </p>
       </div>
       <div className="mt-8 w-full text-center">
-        <h3 className="text-xl font-semibold text-[#F97316] text-center mb-4">Интересует наш бот для "Саммита"?</h3>
+        <h3 className="text-xl font-semibold text-[#F97316] text-center mb-4 flex items-center justify-center">
+          <TowerControl className="w-6 h-6 mr-2 text-[#F97316]" />
+          Интересует наш бот для "Саммита"?
+        </h3>
         <p className="text-gray-800">
           Чтобы получить доступ к боту для "Саммита" (The Division 2) вам нужно:<br/>
           1) Зайти на наш Discord сервер.<br/>
