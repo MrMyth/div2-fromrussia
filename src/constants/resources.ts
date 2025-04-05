@@ -3,10 +3,10 @@ import { Store, AlertOctagon, Map, Clock, Package, MessageCircle, Video, Youtube
 export const RESOURCES = [
   { name: "Товары недели", url: "https://division.inot.pro/", icon: Store },
   { name: "Известные ошибки игры (английский)", url: "https://trello.com/b/F2RU9ia9/the-division-2-known-issues", icon: AlertOctagon },
-  { name: "Известные ошибки (русский)", url: "https://ru.yougile.com/board/zyy6vkmc28pb", icon: AlertOctagon },
+  { name: "Известные ошибки игры (русский)", url: "https://ru.yougile.com/board/zyy6vkmc28pb", icon: AlertOctagon },
   { name: "Интерактивная карта игры", url: "https://division2map.com/", icon: Map },
   { name: "Таймеры игры", url: "https://divisiontimers.com/#/", icon: Clock },
-  { name: "Набор фаната серии", url: "https://drive.google.com/drive/folders/16-yBPXnZiM_d6QtBy_UBUVsQRxYpc9Ga?usp=sharing", icon: Package },
+  { name: "Набор фаната серии (Google Диск)", url: "https://drive.google.com/drive/folders/16-yBPXnZiM_d6QtBy_UBUVsQRxYpc9Ga?usp=sharing", icon: Package },
   { name: "Сообщество игры в VK", url: "https://vk.com/game_thedivision", icon: MessageCircle },
   { name: "Сообщество игры в Telegram", url: "https://t.me/divisiongame", icon: MessageSquare },
   { name: "Чаты по игре в Telegram", url: "https://t.me/divisiongame_chat", icon: MessageSquare },
