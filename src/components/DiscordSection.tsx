@@ -1,4 +1,3 @@
-
 import { Button } from "./ui/button";
 import { 
   Plus, 
@@ -25,7 +24,7 @@ const DiscordSection = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-3xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4"> {/* Изменено с max-w-3xl на max-w-6xl */}
         <div className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
           
           {/* Header */}
