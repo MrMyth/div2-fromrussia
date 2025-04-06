@@ -1,3 +1,4 @@
+
 import {
   Carousel,
   CarouselContent,
@@ -16,11 +17,11 @@ const BaseSlideshow = ({ images, title }: SlideshowProps) => {
   return (
     <>
       {title && (
-        <div className="text-center mt-12">
+        <div className="text-center">
           <h4 className="text-lg font-semibold text-[#F97316] mb-4">{title}</h4>
         </div>
       )}
-      <div className="w-full mt-12">
+      <div className="w-full">
         <Carousel
           opts={{
             align: "start",

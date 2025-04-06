@@ -1,5 +1,6 @@
-import GameSlideshow from "./GameSlideshow";
-import GameSlideshow2 from "./GameSlideshow2";
+
+import { heavyTimesImages, ironHorseImages } from "@/data/slideshowImages";
+import RaidSlideshow from "./RaidSlideshow";
 import { BookOpen, Clock } from "lucide-react";
 
 const ChessKnightIcon = () => (
@@ -28,21 +29,21 @@ const RaidGuides = () => {
       <p className="text-gray-700 mb-8 w-full text-center">
         Кликни на картинку, чтобы увеличить слайдшоу. После увеличения слайдшоу ты можешь перемещаться между слайдами. Для этого используй стрелки по бокам или же стрелки на клавиатуре.
       </p>
-      <div className="space-y-8">
+      <div className="space-y-12">
         <div>
-          <h4 className="subheading text-center mb-4 flex items-center justify-center">
+          <h4 className="subheading text-center mb-6 flex items-center justify-center">
             <Clock className="w-6 h-6 mr-2 text-[#F97316]" />
             Азбука рейда "Тяжелые времена"
           </h4>
-          <GameSlideshow />
+          <RaidSlideshow images={heavyTimesImages} />
         </div>
         
         <div>
-          <h4 className="subheading text-center mb-4 flex items-center justify-center">
+          <h4 className="subheading text-center mb-6 flex items-center justify-center">
             <ChessKnightIcon />
             Азбука рейда "Железный конь"
           </h4>
-          <GameSlideshow2 />
+          <RaidSlideshow images={ironHorseImages} />
         </div>
       </div>
     </div>
