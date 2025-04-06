@@ -26,7 +26,7 @@ const DiscordSection = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
+        <div className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
           
           {/* Header */}
           <header className="text-center mb-10">
