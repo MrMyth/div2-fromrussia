@@ -1,10 +1,21 @@
-
 import { Button } from "./ui/button";
 import { RESOURCES } from "@/constants/resources";
+import React from "react";
 
 const ResourcesList = () => {
   const firstColumn = RESOURCES.slice(0, 8);
   const secondColumn = RESOURCES.slice(8, 16);
+
+  // Helper function to render icon correctly
+  const renderIcon = (icon: any) => {
+    // Check if it's a React component (function)
+    if (typeof icon === 'function') {
+      const IconComponent = icon;
+      return <IconComponent className="w-5 h-5 mr-2" />;
+    }
+    // Otherwise it's already an element
+    return icon;
+  };
 
   return (
     <div>
@@ -20,9 +31,7 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              {typeof resource.icon === 'function' 
-                ? <resource.icon className="w-5 h-5 mr-2" /> 
-                : resource.icon}
+              {renderIcon(resource.icon)}
               {resource.name}
             </Button>
           ))}
@@ -37,9 +46,7 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              {typeof resource.icon === 'function' 
-                ? <resource.icon className="w-5 h-5 mr-2" /> 
-                : resource.icon}
+              {renderIcon(resource.icon)}
               {resource.name}
             </Button>
           ))}
