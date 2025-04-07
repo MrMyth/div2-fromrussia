@@ -14,7 +14,7 @@ const HeroSection = () => {
 
   return (
     <div className="relative min-h-[70vh] flex flex-col overflow-hidden">
-      {/* Анимированный градиентный оверлей (флаг России) */}
+      {/* Анимированный градиентный оверлей */}
       <div 
         className="absolute inset-0 z-10"
         style={{
@@ -28,17 +28,24 @@ const HeroSection = () => {
       {/* Затемнение фона */}
       <div className="absolute inset-0 bg-black/60 z-9" />
 
-      {/* Постер видео (изображение) */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
+      {/* Постер видео (сжатый до ширины меню) */}
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-4xl h-auto z-0 mt-4">
         <img
           src="https://i.ibb.co/8BBx0F0/19201080.png"
           alt="Game Background"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-auto object-contain rounded-lg border-2"
+          style={{
+            borderImage: `linear-gradient(90deg, 
+              white ${gradientPos}%, 
+              #0039A6 ${gradientPos + 30}%, 
+              #D52B1E ${gradientPos + 60}%) 1`,
+            filter: "drop-shadow(0 0 8px rgba(255,255,255,0.3))"
+          }}
         />
       </div>
 
       {/* Навигация */}
-      <div className="relative z-30 w-full">
+      <div className="relative z-30 w-full mt-32">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center py-6">
             <nav className="flex items-center space-x-8 bg-black/70 px-8 py-3 rounded-full border border-white/10">
