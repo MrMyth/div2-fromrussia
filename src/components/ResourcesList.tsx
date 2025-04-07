@@ -22,7 +22,7 @@ const ResourcesList = () => {
             >
               {typeof resource.icon === 'function' 
                 ? <resource.icon className="w-5 h-5 mr-2" /> 
-                : <resource.icon className="w-5 h-5 mr-2" />}
+                : resource.icon}
               {resource.name}
             </Button>
           ))}
@@ -39,7 +39,7 @@ const ResourcesList = () => {
             >
               {typeof resource.icon === 'function' 
                 ? <resource.icon className="w-5 h-5 mr-2" /> 
-                : <resource.icon className="w-5 h-5 mr-2" />}
+                : resource.icon}
               {resource.name}
             </Button>
           ))}
