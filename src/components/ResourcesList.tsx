@@ -7,23 +7,21 @@ const ResourcesList = () => {
   const firstColumn = RESOURCES.slice(0, 8);
   const secondColumn = RESOURCES.slice(8, 16);
 
-  // Helper function to render icon correctly
-  const renderIcon = (icon: any) => {
-    // If it's already a React element, return it directly
-    if (React.isValidElement(icon)) {
-      return icon;
+  // Улучшенная функция для корректного рендеринга иконок
+  const renderIcon = (Icon: any) => {
+    // Проверка, это компонент из react-icons
+    if (typeof Icon === 'function' && Icon.displayName && Icon.displayName.startsWith('Fa')) {
+      return <Icon className="w-5 h-5 mr-2" />;
     }
     
-    // Handle react-icons (they have a render method)
-    if (typeof icon === 'function' && 'render' in icon) {
-      const IconComponent = icon;
-      return <IconComponent className="w-5 h-5 mr-2" />;
+    // Проверка, это компонент Lucide
+    if (typeof Icon === 'function') {
+      return <Icon className="w-5 h-5 mr-2" />;
     }
     
-    // Handle Lucide icons (they're function components)
-    if (typeof icon === 'function') {
-      const IconComponent = icon;
-      return <IconComponent className="w-5 h-5 mr-2" />;
+    // Если это уже React элемент, возвращаем его напрямую
+    if (React.isValidElement(Icon)) {
+      return Icon;
     }
     
     return null;
