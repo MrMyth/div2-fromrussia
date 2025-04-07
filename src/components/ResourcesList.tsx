@@ -1,3 +1,4 @@
+
 import { Button } from "./ui/button";
 import { RESOURCES } from "@/constants/resources";
 
@@ -19,7 +20,9 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              <resource.icon className="w-5 h-5 mr-2" />
+              {typeof resource.icon === 'function' 
+                ? <resource.icon className="w-5 h-5 mr-2" /> 
+                : <resource.icon className="w-5 h-5 mr-2" />}
               {resource.name}
             </Button>
           ))}
@@ -34,7 +37,9 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              <resource.icon className="w-5 h-5 mr-2" />
+              {typeof resource.icon === 'function' 
+                ? <resource.icon className="w-5 h-5 mr-2" /> 
+                : <resource.icon className="w-5 h-5 mr-2" />}
               {resource.name}
             </Button>
           ))}
