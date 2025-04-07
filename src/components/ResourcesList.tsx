@@ -21,7 +21,7 @@ const ResourcesList = () => {
               onClick={() => window.open(resource.url, '_blank')}
             >
               {typeof resource.icon === 'function' 
-                ? <resource.icon /> 
+                ? <resource.icon className="w-5 h-5 mr-2" /> 
                 : <resource.icon className="w-5 h-5 mr-2" />}
               {resource.name}
             </Button>
@@ -38,7 +38,7 @@ const ResourcesList = () => {
               onClick={() => window.open(resource.url, '_blank')}
             >
               {typeof resource.icon === 'function' 
-                ? <resource.icon /> 
+                ? <resource.icon className="w-5 h-5 mr-2" /> 
                 : <resource.icon className="w-5 h-5 mr-2" />}
               {resource.name}
             </Button>
