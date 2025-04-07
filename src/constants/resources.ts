@@ -8,7 +8,8 @@ import {
   Youtube, 
   Link,
   MessageSquare,
-  Gift
+  Gift,
+  UserCircle
 } from "lucide-react";
 import { FaVk, FaDiscord, FaReddit, FaTwitch, FaUserSecret } from "react-icons/fa";
 
