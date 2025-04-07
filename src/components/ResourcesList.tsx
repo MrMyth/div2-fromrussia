@@ -41,7 +41,7 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              {renderIcon(resource.icon)}
+  {React.createElement(resource.icon, { className: "w-5 h-5 mr-2" })}
               {resource.name}
             </Button>
           ))}
@@ -56,7 +56,7 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              {renderIcon(resource.icon)}
+  {React.createElement(resource.icon, { className: "w-5 h-5 mr-2" })}
               {resource.name}
             </Button>
           ))}
