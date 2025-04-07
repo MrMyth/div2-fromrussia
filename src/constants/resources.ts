@@ -66,7 +66,7 @@ export const RESOURCES: Resource[] = [
   { 
     name: "Чаты по игре в Telegram", 
     url: "https://t.me/divisiongame_chat", 
-    icon: MessageCircle 
+    icon: FaTelegram 
   },
   { 
     name: "Twitch канал разработчиков", 
