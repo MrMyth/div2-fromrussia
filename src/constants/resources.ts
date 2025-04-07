@@ -15,6 +15,7 @@ import {
   Shield
 } from "lucide-react";
 import { FaVk, FaDiscord, FaReddit, FaTwitch, FaTelegram } from "react-icons/fa";
+import { Store, AlertOctagon, Map, Clock, Package, MessageCircle, Video, Youtube, MessageSquare, Link } from "lucide-react";
 
 type Resource = {
   name: string;
