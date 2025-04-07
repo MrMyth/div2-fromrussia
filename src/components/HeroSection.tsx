@@ -1,7 +1,17 @@
 import { MENU_ITEMS } from "@/constants/menu";
 import { MenuItem } from "./MenuItem";
+import { useEffect, useState } from "react";
 
 const HeroSection = () => {
+  const [gradientPos, setGradientPos] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setGradientPos((prev) => (prev + 0.5) % 100);
+    }, 50);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="relative min-h-[70vh] flex flex-col overflow-hidden">
       {/* Gradient Overlay */}
@@ -39,16 +49,37 @@ const HeroSection = () => {
 
       {/* Header Content */}
       <div className="relative z-20 container mx-auto px-4 flex-1 flex items-center justify-center">
-        <div className="text-center space-y-6 max-w-3xl">
-          <div className="flex justify-center">
+        <div className="text-center space-y-6 w-full max-w-md">
+          <div className="flex justify-center relative">
+            {/* Анимированная обводка логотипа */}
+            <div 
+              className="absolute inset-0 rounded-full p-1"
+              style={{
+                background: `linear-gradient(90deg, 
+                  white ${gradientPos}%, 
+                  #0039A6 ${gradientPos + 30}%, 
+                  #D52B1E ${gradientPos + 60}%)`,
+                filter: "blur(4px)",
+              }}
+            />
             <img 
               src="https://i.ibb.co/bLnHTds/42da929679073452.png" 
               alt="Division Logo" 
-              className="w-16 h-16 object-contain" // Фиксированный размер без растяжения
+              className="w-full max-w-[200px] h-auto relative z-10" 
             />
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-red-600 tracking-tight">
+          {/* Текст с анимированным градиентом */}
+          <h1 
+            className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent tracking-tight"
+            style={{
+              backgroundImage: `linear-gradient(90deg, 
+                white ${gradientPos}%, 
+                #0039A6 ${gradientPos + 30}%, 
+                #D52B1E ${gradientPos + 60}%)`,
+              backgroundSize: "200% auto",
+            }}
+          >
             [RUS] FROM RUSSIA
           </h1>
           
@@ -60,7 +91,7 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <div className="w-2 h-10 rounded-full bg-gradient-to-b from-orange-500 to-transparent" />
+        <div className="w-2 h-10 rounded-full bg-gradient-to-b from-white to-transparent" />
       </div>
     </div>
   );
