@@ -9,7 +9,8 @@ import {
   Link,
   MessageSquare,
   Gift,
-  UserCircle
+  UserCircle,
+  ExternalLink
 } from "lucide-react";
 import { FaVk, FaDiscord, FaReddit, FaTwitch, FaUserSecret } from "react-icons/fa";
 

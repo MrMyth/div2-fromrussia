@@ -2,7 +2,6 @@
 import { Button } from "./ui/button";
 import { RESOURCES } from "@/constants/resources";
 import React from "react";
-import { IconType } from "react-icons";
 
 const ResourcesList = () => {
   const firstColumn = RESOURCES.slice(0, 8);
@@ -10,13 +9,6 @@ const ResourcesList = () => {
 
   // Helper function to render icon correctly
   const renderIcon = (icon: any) => {
-    console.log("Icon type:", typeof icon, icon);
-    
-    // If it's null or undefined, return nothing
-    if (!icon) {
-      return null;
-    }
-    
     // If it's already a React element, return it directly
     if (React.isValidElement(icon)) {
       return icon;
@@ -24,7 +16,8 @@ const ResourcesList = () => {
     
     // Handle react-icons (they have a render method)
     if (typeof icon === 'function' && 'render' in icon) {
-      return React.createElement(icon, { className: "w-5 h-5 mr-2" });
+      const IconComponent = icon;
+      return <IconComponent className="w-5 h-5 mr-2" />;
     }
     
     // Handle Lucide icons (they're function components)
@@ -33,8 +26,6 @@ const ResourcesList = () => {
       return <IconComponent className="w-5 h-5 mr-2" />;
     }
     
-    // If we reach here, the icon is not renderable
-    console.warn("Unrenderable icon:", icon);
     return null;
   };
 
@@ -52,7 +43,7 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              {resource.icon ? renderIcon(resource.icon) : null}
+              {renderIcon(resource.icon)}
               {resource.name}
             </Button>
           ))}
@@ -67,7 +58,7 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              {resource.icon ? renderIcon(resource.icon) : null}
+              {renderIcon(resource.icon)}
               {resource.name}
             </Button>
           ))}
