@@ -13,7 +13,14 @@ import {
 } from "lucide-react";
 import { FaVk, FaDiscord, FaReddit, FaTwitch, FaUserSecret } from "react-icons/fa";
 
-export const RESOURCES = [
+// Define a type for the resources to ensure proper typing
+type Resource = {
+  name: string;
+  url: string;
+  icon: React.ComponentType<any> | React.ReactElement;
+};
+
+export const RESOURCES: Resource[] = [
   { name: "Товары недели", url: "https://division.inot.pro/", icon: Store },
   { name: "Известные ошибки игры (английский)", url: "https://trello.com/b/F2RU9ia9/the-division-2-known-issues", icon: AlertOctagon },
   { name: "Известные ошибки игры (русский)", url: "https://ru.yougile.com/board/zyy6vkmc28pb", icon: AlertOctagon },
@@ -30,4 +37,4 @@ export const RESOURCES = [
   { name: "Сообщество игры на платформе Reddit", url: "https://www.reddit.com/r/Division2/", icon: FaReddit },
   { name: "Discord сервер Ubisoft", url: "https://discord.gg/ubisoftofficial", icon: FaDiscord },
   { name: "Discord сервер The Division 2", url: "https://discord.gg/thedivisiongame", icon: FaDiscord }
-] as const;
+];

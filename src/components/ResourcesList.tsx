@@ -10,21 +10,32 @@ const ResourcesList = () => {
 
   // Helper function to render icon correctly
   const renderIcon = (icon: any) => {
-    // Check if it's a React component (from Lucide)
-    if (typeof icon === 'function') {
-      // Check if it's from react-icons (has render method)
-      if (icon.render) {
-        const IconComponent = icon;
-        return <IconComponent className="w-5 h-5 mr-2" />;
-      }
-      
-      // It's a Lucide icon component
-      const LucideIcon = icon;
-      return <LucideIcon className="w-5 h-5 mr-2" />;
+    console.log("Icon type:", typeof icon, icon);
+    
+    // If it's null or undefined, return nothing
+    if (!icon) {
+      return null;
     }
     
-    // If it's already an element, return it directly
-    return icon;
+    // If it's already a React element, return it directly
+    if (React.isValidElement(icon)) {
+      return icon;
+    }
+    
+    // Handle react-icons (they have a render method)
+    if (typeof icon === 'function' && 'render' in icon) {
+      return React.createElement(icon, { className: "w-5 h-5 mr-2" });
+    }
+    
+    // Handle Lucide icons (they're function components)
+    if (typeof icon === 'function') {
+      const IconComponent = icon;
+      return <IconComponent className="w-5 h-5 mr-2" />;
+    }
+    
+    // If we reach here, the icon is not renderable
+    console.warn("Unrenderable icon:", icon);
+    return null;
   };
 
   return (
@@ -41,7 +52,7 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              {renderIcon(resource.icon)}
+              {resource.icon ? renderIcon(resource.icon) : null}
               {resource.name}
             </Button>
           ))}
@@ -56,7 +67,7 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-              {renderIcon(resource.icon)}
+              {resource.icon ? renderIcon(resource.icon) : null}
               {resource.name}
             </Button>
           ))}
