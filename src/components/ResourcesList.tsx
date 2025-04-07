@@ -1,6 +1,8 @@
+
 import { Button } from "./ui/button";
 import { RESOURCES } from "@/constants/resources";
 import React from "react";
+import { IconType } from "react-icons";
 
 const ResourcesList = () => {
   const firstColumn = RESOURCES.slice(0, 8);
@@ -8,12 +10,20 @@ const ResourcesList = () => {
 
   // Helper function to render icon correctly
   const renderIcon = (icon: any) => {
-    // Check if it's a React component (function)
+    // Check if it's a React component (from Lucide)
     if (typeof icon === 'function') {
-      const IconComponent = icon;
-      return <IconComponent className="w-5 h-5 mr-2" />;
+      // Check if it's from react-icons (has render method)
+      if (icon.render) {
+        const IconComponent = icon;
+        return <IconComponent className="w-5 h-5 mr-2" />;
+      }
+      
+      // It's a Lucide icon component
+      const LucideIcon = icon;
+      return <LucideIcon className="w-5 h-5 mr-2" />;
     }
-    // Otherwise it's already an element
+    
+    // If it's already an element, return it directly
     return icon;
   };
 
