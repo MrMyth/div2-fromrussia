@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from "./ui/button";
-import { Youtube, Twitch, User, Contact } from "lucide-react";
+import { Youtube, Twitch, User, Contact, Tv } from "lucide-react";
 
 type SocialLink = {
-  type: 'youtube' | 'twitch' | 'vk' | 'personal';
+  type: 'youtube' | 'twitch' | 'vk' | 'personal' | 'trovo';
   url: string;
   label: string;
   colorClass: string;
@@ -56,6 +56,13 @@ const CREATORS: {
         label: 'Twitch',
         colorClass: 'bg-[#9146FF] hover:bg-[#9146FF]/90',
         icon: Twitch
+      },
+      {
+        type: 'trovo',
+        url: 'https://trovo.live/s/MrMyth92?roomType=1',
+        label: 'Trovo',
+        colorClass: 'bg-[#2DED87] hover:bg-[#2DED87]/90',
+        icon: Tv
       },
       {
         type: 'personal',
