@@ -1,10 +1,10 @@
 
 import HeroSection from "@/components/HeroSection";
-import DiscordSection from "@/components/DiscordSection";
-import GamesSection from "@/components/GamesSection";
+import DiscordSection from "@/components/discord/DiscordSection";
+import GamesSection from "@/components/games/GamesSection";
 import Footer from "@/components/Footer";
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <HeroSection />
