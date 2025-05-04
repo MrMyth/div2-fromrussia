@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { 
   ShoppingCart, 
@@ -9,7 +10,7 @@ import {
   Crosshair 
 } from "lucide-react";
 
-// Типы для TypeScript
+// Types
 type GameItem = {
   title: string;
   icon: React.ComponentType<{ className?: string }>;
@@ -22,28 +23,13 @@ type InstructionItem = {
   price?: number;
 };
 
-// Константы
+// Game data
 const GAMES_LIST: GameItem[] = [
-  {
-    title: "Tom Clancy's The Division 2",
-    icon: Gamepad
-  },
-  {
-    title: "Tom Clancy's The Division 2 (Китайская версия)",
-    icon: Globe
-  },
-  {
-    title: "Tom Clancy's The Division 1",
-    icon: Shield
-  },
-  {
-    title: "Tom Clancy's Ghost Recon: Wildlands",
-    icon: Crosshair
-  },
-  {
-    title: "Tom Clancy's Ghost Recon Breakpoint",
-    icon: Skull
-  }
+  { title: "Tom Clancy's The Division 2", icon: Gamepad },
+  { title: "Tom Clancy's The Division 2 (Китайская версия)", icon: Globe },
+  { title: "Tom Clancy's The Division 1", icon: Shield },
+  { title: "Tom Clancy's Ghost Recon: Wildlands", icon: Crosshair },
+  { title: "Tom Clancy's Ghost Recon Breakpoint", icon: Skull }
 ];
 
 const INSTRUCTIONS = {
@@ -67,14 +53,14 @@ const INSTRUCTIONS = {
   }
 };
 
-// Компоненты
-const PriceTag = ({ value }: { value: number }) => (
+// Components
+const PriceTag: React.FC<{ value: number }> = ({ value }) => (
   <span className="ml-2 px-2 py-1 bg-[#F97316] text-white text-sm rounded-full">
     {value} ₽
   </span>
 );
 
-const GameListItem = ({ index, game }: { index: number; game: GameItem }) => {
+const GameListItem: React.FC<{ index: number; game: GameItem }> = ({ index, game }) => {
   const Icon = game.icon;
   return (
     <li className="flex items-center p-3 gap-3 rounded-lg hover:bg-gray-100 transition-colors">
@@ -85,7 +71,7 @@ const GameListItem = ({ index, game }: { index: number; game: GameItem }) => {
   );
 };
 
-const InstructionSection = ({ title, icon: Icon, steps, price }: InstructionItem) => (
+const InstructionSection: React.FC<InstructionItem> = ({ title, icon: Icon, steps, price }) => (
   <section className="mt-6 rounded-lg">
     <h3 className="text-xl font-semibold text-[#F97316] mb-4 flex items-center justify-center text-center">
       <Icon className="w-6 h-6 mr-2" />
@@ -93,26 +79,22 @@ const InstructionSection = ({ title, icon: Icon, steps, price }: InstructionItem
       {price && <PriceTag value={price} />}
     </h3>
     <div className="bg-gray-50 p-6 rounded-lg">
-      <ul className="text-gray-800 space-y-2 pl-5 list-decimal">
+      <ol className="text-gray-800 space-y-2 pl-5 list-decimal">
         {steps.map((step, i) => (
           <li key={i}>{step}</li>
         ))}
-      </ul>
+      </ol>
     </div>
   </section>
 );
 
-// Основной компонент
-const GamesList = () => {
+// Main component
+const GamesList: React.FC = () => {
   return (
     <div className="max-w-3xl mx-auto px-4">
       <ul className="space-y-3">
         {GAMES_LIST.map((game, index) => (
-          <GameListItem 
-            key={game.title} 
-            index={index} 
-            game={game} 
-          />
+          <GameListItem key={game.title} index={index} game={game} />
         ))}
       </ul>
 

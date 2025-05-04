@@ -8,18 +8,16 @@ const DiscordWidget = () => {
         <SquareCode className="w-6 h-6 text-[#F97316]" />
         Виджет сервера
       </h2>
-      <div className="flex justify-center">
-        <iframe 
-          src="https://discord.com/widget?id=835802952521351180&theme=light&locale=ru"
-          width="100%" 
-          height="500" 
-          allowTransparency
-          className="rounded-lg shadow-md border border-gray-200"
-          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-          title="Discord Server Widget"
-          loading="lazy"
-        />
-      </div>
+      <iframe 
+        src="https://discord.com/widget?id=835802952521351180&theme=light&locale=ru"
+        width="100%" 
+        height="500" 
+        allowTransparency
+        className="rounded-lg shadow-md border border-gray-200"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+        title="Discord Server Widget"
+        loading="lazy"
+      />
     </section>
   );
 };

@@ -2,7 +2,7 @@
 import { Button } from "./ui/button";
 import { Plus, Home } from "lucide-react";
 
-const DiscordJoin = () => {
+const DiscordJoin: React.FC = () => {
   const handleJoinDiscord = () => {
     window.open('https://discord.gg/rk7ZeadZGH', '_blank', 'noopener,noreferrer');
   };

@@ -7,15 +7,15 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <div className="flex-grow">
-        <HeroSection />
+      <HeroSection />
+      <main className="flex-grow">
         <section id="discord">
           <DiscordSection />
         </section>
         <section id="games">
           <GamesSection />
         </section>
-      </div>
+      </main>
       <Footer />
     </div>
   );
