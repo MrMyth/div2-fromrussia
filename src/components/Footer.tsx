@@ -1,3 +1,4 @@
+
 const Footer = () => {
   return (
     <footer className="bg-[#F97316] text-white py-6 mt-auto">
@@ -6,6 +7,9 @@ const Footer = () => {
           <div>
             <p className="font-bold">[RUS] FROM RUSSIA</p>
             <p className="text-sm">Игровой Discord сервер</p>
+          </div>
+          <div className="text-sm text-right">
+            <p>Дата обновления сайта: 9:23 (МСК) 04.05.2025</p>
           </div>
         </div>
       </div>
