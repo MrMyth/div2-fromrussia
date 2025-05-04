@@ -2,29 +2,16 @@
 import { Button } from "./ui/button";
 import { RESOURCES } from "@/constants/resources";
 import React from "react";
+import * as LucideIcons from "lucide-react";
 
 const ResourcesList = () => {
   const firstColumn = RESOURCES.slice(0, 8);
   const secondColumn = RESOURCES.slice(8, 16);
 
-  // Улучшенная функция для корректного рендеринга иконок
-  const renderIcon = (Icon: any) => {
-    // Проверка, это компонент из react-icons
-    if (typeof Icon === 'function' && Icon.displayName && Icon.displayName.startsWith('Fa')) {
-      return <Icon className="w-5 h-5 mr-2" />;
-    }
-    
-    // Проверка, это компонент Lucide
-    if (typeof Icon === 'function') {
-      return <Icon className="w-5 h-5 mr-2" />;
-    }
-    
-    // Если это уже React элемент, возвращаем его напрямую
-    if (React.isValidElement(Icon)) {
-      return Icon;
-    }
-    
-    return null;
+  // Render icon based on its type (Lucide or react-icons)
+  const renderIcon = (Icon) => {
+    if (!Icon) return null;
+    return <Icon className="w-5 h-5 mr-2" />;
   };
 
   return (
@@ -41,7 +28,7 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-  {React.createElement(resource.icon, { className: "w-5 h-5 mr-2" })}
+              {renderIcon(resource.icon)}
               {resource.name}
             </Button>
           ))}
@@ -56,7 +43,7 @@ const ResourcesList = () => {
               className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
               onClick={() => window.open(resource.url, '_blank')}
             >
-  {React.createElement(resource.icon, { className: "w-5 h-5 mr-2" })}
+              {renderIcon(resource.icon)}
               {resource.name}
             </Button>
           ))}
