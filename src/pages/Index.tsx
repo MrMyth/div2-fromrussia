@@ -9,12 +9,12 @@ const Index = () => {
     <div className="min-h-screen bg-white flex flex-col">
       <div className="flex-grow">
         <HeroSection />
-        <div id="discord">
+        <section id="discord">
           <DiscordSection />
-        </div>
-        <div id="games">
+        </section>
+        <section id="games">
           <GamesSection />
-        </div>
+        </section>
       </div>
       <Footer />
     </div>
