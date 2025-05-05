@@ -1,3 +1,4 @@
+
 import { MENU_ITEMS } from "@/constants/menu";
 import { MenuItem } from "./MenuItem";
 
@@ -5,10 +6,10 @@ const HeroSection = () => {
   return (
     <div className="relative min-h-[50vh] flex flex-col">
       {/* Navigation Menu */}
-      <div className="relative z-30 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40">
+      <div className="relative z-30 w-full bg-zinc-900/90 backdrop-blur supports-[backdrop-filter]:bg-zinc-900/80 border-b border-zinc-800">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center py-4">
-            <nav className="flex items-center space-x-6">
+          <div className="flex items-center justify-center py-6">
+            <nav className="flex items-center space-x-8">
               {MENU_ITEMS.map((item, index) => (
                 <MenuItem key={index} {...item} />
               ))}
@@ -19,7 +20,7 @@ const HeroSection = () => {
 
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-background z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-background z-10" />
         <video
           className="w-full h-full object-cover"
           autoPlay
@@ -37,24 +38,24 @@ const HeroSection = () => {
 
       {/* Header Content */}
       <div className="relative z-20 container mx-auto px-4">
-        <div className="flex flex-col items-center justify-center h-[50vh] text-center space-y-4">
+        <div className="flex flex-col items-center justify-center h-[60vh] text-center space-y-6">
           <img 
             src="https://i.ibb.co/bLnHTds/42da929679073452.png" 
             alt="Division Logo" 
-            className="w-12 h-12"
+            className="w-16 h-16"
           />
-          <h1 className="catchphrase">
+          <h1 className="catchphrase text-2xl md:text-3xl">
             [RUS] FROM RUSSIA
           </h1>
-          <p className="subheading">
+          <p className="subheading text-lg md:text-xl">
             Игровой Discord сервер
           </p>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <div className="w-1 h-8 rounded-full bg-gradient-to-b from-[#F97316] to-transparent" />
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+        <div className="w-1 h-10 rounded-full bg-gradient-to-b from-[#F97316] to-transparent" />
       </div>
     </div>
   );
