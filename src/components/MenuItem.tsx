@@ -1,4 +1,3 @@
-
 import { LucideIcon } from "lucide-react";
 
 interface MenuItemProps {
@@ -11,9 +10,9 @@ export const MenuItem = ({ icon: Icon, text, href }: MenuItemProps) => {
   return (
     <a
       href={href}
-      className="flex items-center space-x-2 text-sm text-zinc-300 hover:text-[#F97316] transition-all duration-200 font-medium tracking-wide"
+      className="flex items-center space-x-2 text-sm text-gray-200 hover:text-primary transition-colors"
     >
-      <Icon className="w-[18px] h-[18px]" />
+      <Icon className="w-5 h-5" />
       <span>{text}</span>
     </a>
   );
