@@ -1,4 +1,3 @@
-
 import { MENU_ITEMS } from "@/constants/menu";
 import { MenuItem } from "./MenuItem";
 
@@ -7,7 +6,7 @@ const HeroSection = () => {
     <div className="relative min-h-[50vh] flex flex-col">
       {/* Navigation Menu */}
       <div className="relative z-30 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4">
           <div className="flex items-center justify-center py-4">
             <nav className="flex items-center space-x-6">
               {MENU_ITEMS.map((item, index) => (
@@ -37,7 +36,7 @@ const HeroSection = () => {
       </div>
 
       {/* Header Content */}
-      <div className="relative z-20 container mx-auto px-4 max-w-5xl">
+      <div className="relative z-20 container mx-auto px-4">
         <div className="flex flex-col items-center justify-center h-[50vh] text-center space-y-4">
           <img 
             src="https://i.ibb.co/bLnHTds/42da929679073452.png" 
