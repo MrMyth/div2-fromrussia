@@ -20,11 +20,11 @@ const CalendarSection: React.FC = () => {
   }, []);
 
   // Format the current time for Moscow timezone
-  // Changed format to show time after date
+  // Changed format to show day of week, date and time
   const moscowTime = formatInTimeZone(
     currentTime,
     "Europe/Moscow",
-    "dd MMMM yyyy, HH:mm:ss",
+    "EEEE, dd MMMM yyyy, HH:mm:ss",
     { locale: ru }
   );
 
