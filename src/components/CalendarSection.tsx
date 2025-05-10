@@ -1,8 +1,32 @@
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Calendar as CalendarIcon } from "lucide-react";
+import { format } from "date-fns";
+import { formatInTimeZone } from "date-fns-tz";
+import { ru } from "date-fns/locale";
 
 const CalendarSection: React.FC = () => {
+  const [currentTime, setCurrentTime] = useState<Date>(new Date());
+
+  // Update time every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+    
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  // Format the current time for Moscow timezone
+  const moscowTime = formatInTimeZone(
+    currentTime,
+    "Europe/Moscow",
+    "dd MMMM yyyy HH:mm:ss",
+    { locale: ru }
+  );
+
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -28,6 +52,12 @@ const CalendarSection: React.FC = () => {
               title="Game Events Calendar"
               className="max-w-full"
             />
+          </div>
+          
+          <div className="mt-6 text-center">
+            <p className="text-lg font-medium text-gray-800">
+              Текущая дата и время по Москве: <span className="text-[#F97316] font-bold">{moscowTime}</span>
+            </p>
           </div>
         </div>
       </div>
