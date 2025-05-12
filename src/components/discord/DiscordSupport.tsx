@@ -41,7 +41,7 @@ const DiscordSupport: React.FC = () => {
       </h2>
       <div className="bg-gray-50 p-6 rounded-lg">
         <div className="space-y-4">
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 mb-4 text-center">
             Если вам нравится наш сервер и вы хотите помочь нам развиваться, вы можете поддержать нас финансово:
           </p>
           <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
@@ -70,7 +70,7 @@ const DiscordSupport: React.FC = () => {
             </ButtonLink>
           </div>
           
-          <p className="text-gray-700 text-sm mt-2">
+          <p className="text-gray-700 text-sm mt-2 text-center">
             Спасибо за вашу поддержку! Это помогает нам улучшать сервер и создавать больше контента.
           </p>
         </div>
