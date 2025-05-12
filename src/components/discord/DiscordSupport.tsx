@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Copy } from "lucide-react";
 import { Button } from "../ui/button";
@@ -51,8 +50,8 @@ const DiscordSupport: React.FC = () => {
               <code className="bg-gray-100 p-2 rounded text-base font-mono flex-1">{cardNumber}</code>
               <Button 
                 size="sm" 
-                variant="outline" 
-                className="ml-3 flex items-center gap-1" 
+                variant="default" 
+                className="ml-3 flex items-center gap-1 bg-[#8b3ffd] hover:bg-[#8b3ffd]/90 text-white" 
                 onClick={handleCopy}
               >
                 <Copy className="w-4 h-4" />
