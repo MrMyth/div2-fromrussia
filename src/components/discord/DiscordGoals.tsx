@@ -1,4 +1,3 @@
-
 import { Target } from "lucide-react";
 
 const DiscordGoals: React.FC = () => {
@@ -10,7 +9,7 @@ const DiscordGoals: React.FC = () => {
       </h2>
       <div className="bg-gray-50 p-6 rounded-lg">
         <div className="space-y-4">
-          <p className="text-gray-700">
+          <p className="text-gray-700 text-center">
             Наша основная цель — набрать 1000 участников, чтобы попасть в каталог Discord серверов и стать еще более популярными!
           </p>
         </div>
