@@ -22,17 +22,13 @@ const DiscordSection: React.FC = () => {
             </p>
           </header>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-8">
-              <DiscordJoin />
-              <DiscordBenefits />
-              <DiscordGoals />
-              <DiscordSupport />
-            </div>
-            <div className="space-y-8">
-              <DiscordWidget />
-              <DiscordAdditional />
-            </div>
+          <div className="space-y-8">
+            <DiscordJoin />
+            <DiscordWidget />
+            <DiscordBenefits />
+            <DiscordGoals />
+            <DiscordAdditional />
+            <DiscordSupport />
           </div>
         </div>
       </div>
