@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Copy } from "lucide-react";
 import { Button } from "../ui/button";
 import { useToast } from "@/hooks/use-toast";
+import ButtonLink from "../common/ButtonLink";
 
 const DiscordSupport: React.FC = () => {
   const { toast } = useToast();
@@ -59,6 +60,17 @@ const DiscordSupport: React.FC = () => {
               </Button>
             </div>
           </div>
+          
+          <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+            <p className="text-gray-500 text-sm mb-2">Или через YooMoney:</p>
+            <ButtonLink 
+              href="https://yoomoney.ru/to/4100118249151359" 
+              className="w-full bg-[#8b3ffd] hover:bg-[#8b3ffd]/90 py-2 text-base font-medium text-white"
+            >
+              Поддержать через YooMoney
+            </ButtonLink>
+          </div>
+          
           <p className="text-gray-700 text-sm mt-2">
             Спасибо за вашу поддержку! Это помогает нам улучшать сервер и создавать больше контента.
           </p>
