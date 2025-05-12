@@ -27,8 +27,8 @@ const DiscordSection: React.FC = () => {
             <DiscordWidget />
             <DiscordBenefits />
             <DiscordGoals />
-            <DiscordAdditional />
             <DiscordSupport />
+            <DiscordAdditional />
           </div>
         </div>
       </div>
