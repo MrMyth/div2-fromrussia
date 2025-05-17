@@ -1,6 +1,57 @@
+
 import React from 'react';
-import { GAMES_LIST, INSTRUCTIONS } from '@/constants/games';
-import { MessageSquare } from 'lucide-react';
+import { 
+  ShoppingCart, 
+  TowerControl, 
+  Gamepad, 
+  Globe, 
+  Shield, 
+  Skull,
+  Crosshair 
+} from "lucide-react";
+
+// Types
+type GameItem = {
+  title: string;
+  icon: React.ComponentType<{ className?: string }>;
+};
+
+type InstructionItem = {
+  title: string;
+  icon: React.ComponentType<{ className?: string }>;
+  steps: string[];
+  price?: number;
+};
+
+// Game data
+const GAMES_LIST: GameItem[] = [
+  { title: "Tom Clancy's The Division 2", icon: Gamepad },
+  { title: "Tom Clancy's The Division 2 (Китайская версия)", icon: Globe },
+  { title: "Tom Clancy's The Division 1", icon: Shield },
+  { title: "Tom Clancy's Ghost Recon: Wildlands", icon: Crosshair },
+  { title: "Tom Clancy's Ghost Recon Breakpoint", icon: Skull }
+];
+
+const INSTRUCTIONS = {
+  chineseVersion: {
+    title: "Как купить инструкцию по приобретению китайской версию игры?",
+    icon: ShoppingCart,
+    steps: [
+      "Зайти на наш Discord сервер",
+      "Связаться с MrMyth92 на нашем сервере и запросить инструкцию"
+    ],
+    price: 750
+  },
+  summitBot: {
+    title: "Интересует наш бот для 'Саммита'?",
+    icon: TowerControl,
+    steps: [
+      "Зайти на наш Discord сервер",
+      "Выбрать роли на сервере",
+      "Открыть канал сервера 'бот-100-й-этаж' и воспользоваться инструкцией по боту"
+    ]
+  }
+};
 
 // Components
 const PriceTag: React.FC<{ value: number }> = ({ value }) => (
@@ -9,7 +60,7 @@ const PriceTag: React.FC<{ value: number }> = ({ value }) => (
   </span>
 );
 
-const GameListItem: React.FC<{ index: number; game: typeof GAMES_LIST[0] }> = ({ index, game }) => {
+const GameListItem: React.FC<{ index: number; game: GameItem }> = ({ index, game }) => {
   const Icon = game.icon;
   return (
     <li className="flex items-center p-3 gap-3 rounded-lg hover:bg-gray-100 transition-colors">
@@ -20,7 +71,7 @@ const GameListItem: React.FC<{ index: number; game: typeof GAMES_LIST[0] }> = ({
   );
 };
 
-const InstructionSection: React.FC<typeof INSTRUCTIONS[keyof typeof INSTRUCTIONS]> = ({ title, icon: Icon, steps, price }) => (
+const InstructionSection: React.FC<InstructionItem> = ({ title, icon: Icon, steps, price }) => (
   <section className="mt-6 rounded-lg">
     <h3 className="text-xl font-semibold text-[#F97316] mb-4 flex items-center justify-center text-center">
       <Icon className="w-6 h-6 mr-2" />
@@ -49,23 +100,6 @@ const GamesList: React.FC = () => {
 
       <InstructionSection {...INSTRUCTIONS.chineseVersion} />
       <InstructionSection {...INSTRUCTIONS.summitBot} />
-
-      <div className="mt-16 rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-        <h3 className="text-xl font-bold text-[#F97316] text-center mb-8 flex items-center justify-center">
-          <MessageSquare className="w-6 h-6 mr-2 text-[#F97316]" />
-          Форма обратной связи для бота
-        </h3>
-        <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLSeXCr_WqmXhcxxHBPdqfj_goal6uwsmn64DVcRUtbpFf1FHYg/viewform?embedded=true" 
-          width="100%" 
-          height="1754" 
-          frameBorder="0" 
-          marginHeight="0" 
-          marginWidth="0"
-        >
-          Загрузка…
-        </iframe>
-      </div>
     </div>
   );
 };
