@@ -3,10 +3,10 @@ import React from 'react';
 const ComplaintForm = () => {
   return (
     <div className="flex justify-center px-4 pb-2">
-      <div className="w-full max-w-2xl border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+      <div className="w-full max-w-4xl border border-gray-200 rounded-lg overflow-hidden shadow-sm"> {/* Changed max-w-2xl to max-w-4xl */}
         <iframe 
           width="100%"
-          height="650"
+          height="1300" {/* Increased from 650 to 1300 */}
           src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__cxv-yNUNk9PQ1lEU1hWUDVFTUU1OEcwUVA0QVFZWi4u&embed=true" 
           frameBorder="0"
           marginWidth="0"
