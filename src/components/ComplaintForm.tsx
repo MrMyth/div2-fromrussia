@@ -22,7 +22,7 @@ const ComplaintForm = () => {
       <div className="mt-8 rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
         <h3 className="text-xl font-bold text-[#F97316] text-center mb-8 flex items-center justify-center">
           <MessageSquare className="w-6 h-6 mr-2 text-[#F97316]" />
-          Форма обратной связи для бота
+		Форма обратной связи для бота Саммита
         </h3>
         <iframe 
           src="https://docs.google.com/forms/d/e/1FAIpQLSeXCr_WqmXhcxxHBPdqfj_goal6uwsmn64DVcRUtbpFf1FHYg/viewform?embedded=true" 
@@ -32,7 +32,7 @@ const ComplaintForm = () => {
           marginHeight="0" 
           marginWidth="0"
           className="block"
-          title="Форма обратной связи для бота"
+          title="Форма обратной связи для бота Саммита"
         >
           Загрузка…
         </iframe>
