@@ -6,7 +6,7 @@ export const MENU_ITEMS = [
   { icon: Gamepad, text: "Наши игры", href: "#games" },
   { icon: BookOpen, text: "Азбуки рейдов", href: "#raids" },
   { icon: Youtube, text: "Наши каналы", href: "#channels" },
-  { icon: HelpCircle, text: "Жалоба на игрока", href: "#complaint" },
+  { icon: HelpCircle, text: "Обратная связь", href: "#complaint" },
   { icon: Link, text: "Полезные ресурсы", href: "#resources" },
   { icon: Calendar, text: "Календарь", href: "#calendar" }
 ] as const;
