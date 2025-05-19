@@ -49,8 +49,8 @@ export const RESOURCES: Resource[] = [
     icon: Clock 
   },
   { 
-    name: "Набор фаната серии (Google Диск)", 
-    url: "https://drive.google.com/drive/folders/16-yBPXnZiM_d6QtBy_UBUVsQRxYpc9Ga?usp=sharing", 
+    name: "Набор фаната серии (Dropbox)", 
+    url: "https://www.dropbox.com/scl/fo/nqqr4fjdpkyldkir6tgu3/AP6EwQpr12k999_iJPhvw9U?rlkey=2b9wgs6mowgixl2c6cwy4j3jy&dl=0", 
     icon: Package 
   },
   { 
