@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MessageSquare } from 'lucide-react';
 
@@ -11,7 +12,7 @@ const ComplaintForm = () => {
             width="100%"
             height="650"
             frameBorder="0"
-            className="block border-0" // Удалена внутренняя граница
+            className="block border-0"
             title="Форма жалобы на игрока"
           >
             Загрузка…
@@ -24,15 +25,15 @@ const ComplaintForm = () => {
           <MessageSquare className="w-6 h-6 mr-2 text-[#F97316]" />
           Форма обратной связи для бота
         </h3>
-        <div className="border-0 rounded-lg overflow-hidden"> {/* Новый контейнер без границы */}
+        <div className="border-0 rounded-lg overflow-hidden">
           <iframe 
             src="https://docs.google.com/forms/d/e/1FAIpQLSeXCr_WqmXhcxxHBPdqfj_goal6uwsmn64DVcRUtbpFf1FHYg/viewform?embedded=true" 
             width="100%" 
             height="1754" 
             frameBorder="0" 
-            marginHeight="0" 
-            marginWidth="0"
-            className="block border-0" // Удалена внутренняя граница
+            marginHeight={0}
+            marginWidth={0}
+            className="block border-0"
             title="Форма обратной связи для бота"
           >
             Загрузка…
