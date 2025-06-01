@@ -42,7 +42,7 @@ export const RESOURCES: Resource[] = [
   },
   { 
     name: "Интерактивная карта игры", 
-    url: "https://divisiontimers.com/#/", 
+    url: "https://division2map.com/", 
     icon: Map 
   },
   { 
