@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Bot } from 'lucide-react';
+import { Bot, MessageSquare } from 'lucide-react';
+import ComplaintForm from './ComplaintForm';
 
 const BotSection: React.FC = () => {
   return (
@@ -28,6 +29,14 @@ const BotSection: React.FC = () => {
               </section>
             </div>
           </div>
+        </div>
+
+        <div className="mt-8 rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
+          <h3 className="text-xl font-bold text-[#F97316] text-center mb-8 flex items-center justify-center">
+            <MessageSquare className="w-6 h-6 mr-2 text-[#F97316]" />
+            Форма обратной связи для бота
+          </h3>
+          <ComplaintForm />
         </div>
       </div>
     </section>

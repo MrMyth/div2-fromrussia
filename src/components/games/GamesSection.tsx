@@ -4,7 +4,7 @@ import RaidGuides from "../RaidGuides";
 import ResourcesList from "../resources/ResourcesList";
 import ComplaintForm from "../ComplaintForm";
 import CreatorsSection from "../CreatorsSection";
-import { MessageSquare, Gamepad, HelpCircle, Link, Youtube } from "lucide-react";
+import { Gamepad, HelpCircle, Link, Youtube } from "lucide-react";
 
 const GamesSection: React.FC = () => {
   return (
