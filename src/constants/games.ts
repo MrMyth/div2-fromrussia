@@ -1,7 +1,6 @@
 
 import { 
   ShoppingCart, 
-  TowerControl, 
   Gamepad, 
   Globe, 
   Shield, 
@@ -41,14 +40,5 @@ export const INSTRUCTIONS: Record<string, InstructionItem> = {
       "Связаться с MrMyth92 на нашем сервере и запросить инструкцию"
     ],
     price: 750
-  },
-  summitBot: {
-    title: "Интересует наш бот для 'Саммита'?",
-    icon: TowerControl,
-    steps: [
-      "Зайти на наш Discord сервер",
-      "Выбрать роли на сервере",
-      "Открыть канал сервера 'бот-100-й-этаж' и воспользоваться инструкцией по боту"
-    ]
   }
 };

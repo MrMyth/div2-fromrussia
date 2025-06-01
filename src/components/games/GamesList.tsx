@@ -48,7 +48,6 @@ const GamesList: React.FC = () => {
       </ul>
 
       <InstructionSection {...INSTRUCTIONS.chineseVersion} />
-      <InstructionSection {...INSTRUCTIONS.summitBot} />
     </div>
   );
 };
