@@ -1,3 +1,4 @@
+
 import { 
   Store, 
   AlertOctagon, 
@@ -12,7 +13,8 @@ import {
   MessageCircle,
   Calendar,
   FileText,
-  Shield
+  Shield,
+  Globe
 } from "lucide-react";
 import { FaVk, FaDiscord, FaReddit, FaTwitch, FaTelegram } from "react-icons/fa";
 
@@ -40,7 +42,7 @@ export const RESOURCES: Resource[] = [
   },
   { 
     name: "Интерактивная карта игры", 
-    url: "https://division2map.com/", 
+    url: "https://divisiontimers.com/#/", 
     icon: Map 
   },
   { 
@@ -62,6 +64,11 @@ export const RESOURCES: Resource[] = [
     name: "Сообщество игры в Telegram", 
     url: "https://t.me/divisiongame", 
     icon: FaTelegram 
+  },
+  { 
+    name: "Официальная страница The Division 2", 
+    url: "https://www.ubisoft.com/ru-ru/game/the-division/the-division-2", 
+    icon: Globe 
   },
   { 
     name: "Чаты по игре в Telegram", 
@@ -102,5 +109,10 @@ export const RESOURCES: Resource[] = [
     name: "Discord сервер The Division 2", 
     url: "https://discord.gg/thedivisiongame", 
     icon: FaDiscord 
+  },
+  { 
+    name: "Бесплатные игры Ubisoft", 
+    url: "https://www.ubisoft.com/en-gb/games/free", 
+    icon: Globe 
   }
 ];
