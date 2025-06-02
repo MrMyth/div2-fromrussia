@@ -1,5 +1,6 @@
 
 import GamesList from "./GamesList";
+import BotSection from "../BotSection";
 import ChineseVersionSection from "../ChineseVersionSection";
 import RaidGuides from "../RaidGuides";
 import ResourcesList from "../resources/ResourcesList";
@@ -19,6 +20,10 @@ const GamesSection: React.FC = () => {
             </h2>
             <GamesList />
           </div>
+        </div>
+        
+        <div id="bot" className="mt-8">
+          <BotSection />
         </div>
 
         <div id="chinese-version" className="mt-8">
