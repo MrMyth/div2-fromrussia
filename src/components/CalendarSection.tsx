@@ -44,7 +44,7 @@ const CalendarSection: React.FC = () => {
           
           <div className="flex justify-center overflow-auto">
             <iframe 
-              src="https://calendar.google.com/calendar/u/0?cid=NTMyNzJkMjI1MzAxYmRkMDIxNTJhYzZmM2ZkYzgzZTZhMTRlMGI0M2RiNDQzMzhhYmMwMThkMTI0ZmUzMDU2Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" 
+              src="https://calendar.google.com/calendar/embed?src=53272d225301bdd02152ac6f3fdc83e6a14e0b43db44338abc018d124fe3056c%40group.calendar.google.com&ctz=Europe%2FMoscow" 
               style={{ border: 0 }} 
               width="1600"
               height="600" 
