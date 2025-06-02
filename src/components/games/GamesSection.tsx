@@ -42,30 +42,30 @@ const GamesSection: React.FC = () => {
 
         <div id="channels" className="mt-8">
           <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-            <h3 className="catchphrase text-center mb-8 flex items-center justify-center">
+            <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8 flex items-center justify-center">
               <Youtube className="w-6 h-6 mr-2 text-[#F97316]" />
               Наши каналы
-            </h3>
+            </h2>
             <CreatorsSection />
           </div>
         </div>
         
         <div id="complaint" className="mt-8">
           <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-            <h3 className="text-xl font-bold text-[#F97316] text-center mb-8 flex items-center justify-center">
+            <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8 flex items-center justify-center">
               <HelpCircle className="w-6 h-6 mr-2 text-[#F97316]" />
               Жалоба на игрока
-            </h3>
+            </h2>
             <ComplaintForm />
           </div>
         </div>
 
         <div id="resources" className="mt-8">
           <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-            <h3 className="text-xl font-bold text-[#F97316] text-center mb-8 flex items-center justify-center">
+            <h2 className="text-2xl font-bold text-[#F97316] text-center mb-8 flex items-center justify-center">
               <Link className="w-6 h-6 mr-2 text-[#F97316]" />
               Полезные ресурсы
-            </h3>
+            </h2>
             <ResourcesList />
           </div>
         </div>

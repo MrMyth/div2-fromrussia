@@ -1,9 +1,10 @@
+
 import { Target } from "lucide-react";
 
 const DiscordGoals: React.FC = () => {
   return (
     <section>
-      <h2 className="text-xl font-semibold mb-6 text-center flex items-center justify-center gap-2 text-[#F97316]">
+      <h2 className="subheading text-center mb-6 flex items-center justify-center gap-2">
         <Target className="w-6 h-6 text-[#F97316]" />
         Цели сервера
       </h2>

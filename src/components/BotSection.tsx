@@ -12,7 +12,7 @@ const BotSection: React.FC = () => {
       
       <div className="max-w-3xl mx-auto px-4">
         <section className="rounded-lg">
-          <h3 className="text-xl font-semibold text-[#F97316] mb-4 flex items-center justify-center text-center">
+          <h3 className="subheading text-center mb-4 flex items-center justify-center">
             <TowerControl className="w-6 h-6 mr-2" />
             Интересует наш бот для 'Саммита'?
           </h3>
@@ -26,7 +26,7 @@ const BotSection: React.FC = () => {
         </section>
 
         <section className="mt-8">
-          <h3 className="text-xl font-bold text-[#F97316] text-center mb-6 flex items-center justify-center">
+          <h3 className="subheading text-center mb-6 flex items-center justify-center">
             <MessageSquare className="w-6 h-6 mr-2 text-[#F97316]" />
             Форма обратной связи для бота
           </h3>

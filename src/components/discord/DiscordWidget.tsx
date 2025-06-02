@@ -4,7 +4,7 @@ import { SquareCode } from "lucide-react";
 const DiscordWidget: React.FC = () => {
   return (
     <section className="bg-white rounded-lg shadow-sm p-4 border border-gray-100">
-      <h2 className="text-xl font-semibold mb-4 flex items-center justify-center gap-2 text-[#F97316]">
+      <h2 className="subheading text-center mb-4 flex items-center justify-center gap-2">
         <SquareCode className="w-6 h-6 text-[#F97316]" />
         Виджет сервера
       </h2>

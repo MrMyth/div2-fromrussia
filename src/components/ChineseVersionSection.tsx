@@ -12,7 +12,7 @@ const ChineseVersionSection: React.FC = () => {
       
       <div className="max-w-3xl mx-auto px-4">
         <section className="rounded-lg">
-          <h3 className="text-xl font-semibold text-[#F97316] mb-4 flex items-center justify-center text-center">
+          <h3 className="subheading text-center mb-4 flex items-center justify-center">
             <ShoppingCart className="w-6 h-6 mr-2" />
             Как купить инструкцию по приобретению китайской версию игры?
             <span className="ml-2 px-2 py-1 bg-[#F97316] text-white text-sm rounded-full">750 ₽</span>
