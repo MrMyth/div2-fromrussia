@@ -16,7 +16,7 @@ const HeroSection = () => {
                 alt="Division Logo" 
                 className="w-10 h-10"
               />
-              <span className="text-xl font-bold text-white whitespace-nowrap">[RUS] FROM RUSSIA</span>
+              <span className="text-xl font-bold text-white">[RUS] FROM RUSSIA</span>
             </div>
             
             {/* Navigation */}
