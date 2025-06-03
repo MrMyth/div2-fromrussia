@@ -15,7 +15,10 @@ const HeroSection = () => {
                 alt="Division Logo" 
                 className="w-10 h-10"
               />
-              <span className="text-xl font-bold text-gray-800">[RUS] FROM RUSSIA</span>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-gray-800">[RUS]</span>
+                <span className="text-xl font-bold text-gray-800">From Russia</span>
+              </div>
             </div>
             
             {/* Navigation */}
@@ -57,9 +60,8 @@ const HeroSection = () => {
           {/* Hero Text Overlay */}
           <div className="absolute inset-0 z-20 flex items-center justify-center">
             <div className="text-center space-y-6 max-w-4xl px-4">
-              <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-lg">
-                [RUS] FROM RUSSIA
-              </h1>
+              <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-lg">[RUS]</h1>
+              <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-lg">From Russia</h1>
               <p className="text-xl md:text-2xl text-white/90 drop-shadow-md">
                 Игровой Discord сервер
               </p>
