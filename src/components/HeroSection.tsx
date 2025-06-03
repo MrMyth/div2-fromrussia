@@ -1,4 +1,3 @@
-
 import { MENU_ITEMS } from "@/constants/menu";
 import { MenuItem } from "./MenuItem";
 
@@ -6,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="relative flex flex-col">
       {/* Navigation Menu */}
-      <div className="relative z-30 w-full bg-black/90 backdrop-blur-sm border-b border-gray-800">
+      <div className="relative z-30 w-full bg-white border-b border-gray-300">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
@@ -16,7 +15,7 @@ const HeroSection = () => {
                 alt="Division Logo" 
                 className="w-10 h-10"
               />
-              <span className="text-xl font-bold text-white">[RUS] FROM RUSSIA</span>
+              <span className="text-xl font-bold text-gray-800">[RUS] FROM RUSSIA</span>
             </div>
             
             {/* Navigation */}
@@ -27,7 +26,7 @@ const HeroSection = () => {
             </nav>
             
             {/* Mobile menu button */}
-            <button className="md:hidden p-2 text-white">
+            <button className="md:hidden p-2 text-gray-800">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
