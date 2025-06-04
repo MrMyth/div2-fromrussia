@@ -1,4 +1,3 @@
-
 import { MENU_ITEMS } from "@/constants/menu";
 import { MenuItem } from "./MenuItem";
 
@@ -10,13 +9,16 @@ const HeroSection = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-3">
               <img 
                 src="https://i.ibb.co/bLnHTds/42da929679073452.png" 
                 alt="Division Logo" 
                 className="w-10 h-10"
               />
-              <span className="text-xl font-bold text-gray-800">[RUS] From Russia</span>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-gray-800">[RUS]</span>
+                <span className="text-xl font-bold text-gray-800">From Russia</span>
+              </div>
             </div>
             
             {/* Navigation */}
