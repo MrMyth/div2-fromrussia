@@ -11,7 +11,7 @@ const HeroSection = () => {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <img 
-                src="https://i.ibb.co/bLnHTds/42da929679073452.png" 
+                src="https://i.postimg.cc/LXc1S617/15de736431ba7c13.jpg" 
                 alt="Division Logo" 
                 className="w-10 h-10"
               />
@@ -49,7 +49,7 @@ const HeroSection = () => {
             loop
             muted
             playsInline
-            poster="https://i.ibb.co/8BBx0F0/19201080.png"
+            poster="https://i.postimg.cc/pLfnHHWc/19201080.png"
           >
             <source
               src="https://cdn.cloudflare.steamstatic.com/steam/apps/256810065/movie480_vp9.webm"
