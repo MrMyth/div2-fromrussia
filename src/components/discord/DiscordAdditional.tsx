@@ -18,7 +18,7 @@ const DiscordAdditional: React.FC = () => {
           Скачать Discord
         </ButtonLink>
         <ButtonLink
-          href="https://drive.google.com/file/d/1peDzSGlgP0bDeE4lP7JA_rC7HhZTM8R2/view?usp=sharing"
+          href="https://www.dropbox.com/scl/fo/56eaxni1xffpzc65e0qny/AJrvVoVtCNaJHQP-9-pa3JA?rlkey=cc5dgfsdjmgjbc75m2u8yc02f&e=1&dl=0"
           icon={XOctagon}
           className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 py-6 text-lg font-medium text-white"
         >
