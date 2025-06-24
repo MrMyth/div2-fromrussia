@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import DiscordSection from "@/components/discord/DiscordSection";
 import GamesSection from "@/components/games/GamesSection";
 import CalendarSection from "@/components/CalendarSection";
+import DiscordSupport from "@/components/discord/DiscordSupport";
 import Footer from "@/components/Footer";
 
 const Index: React.FC = () => {
@@ -18,6 +19,9 @@ const Index: React.FC = () => {
         </section>
         <section id="calendar">
           <CalendarSection />
+        </section>
+        <section id="support">
+          <DiscordSupport />
         </section>
       </main>
       <Footer />

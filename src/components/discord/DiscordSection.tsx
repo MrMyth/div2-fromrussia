@@ -5,7 +5,6 @@ import DiscordJoin from "./DiscordJoin";
 import DiscordWidget from "./DiscordWidget";
 import DiscordAdditional from "./DiscordAdditional";
 import DiscordGoals from "./DiscordGoals";
-import DiscordSupport from "./DiscordSupport";
 import DiscordFullAccess from "./DiscordFullAccess";
 
 const DiscordSection: React.FC = () => {
@@ -26,10 +25,9 @@ const DiscordSection: React.FC = () => {
           <div className="space-y-8">
             <DiscordJoin />
             <DiscordWidget />
+            <DiscordFullAccess />
             <DiscordBenefits />
             <DiscordGoals />
-            <DiscordSupport />
-            <DiscordFullAccess />
             <DiscordAdditional />
           </div>
         </div>
