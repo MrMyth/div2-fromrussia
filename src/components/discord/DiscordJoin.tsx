@@ -16,7 +16,7 @@ const DiscordJoin: React.FC = () => {
         <ButtonLink 
           href="https://discord.gg/rk7ZeadZGH" 
           icon={Plus} 
-          className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 py-6 text-lg font-medium text-white"
+          className="w-full h-12 bg-[#5865F2] hover:bg-[#5865F2]/90 text-lg font-medium text-white"
         >
           Присоединиться к серверу
         </ButtonLink>

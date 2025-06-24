@@ -13,7 +13,7 @@ const DiscordAdditional: React.FC = () => {
         <ButtonLink
           href="https://discord.com/download"
           icon={Download}
-          className="w-full bg-[#5865F2] hover:bg-[#5865F2]/90 py-6 text-lg font-medium text-white"
+          className="w-full h-12 bg-[#5865F2] hover:bg-[#5865F2]/90 text-lg font-medium text-white"
         >
           Скачать Discord
         </ButtonLink>
