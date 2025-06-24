@@ -10,6 +10,6 @@ export const MENU_ITEMS = [
   { icon: Youtube, text: "Наши каналы", href: "#channels" },
   { icon: HelpCircle, text: "Обратная связь", href: "#complaint" },
   { icon: Link, text: "Полезные ресурсы", href: "#resources" },
-  { icon: Heart, text: "Поддержка", href: "#support" },
-  { icon: Calendar, text: "Календарь", href: "#calendar" }
+  { icon: Calendar, text: "Календарь", href: "#calendar" },
+  { icon: Heart, text: "Поддержка", href: "#support" }
 ] as const;
