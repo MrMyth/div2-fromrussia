@@ -6,6 +6,7 @@ import DiscordWidget from "./DiscordWidget";
 import DiscordAdditional from "./DiscordAdditional";
 import DiscordGoals from "./DiscordGoals";
 import DiscordFullAccess from "./DiscordFullAccess";
+import DiscordUnlockHelp from "./DiscordUnlockHelp";
 
 const DiscordSection: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const DiscordSection: React.FC = () => {
             <DiscordJoin />
             <DiscordWidget />
             <DiscordFullAccess />
+            <DiscordUnlockHelp />
             <DiscordBenefits />
             <DiscordGoals />
             <DiscordAdditional />
