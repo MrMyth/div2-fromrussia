@@ -1,6 +1,6 @@
 
 import ButtonLink from "../common/ButtonLink";
-import { HelpCircle } from "lucide-react";
+import { HelpCircle, MessageCircle } from "lucide-react";
 
 const DiscordUnlockHelp: React.FC = () => {
   return (
@@ -16,6 +16,7 @@ const DiscordUnlockHelp: React.FC = () => {
         <ButtonLink
           href="https://t.me/FromRussiaDiv2"
           className="w-full h-12 bg-[#0088CC] hover:bg-[#0088CC]/90 text-lg font-medium text-white"
+          icon={MessageCircle}
         >
           Получить помощь в Telegram
         </ButtonLink>
