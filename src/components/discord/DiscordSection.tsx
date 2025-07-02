@@ -1,5 +1,5 @@
 
-import { MessageSquare } from "lucide-react";
+import { DiscordIcon } from "../CustomIcons";
 import DiscordBenefits from "./DiscordBenefits";
 import DiscordJoin from "./DiscordJoin";
 import DiscordWidget from "./DiscordWidget";
@@ -15,7 +15,7 @@ const DiscordSection: React.FC = () => {
         <div className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
           <header className="text-center mb-10">
             <h1 className="text-3xl font-bold flex items-center justify-center gap-2 text-[#F97316]">
-              <MessageSquare className="w-7 h-7 text-[#F97316]" />
+              <DiscordIcon />
               <span>Discord сервер</span>
             </h1>
             <p className="mt-2 text-lg text-gray-500">
