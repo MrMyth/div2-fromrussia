@@ -72,29 +72,33 @@ const CREATORS: {
 const CreatorsSection = () => {
   return (
     <div className="space-y-6">
-      {CREATORS.map((creator) => (
-        <div key={creator.name} className="space-y-4 p-6 rounded-lg bg-white border border-gray-200 shadow-sm">
-          <h2 className="subheading text-center">
-            {creator.name}
-          </h2>
-          <div className="flex justify-center gap-4 flex-wrap">
-            {creator.links.map((link) => {
-              const Icon = link.icon;
-              return (
-                <Button
-                  key={`${creator.name}-${link.type}`}
-                  size="lg"
-                  className={`${link.colorClass} text-white rounded-full py-6 text-lg font-medium min-w-[180px]`}
-                  onClick={() => window.open(link.url, '_blank')}
-                >
-                  <Icon className="w-5 h-5 mr-2" />
-                  {link.label}
-                </Button>
-              );
-            })}
+      {CREATORS.map((creator) => {
+        const CreatorIcon = creator.icon;
+        return (
+          <div key={creator.name} className="space-y-4 p-6 rounded-lg bg-white border border-gray-200 shadow-sm">
+            <h2 className="subheading text-center flex items-center justify-center">
+              <CreatorIcon className="w-6 h-6 mr-2 text-[#F97316]" />
+              {creator.name}
+            </h2>
+            <div className="flex justify-center gap-4 flex-wrap">
+              {creator.links.map((link) => {
+                const Icon = link.icon;
+                return (
+                  <Button
+                    key={`${creator.name}-${link.type}`}
+                    size="lg"
+                    className={`${link.colorClass} text-white rounded-full py-6 text-lg font-medium min-w-[180px]`}
+                    onClick={() => window.open(link.url, '_blank')}
+                  >
+                    <Icon className="w-5 h-5 mr-2" />
+                    {link.label}
+                  </Button>
+                );
+              })}
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 };
