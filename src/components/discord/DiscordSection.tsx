@@ -1,5 +1,4 @@
 
-
 import DiscordBenefits from "./DiscordBenefits";
 import DiscordJoin from "./DiscordJoin";
 import DiscordWidget from "./DiscordWidget";
@@ -47,4 +46,3 @@ const DiscordSection: React.FC = () => {
 };
 
 export default DiscordSection;
-
