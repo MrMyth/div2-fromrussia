@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "./ui/button";
 import { Youtube, Twitch, User, Contact } from "lucide-react";
@@ -73,8 +74,7 @@ const CreatorsSection = () => {
     <div className="space-y-6">
       {CREATORS.map((creator) => (
         <div key={creator.name} className="space-y-4 p-6 rounded-lg bg-white border border-gray-200 shadow-sm">
-          <h2 className="text-xl font-semibold text-center flex items-center justify-center gap-2">
-            <creator.icon className="w-6 h-6 text-[#F97316]" />
+          <h2 className="text-2xl font-bold text-center text-[#8B5CF6] font-serif tracking-wide">
             {creator.name}
           </h2>
           <div className="flex justify-center gap-4 flex-wrap">
