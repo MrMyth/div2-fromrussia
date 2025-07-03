@@ -74,7 +74,7 @@ const CreatorsSection = () => {
     <div className="space-y-6">
       {CREATORS.map((creator) => (
         <div key={creator.name} className="space-y-4 p-6 rounded-lg bg-white border border-gray-200 shadow-sm">
-          <h2 className="text-2xl font-bold text-center text-[#8B5CF6] font-serif tracking-wide">
+          <h2 className="subheading text-center">
             {creator.name}
           </h2>
           <div className="flex justify-center gap-4 flex-wrap">
