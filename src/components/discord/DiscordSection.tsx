@@ -4,7 +4,6 @@ import DiscordJoin from "./DiscordJoin";
 import DiscordWidget from "./DiscordWidget";
 import DiscordAdditional from "./DiscordAdditional";
 import DiscordGoals from "./DiscordGoals";
-import DiscordFullAccess from "./DiscordFullAccess";
 import DiscordUnlockHelp from "./DiscordUnlockHelp";
 
 const DiscordSection: React.FC = () => {
@@ -33,7 +32,6 @@ const DiscordSection: React.FC = () => {
           <div className="space-y-8">
             <DiscordJoin />
             <DiscordWidget />
-            <DiscordFullAccess />
             <DiscordUnlockHelp />
             <DiscordBenefits />
             <DiscordGoals />
