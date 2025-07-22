@@ -10,7 +10,7 @@ const DiscordUnlockHelp: React.FC = () => {
         Зеркало в Telegram
       </h2>
       <p className="text-gray-600 text-center mb-6">
-        Если у вас что-то не получается, нажмите на кнопку ниже, чтобы запросить помощь в настройке через Telegram
+        Если у вас что-то не получается, нажмите на кнопку ниже, чтобы запросить помощь через Telegram
       </p>
       <div className="grid gap-4">
         <ButtonLink
