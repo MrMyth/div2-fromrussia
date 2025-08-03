@@ -1,6 +1,6 @@
 
 import ButtonLink from "../common/ButtonLink";
-import { Download, Lightbulb, MessageCircle, Globe } from "lucide-react";
+import { Download, Lightbulb, MessageCircle, Globe, HelpCircle } from "lucide-react";
 
 const DiscordAdditional: React.FC = () => {
   return (
@@ -19,7 +19,8 @@ const DiscordAdditional: React.FC = () => {
         </ButtonLink>
         
         <div className="mt-6">
-          <h3 className="text-lg font-semibold text-center mb-4 text-[#F97316]">
+          <h3 className="text-lg font-semibold text-center mb-4 text-[#F97316] flex items-center justify-center gap-2">
+            <HelpCircle className="w-5 h-5" />
             Зеркало в Telegram
           </h3>
           <p className="text-gray-600 text-center mb-4 text-sm">
