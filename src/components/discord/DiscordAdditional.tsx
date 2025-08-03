@@ -1,6 +1,6 @@
 
 import ButtonLink from "../common/ButtonLink";
-import { Download, Lightbulb } from "lucide-react";
+import { Download, Lightbulb, MessageCircle, Globe } from "lucide-react";
 
 const DiscordAdditional: React.FC = () => {
   return (
@@ -17,6 +17,31 @@ const DiscordAdditional: React.FC = () => {
         >
           Скачать Discord
         </ButtonLink>
+        
+        <div className="mt-6">
+          <h3 className="text-lg font-semibold text-center mb-4 text-[#F97316]">
+            Зеркало в Telegram
+          </h3>
+          <p className="text-gray-600 text-center mb-4 text-sm">
+            Если у вас что-то не получается, нажмите на кнопку ниже, чтобы запросить помощь через Telegram
+          </p>
+          <div className="grid gap-3">
+            <ButtonLink
+              href="https://t.me/FromRussiaDiv2"
+              className="w-full h-12 bg-[#0088CC] hover:bg-[#0088CC]/90 text-lg font-medium text-white"
+              icon={MessageCircle}
+            >
+              Получить помощь в Telegram
+            </ButtonLink>
+            <ButtonLink
+              href="https://telegram.org/"
+              className="w-full h-12 bg-[#0088CC] hover:bg-[#0088CC]/90 text-lg font-medium text-white"
+              icon={Globe}
+            >
+              Сайт Telegram
+            </ButtonLink>
+          </div>
+        </div>
       </div>
     </section>
   );
