@@ -21,7 +21,7 @@ const DiscordAdditional: React.FC = () => {
         <div className="mt-6">
           <h3 className="text-lg font-semibold text-center mb-4 text-[#F97316] flex items-center justify-center gap-2">
             <HelpCircle className="w-5 h-5" />
-            Зеркало в Telegram
+            Группа в Telegram
           </h3>
           <p className="text-gray-600 text-center mb-4 text-sm">
             Если у вас что-то не получается, нажмите на кнопку ниже, чтобы запросить помощь через Telegram
@@ -39,7 +39,7 @@ const DiscordAdditional: React.FC = () => {
               className="w-full h-12 bg-[#0088CC] hover:bg-[#0088CC]/90 text-lg font-medium text-white"
               icon={Globe}
             >
-              Сайт Telegram
+              Скачать Telegram
             </ButtonLink>
           </div>
         </div>
@@ -47,7 +47,7 @@ const DiscordAdditional: React.FC = () => {
         <div className="mt-6">
           <h3 className="text-lg font-semibold text-center mb-4 text-[#F97316] flex items-center justify-center gap-2">
             <Users className="w-5 h-5" />
-            Зеркало VK
+            Группа в VK
           </h3>
           <p className="text-gray-600 text-center mb-4 text-sm">
             Если у вас что-то не получается, нажмите на кнопку ниже, чтобы запросить помощь через VK
@@ -58,7 +58,7 @@ const DiscordAdditional: React.FC = () => {
               className="w-full h-12 bg-[#4680C2] hover:bg-[#4680C2]/90 text-lg font-medium text-white"
               icon={Users}
             >
-              Группа VK
+              Группа в VK
             </ButtonLink>
           </div>
         </div>
