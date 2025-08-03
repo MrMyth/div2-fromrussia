@@ -49,6 +49,9 @@ const DiscordAdditional: React.FC = () => {
             <Users className="w-5 h-5" />
             Зеркало VK
           </h3>
+          <p className="text-gray-600 text-center mb-4 text-sm">
+            Если у вас что-то не получается, нажмите на кнопку ниже, чтобы запросить помощь через VK
+          </p>
           <div className="grid gap-3">
             <ButtonLink
               href="https://vk.com/fromrussiadiv2"
