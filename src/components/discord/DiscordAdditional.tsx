@@ -1,6 +1,6 @@
 
 import ButtonLink from "../common/ButtonLink";
-import { Download, Lightbulb, MessageCircle, Globe, HelpCircle } from "lucide-react";
+import { Download, Lightbulb, MessageCircle, Globe, HelpCircle, Users } from "lucide-react";
 
 const DiscordAdditional: React.FC = () => {
   return (
@@ -40,6 +40,22 @@ const DiscordAdditional: React.FC = () => {
               icon={Globe}
             >
               Сайт Telegram
+            </ButtonLink>
+          </div>
+        </div>
+
+        <div className="mt-6">
+          <h3 className="text-lg font-semibold text-center mb-4 text-[#F97316] flex items-center justify-center gap-2">
+            <Users className="w-5 h-5" />
+            Зеркало VK
+          </h3>
+          <div className="grid gap-3">
+            <ButtonLink
+              href="https://vk.com/fromrussiadiv2"
+              className="w-full h-12 bg-[#4680C2] hover:bg-[#4680C2]/90 text-lg font-medium text-white"
+              icon={Users}
+            >
+              Группа VK
             </ButtonLink>
           </div>
         </div>
