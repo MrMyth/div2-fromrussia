@@ -4,13 +4,18 @@ import GamesSection from "@/components/games/GamesSection";
 import CalendarSection from "@/components/CalendarSection";
 import DiscordSupport from "@/components/discord/DiscordSupport";
 import Footer from "@/components/Footer";
+import { Card, CardContent } from "@/components/ui/card";
 const Index: React.FC = () => {
   return <div className="min-h-screen bg-white flex flex-col">
       <HeroSection />
-      <div className="bg-white py-2 text-center">
-        <p className="text-red-600 font-bold text-4xl">
-          Дата обновления сайта: 12:45 (МСК) 11.08.2025
-        </p>
+      <div className="container mx-auto px-4 py-4">
+        <Card>
+          <CardContent className="py-4 text-center">
+            <p className="text-red-600 font-bold text-4xl">
+              Дата обновления сайта: 12:45 (МСК) 11.08.2025
+            </p>
+          </CardContent>
+        </Card>
       </div>
       <main className="flex-grow">
         <section id="discord">
