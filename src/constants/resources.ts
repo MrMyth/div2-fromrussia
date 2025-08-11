@@ -117,7 +117,7 @@ export const RESOURCES: Resource[] = [
     icon: Globe 
   },
   { 
-    name: "Anna2.info - База данных агентов", 
+    name: "База данных о агентах", 
     url: "https://anna2.info/", 
     icon: Shield,
     warning: "Сайт представляет собой **НЕ ОФИЦИАЛЬНУЮ БАЗУ ДАННЫХ О АГЕНТАХ**. Позволяет проверить игрока на использование читов."
