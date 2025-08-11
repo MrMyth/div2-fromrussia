@@ -1,13 +1,10 @@
 const Footer = () => {
   return <footer className="bg-[#F97316] text-white py-6 mt-auto">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center">
-          <div>
+        <div className="flex justify-center items-center">
+          <div className="text-center">
             <p className="font-bold">[RUS] FROM RUSSIA</p>
             <p className="text-sm">Игровой Discord сервер</p>
-          </div>
-          <div className="text-sm text-right">
-            <p>Дата обновления сайта: 12:45 (МСК) 11.08.2025</p>
           </div>
         </div>
       </div>

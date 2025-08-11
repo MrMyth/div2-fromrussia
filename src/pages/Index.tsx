@@ -10,6 +10,11 @@ const Index: React.FC = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <HeroSection />
+      <div className="bg-white py-2 text-center">
+        <p className="text-red-600 font-bold text-sm">
+          Дата обновления сайта: 12:45 (МСК) 11.08.2025
+        </p>
+      </div>
       <main className="flex-grow">
         <section id="discord">
           <DiscordSection />
