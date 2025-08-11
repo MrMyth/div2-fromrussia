@@ -7,7 +7,7 @@ const Footer = () => {
             <p className="text-sm">Игровой Discord сервер</p>
           </div>
           <div className="text-sm text-right">
-            <p>Дата обновления сайта: 11:55 (МСК) 01.07.2025</p>
+            <p>Дата обновления сайта: 12:45 (МСК) 11.08.2025</p>
           </div>
         </div>
       </div>
