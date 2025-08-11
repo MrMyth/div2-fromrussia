@@ -22,6 +22,7 @@ type Resource = {
   name: string;
   url: string;
   icon: React.ComponentType<any>;
+  warning?: string;
 };
 
 export const RESOURCES: Resource[] = [
@@ -114,5 +115,11 @@ export const RESOURCES: Resource[] = [
     name: "Бесплатные игры Ubisoft", 
     url: "https://www.ubisoft.com/en-gb/games/free", 
     icon: Globe 
+  },
+  { 
+    name: "Anna2.info - База данных агентов", 
+    url: "https://anna2.info/", 
+    icon: Shield,
+    warning: "Сайт представляет собой **НЕ ОФИЦИАЛЬНУЮ БАЗУ ДАННЫХ О АГЕНТАХ**. Позволяет проверить игрока на использование читов."
   }
 ];

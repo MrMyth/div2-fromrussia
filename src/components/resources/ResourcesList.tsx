@@ -17,14 +17,21 @@ const ResourcesList: React.FC = () => {
       resource.icon;
 
     return (
-      <ButtonLink
-        key={resource.name}
-        href={resource.url}
-        icon={IconComponent}
-        className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full md:w-96 rounded-full py-6 text-lg font-medium"
-      >
-        {resource.name}
-      </ButtonLink>
+      <div className="w-full md:w-96">
+        <ButtonLink
+          key={resource.name}
+          href={resource.url}
+          icon={IconComponent}
+          className="bg-[#F97316] hover:bg-[#F97316]/90 text-white w-full rounded-full py-6 text-lg font-medium"
+        >
+          {resource.name}
+        </ButtonLink>
+        {resource.warning && (
+          <p className="text-sm text-gray-600 mt-2 px-4 text-center">
+            {resource.warning}
+          </p>
+        )}
+      </div>
     );
   };
 
