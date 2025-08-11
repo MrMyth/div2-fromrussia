@@ -1,17 +1,14 @@
-
 import HeroSection from "@/components/HeroSection";
 import DiscordSection from "@/components/discord/DiscordSection";
 import GamesSection from "@/components/games/GamesSection";
 import CalendarSection from "@/components/CalendarSection";
 import DiscordSupport from "@/components/discord/DiscordSupport";
 import Footer from "@/components/Footer";
-
 const Index: React.FC = () => {
-  return (
-    <div className="min-h-screen bg-white flex flex-col">
+  return <div className="min-h-screen bg-white flex flex-col">
       <HeroSection />
       <div className="bg-white py-2 text-center">
-        <p className="text-red-600 font-bold text-sm">
+        <p className="text-red-600 font-bold text-4xl">
           Дата обновления сайта: 12:45 (МСК) 11.08.2025
         </p>
       </div>
@@ -30,8 +27,6 @@ const Index: React.FC = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
