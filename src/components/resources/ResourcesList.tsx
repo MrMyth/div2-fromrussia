@@ -62,7 +62,7 @@ const ResourcesList: React.FC = () => {
                 </div>
                 <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-4">
                   <p className="text-sm text-yellow-800 font-medium">
-                    ⚠️ Сайт представляет собой <strong>НЕ ОФИЦИАЛЬНУЮ БАЗУ ДАННЫХ О АГЕНТАХ</strong>. Позволяет проверить игрока на использование читов.
+                    ⚠️ {resource.warning}
                   </p>
                 </div>
               </div>

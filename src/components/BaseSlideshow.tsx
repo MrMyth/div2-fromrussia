@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useSlideshow } from "@/hooks/useSlideshow";
-import type { SlideshowProps } from "@/types";
+import type { SlideshowProps } from "@/types/slideshow";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const BaseSlideshow = ({ images, title }: SlideshowProps) => {
