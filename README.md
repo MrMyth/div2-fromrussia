@@ -1,4 +1,4 @@
-Исходный код сайта: https://div2-fromrussia.lovable.app/
+Исходный код сайта: https://div2-fromrussia.lovable.app/ .
 
 Создано с помощью https://lovable.dev/.
 
