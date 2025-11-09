@@ -10,10 +10,10 @@ const Index: React.FC = () => {
       <HeroSection />
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div className="rounded-2xl border-2 border-[#F97316] bg-gradient-to-br from-[#F97316]/5 to-[#F97316]/10 p-6 shadow-lg">
             <div className="text-center">
-              <p className="text-red-600 font-bold text-4xl">
-                Дата обновления сайта: 12:45 (МСК) 11.08.2025
+              <p className="text-[#F97316] font-bold text-3xl md:text-4xl">
+                Дата обновления сайта: 09.11.2025 в 14:30 (МСК)
               </p>
             </div>
           </div>

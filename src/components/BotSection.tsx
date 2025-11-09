@@ -61,7 +61,7 @@ const BotSection: React.FC = () => {
               Если вам нравится наш бот и вы хотите помочь его развитию:
             </p>
             <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
-              <p className="text-gray-500 text-sm mb-2">Номер карты:</p>
+              <p className="text-gray-500 text-sm mb-2">Номер карты Сбербанка:</p>
               <div className="flex items-center">
                 <code className="bg-gray-100 p-2 rounded text-base font-mono flex-1">{cardNumber}</code>
                 <Button 
