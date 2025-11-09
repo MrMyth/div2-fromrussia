@@ -13,7 +13,7 @@ const Index: React.FC = () => {
           <div className="rounded-2xl border-2 border-[#F97316] bg-gradient-to-br from-[#F97316]/5 to-[#F97316]/10 p-6 shadow-lg">
             <div className="text-center">
               <p className="text-[#F97316] font-bold text-3xl md:text-4xl">
-                Дата обновления сайта: 09.11.2025 в 14:30 (МСК)
+                Дата обновления сайта: 09.11.2025 в 21:11 (МСК)
               </p>
             </div>
           </div>
