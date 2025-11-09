@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bot, MessageSquare, TowerControl, Copy } from 'lucide-react';
+import { Bot, MessageSquare, TowerControl, Copy, Banknote } from 'lucide-react';
 import { Button } from './ui/button';
 import { useToast } from '@/hooks/use-toast';
 
@@ -53,7 +53,7 @@ const BotSection: React.FC = () => {
 
         <section className="mt-8">
           <h3 className="subheading text-center mb-4 flex items-center justify-center">
-            <MessageSquare className="w-6 h-6 mr-2 text-[#F97316]" />
+            <Banknote className="w-6 h-6 mr-2 text-[#F97316]" />
             Поддержать бота финансово
           </h3>
           <div className="bg-gray-50 p-6 rounded-lg mb-8">
